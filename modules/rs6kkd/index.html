@@ -1,0 +1,108 @@
+<section class="modulex-referans-konveyor{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-referans-konveyor-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* referans-konveyor — referans-cift-serit iki karşıt hap şerit, referans-dikey-akis dikey sütunlar; bu modül tek bantlı fabrika hattı iskeleti kurar — farklı boylarda koli kutuları, sevkiyat etiketi + barkod + damga, dönen silindir katmanı ve açık duraklat/oynat düğmesi (WCAG 2.2.2) ailede yok. */
+  .modulex-referans-konveyor { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-referans-konveyor *, .modulex-referans-konveyor *::before, .modulex-referans-konveyor *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-referans-konveyor :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-referans-konveyor :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-referans-konveyor :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-referans-konveyor :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-referans-konveyor img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-referans-konveyor) img { height: auto; }
+  .modulex-referans-konveyor [hidden] { display: none !important; }
+  .modulex-referans-konveyor :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-referans-konveyor :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-referans-konveyor-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-referans-konveyor-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-referans-konveyor--bassiz .modulex-referans-konveyor-bas { display: none; }
+  .modulex-referans-konveyor-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-referans-konveyor-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-referans-konveyor-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-referans-konveyor-bas { max-width: 760px; }
+  .modulex-referans-konveyor-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-referans-konveyor-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-referans-konveyor-dugme:hover { transform: translateY(-2px); }
+  .modulex-referans-konveyor-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-referans-konveyor-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-referans-konveyor-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-referans-konveyor-hat { position: relative; }
+  .modulex-referans-konveyor-bantlik { direction: ltr; overflow: hidden; padding-block-start: 30px; border-block-end: 10px solid color-mix(in srgb, --text-- 80%, --bg--); -webkit-mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent); mask-image: linear-gradient(90deg, transparent, black 5%, black 95%, transparent); }
+  .modulex-referans-konveyor-yol { display: flex; align-items: flex-end; width: max-content; animation: modulex-referans-konveyor-tasi 44s linear infinite; }
+  .modulex-referans-konveyor-hat:hover .modulex-referans-konveyor-yol, .modulex-referans-konveyor-hat:focus-within .modulex-referans-konveyor-yol, .modulex-referans-konveyor--durdu .modulex-referans-konveyor-yol, .modulex-referans-konveyor--durdu .modulex-referans-konveyor-silindir, .modulex-referans-konveyor-hat:hover .modulex-referans-konveyor-silindir { animation-play-state: paused; }
+  .modulex-referans-konveyor-dizi { display: flex; align-items: flex-end; gap: 26px; padding-inline-end: 26px; }
+  .modulex-referans-konveyor-koli > *, .modulex-referans-konveyor-koli > .modulex-referans-konveyor-bag { position: relative; display: grid; justify-items: center; align-content: end; gap: 10px; width: 188px; padding: 26px 14px 14px; border: 2px solid color-mix(in srgb, --accent-- 45%, --cizgi--); border-block-end-width: 0; border-radius: 6px 6px 0 0; background: color-mix(in srgb, --accent-- 9%, --kartBg--); text-align: center; transition: transform 0.35s ease; }
+  .modulex-referans-konveyor-koli:nth-child(3n+2) > * { width: 160px; padding-block-start: 16px; }
+  .modulex-referans-konveyor-koli:nth-child(3n) > * { padding-block-start: 48px; }
+  .modulex-referans-konveyor-koli:hover > * { transform: translateY(-8px) rotate(-1.5deg); }
+  .modulex-referans-konveyor-koliband { position: absolute; inset-block: 0; inset-inline-start: calc(50% - 16px); width: 32px; background: color-mix(in srgb, --accent-- 24%, transparent); }
+  .modulex-referans-konveyor-fis { position: relative; display: grid; justify-items: center; gap: 6px; width: 100%; padding: 10px 8px; border: 1px dashed --cizgi--; border-radius: 4px; background: --bg--; }
+  .modulex-referans-konveyor-kimg { width: auto; height: 30px; object-fit: contain; filter: grayscale(1); transition: filter 0.3s ease; }
+  .modulex-referans-konveyor-koli:hover .modulex-referans-konveyor-kimg { filter: none; }
+  .modulex-referans-konveyor-kad { font-size: 0.98rem; font-weight: 800; line-height: 1.25; unicode-bidi: plaintext; }
+  .modulex-referans-konveyor-kod { display: inline-flex; align-items: center; gap: 6px; color: --muted--; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.72rem; }
+  .modulex-referans-konveyor-barkod { width: 46px; height: 14px; background: repeating-linear-gradient(90deg, currentColor 0 2px, transparent 2px 4px, currentColor 4px 5px, transparent 5px 8px); }
+  .modulex-referans-konveyor-damga { position: relative; padding: 2px 8px; border: 2px solid --accentInk--; border-radius: 4px; color: --accentInk--; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; transform: rotate(-4deg); unicode-bidi: plaintext; }
+  .modulex-referans-konveyor-silindir { height: 16px; margin-inline: 3%; background: radial-gradient(circle, color-mix(in srgb, --text-- 55%, --bg--) 0 5px, transparent 6px) 0 0 / 28px 16px repeat-x; animation: modulex-referans-konveyor-don 1.4s linear infinite; }
+  .modulex-referans-konveyor-pano { display: flex; justify-content: flex-end; margin-block-start: 10px; }
+  .modulex-referans-konveyor-dur { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid --cizgi--; border-radius: 12px; background: --bg--; color: --text--; transition: background 0.25s ease, color 0.25s ease; }
+  .modulex-referans-konveyor-dur:hover { background: --accent--; color: --accentText--; }
+  .modulex-referans-konveyor-dur .material-symbols-outlined { font-size: 22px; }
+  @keyframes modulex-referans-konveyor-tasi { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes modulex-referans-konveyor-don { to { background-position: -28px 0; } }
+  @media (max-width: 768px) { .modulex-referans-konveyor-yol { animation-duration: 30s; } .modulex-referans-konveyor-koli > *, .modulex-referans-konveyor-koli > .modulex-referans-konveyor-bag { width: 150px; } .modulex-referans-konveyor-koli:nth-child(3n+2) > * { width: 132px; } .modulex-referans-konveyor-dizi { gap: 16px; padding-inline-end: 16px; } }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-referans-konveyor-bantlik { direction: inherit; padding-block-start: 12px; -webkit-mask-image: none; mask-image: none; }
+    .modulex-referans-konveyor-kopya { display: none; }
+    .modulex-referans-konveyor-yol { width: auto; }
+    .modulex-referans-konveyor-dizi { flex-wrap: wrap; justify-content: center; row-gap: 22px; padding-inline-end: 0; }
+    .modulex-referans-konveyor-koli > *, .modulex-referans-konveyor-koli > .modulex-referans-konveyor-bag { border-block-end-width: 6px; border-radius: 6px; }
+  }
+  .modulex-referans-konveyor-logo { display: block; width: auto; max-width: 100%; height: clamp(32px, 4vw, 48px); object-fit: contain; filter: grayscale(1); transition: filter 0.3s ease, transform 0.3s ease; }
+  .modulex-referans-konveyor-kelime { display: inline-block; color: --text--; font-family: var(--mx-font-heading, inherit); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; transition: color 0.3s ease; }
+  .modulex-referans-konveyor-bag { color: inherit; text-decoration: none; }
+  .modulex-referans-konveyor-sektor { color: --accentInk--; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .modulex-referans-konveyor-kmetin { color: --muted--; font-size: 0.95rem; line-height: 1.65; }
+  .modulex-referans-konveyor-yil { color: --muted--; font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .modulex-referans-konveyor-harf img { width: 100%; height: 100%; object-fit: contain; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-referans-konveyor :is(.modulex-referans-konveyor-baslik, .modulex-referans-konveyor-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-referans-konveyor-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-referans-konveyor { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-referans-konveyor *, .modulex-referans-konveyor *::before, .modulex-referans-konveyor *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-referans-konveyor";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const konveyorDur = (s, P, az) => {
+        const b = s.querySelector("[data-kv-dur]");
+        if (!b || az) return;
+        b.hidden = false;
+        b.addEventListener("click", () => {
+          const d = s.classList.toggle(P + "--durdu");
+          b.setAttribute("aria-label", d ? b.dataset.oynaA : b.dataset.durA);
+          const i = b.querySelector(".material-symbols-outlined");
+          if (i) i.textContent = d ? "play_arrow" : "pause";
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      konveyorDur(s, P, az);
+    });
+  })();
+</script>

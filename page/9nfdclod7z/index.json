@@ -1,0 +1,40 @@
+{
+  "id": "9nfdclod7z",
+  "name": {
+    "tr": "Parseller",
+    "en": "Plots",
+    "ar": "القطع"
+  },
+  "description": {
+    "tr": "Tarladan laboratuvara kareler; görseller temsilîdir.",
+    "en": "Frames from field to lab; images are representative.",
+    "ar": "لقطات من الحقل إلى المختبر؛ الصور تمثيلية."
+  },
+  "keyword": {
+    "tr": "parsel, galeri",
+    "en": "plot, gallery",
+    "ar": "قطعة، معرض"
+  },
+  "path": "referanslar",
+  "icon": "hexagon",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "qbeg40",
+      "rs6kkd"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Parseller",
+    "en": "Plots",
+    "ar": "القطع"
+  },
+  "date": "2026-11-16T20:22:24.779Z",
+  "update": "2026-11-16T20:25:16.410Z"
+}

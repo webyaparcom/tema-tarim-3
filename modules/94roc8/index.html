@@ -1,0 +1,128 @@
+<section class="modulex-sayac-kantar{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-sayac-kantar-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* sayac-kantar — sayac-sekmeli tek büyük rakamı sekmeyle değiştirir, sayac-terazi kollu terazi eğimiyle oran anlatır; bu modül ürün seçmeli bir baskül iskeletidir — kasa yığını (adet = oran) + çöken kefe + LCD tartım ekranı + fiş no (hasat / kantar fişi dili). */
+  .modulex-sayac-kantar { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-sayac-kantar *, .modulex-sayac-kantar *::before, .modulex-sayac-kantar *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-sayac-kantar :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-sayac-kantar :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-sayac-kantar :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-sayac-kantar :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-sayac-kantar img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-sayac-kantar) img { height: auto; }
+  .modulex-sayac-kantar [hidden] { display: none !important; }
+  .modulex-sayac-kantar :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-sayac-kantar :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-sayac-kantar-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-sayac-kantar-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-sayac-kantar--bassiz .modulex-sayac-kantar-bas { display: none; }
+  .modulex-sayac-kantar-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-sayac-kantar-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-sayac-kantar-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-sayac-kantar-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-sayac-kantar-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-sayac-kantar-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-sayac-kantar-dugme:hover { transform: translateY(-2px); }
+  .modulex-sayac-kantar-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-sayac-kantar-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-sayac-kantar-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-sayac-kantar-tarti { display: grid; gap: 26px; }
+  .modulex-sayac-kantar-urunler { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .modulex-sayac-kantar:not(.modulex-sayac-kantar--js) .modulex-sayac-kantar-urunler { display: none; }
+  .modulex-sayac-kantar-urun { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px; border: 2px solid --cizgi--; border-radius: 12px; background: --kartBg--; color: --text--; font: inherit; font-weight: 700; transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease, transform 0.25s ease; }
+  .modulex-sayac-kantar-urun:hover { border-color: --accent--; transform: translateY(-2px); }
+  .modulex-sayac-kantar-urun[aria-pressed="true"] { border-color: --accent--; background: --accent--; color: --accentText--; }
+  .modulex-sayac-kantar-urun-i { font-size: 20px; }
+  .modulex-sayac-kantar-tartimlar { display: grid; gap: 22px; }
+  .modulex-sayac-kantar-tartim { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: end; gap: clamp(24px, 5vw, 64px); padding: clamp(22px, 4vw, 44px); border-radius: --yuvarlak--; background: --kartBg--; box-shadow: 0 30px 60px -45px color-mix(in srgb, --text-- 60%, transparent); }
+  .modulex-sayac-kantar-baskul { display: grid; justify-items: center; }
+  .modulex-sayac-kantar-yuk { display: flex; flex-wrap: wrap-reverse; align-content: flex-start; justify-content: center; gap: 4px; width: 184px; min-height: 120px; transform: translateY(calc(var(--o) * 6px)); }
+  .modulex-sayac-kantar-kasa { width: 56px; height: 38px; border: 2px solid color-mix(in srgb, --accent-- 55%, --text--); border-radius: 4px; background: repeating-linear-gradient(180deg, color-mix(in srgb, --accent-- 40%, --bg--) 0 8px, color-mix(in srgb, --accent-- 26%, --bg--) 8px 11px); animation: modulex-sayac-kantar-dus 0.55s cubic-bezier(0.3, 1.3, 0.6, 1) backwards; animation-delay: calc(var(--k) * 90ms); }
+  @keyframes modulex-sayac-kantar-dus { from { transform: translateY(-40px); opacity: 0; } to { transform: none; opacity: 1; } }
+  .modulex-sayac-kantar-kefe { width: 240px; height: 14px; border-radius: 4px; background: --text--; transform: translateY(calc(var(--o) * 6px)); transition: transform 0.6s ease; }
+  .modulex-sayac-kantar-govde { width: 200px; height: 46px; background: linear-gradient(180deg, color-mix(in srgb, --text-- 72%, --bg--), color-mix(in srgb, --text-- 52%, --bg--)); clip-path: polygon(8% 0, 92% 0, 100% 100%, 0 100%); }
+  .modulex-sayac-kantar-okuma { display: grid; gap: 10px; }
+  .modulex-sayac-kantar-lcd-ekran { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 22px; border: 6px solid color-mix(in srgb, --text-- 80%, --bg--); border-radius: 14px; background: color-mix(in srgb, --accent-- 16%, --text--); color: color-mix(in srgb, --accent-- 22%, --bg--); box-shadow: inset 0 0 24px color-mix(in srgb, --text-- 60%, transparent); }
+  .modulex-sayac-kantar-lcd { font-family: var(--mx-font-mono, ui-monospace, monospace); font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: 0.04em; line-height: 1; text-shadow: 0 0 12px color-mix(in srgb, --accent-- 50%, transparent); }
+  .modulex-sayac-kantar-lcd .modulex-sayac-kantar-ek { font-size: 0.45em; }
+  .modulex-sayac-kantar-sabit { flex: none; width: 12px; height: 12px; border-radius: 50%; background: currentColor; animation: modulex-sayac-kantar-sabit 1.2s steps(2) 3; }
+  @keyframes modulex-sayac-kantar-sabit { 50% { opacity: 0.2; } }
+  .modulex-sayac-kantar-etiket { display: flex; align-items: center; gap: 8px; font-size: 1.25rem; font-weight: 750; }
+  .modulex-sayac-kantar-ikon { color: --accentInk--; font-size: 22px; }
+  .modulex-sayac-kantar-not { color: --muted--; }
+  .modulex-sayac-kantar-fis { color: --muted--; font-family: var(--mx-font-mono, ui-monospace, monospace); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.1em; }
+  @media (max-width: 768px) {
+    .modulex-sayac-kantar-tartim { grid-template-columns: minmax(0, 1fr); }
+    .modulex-sayac-kantar-yuk { width: 160px; min-height: 96px; }
+    .modulex-sayac-kantar-kasa { width: 48px; height: 32px; }
+    .modulex-sayac-kantar-kefe { width: 200px; }
+    .modulex-sayac-kantar-govde { width: 170px; height: 36px; }
+    .modulex-sayac-kantar-urun { padding-inline: 12px; font-size: 0.9rem; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sayac-kantar :is(.modulex-sayac-kantar-baslik, .modulex-sayac-kantar-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sayac-kantar-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-sayac-kantar { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-sayac-kantar *, .modulex-sayac-kantar *::before, .modulex-sayac-kantar *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-sayac-kantar";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const sayac = (s, P, az) => {
+        const el = [...s.querySelectorAll("[data-hedef]")];
+        if (!el.length || az || !("IntersectionObserver" in window)) return;
+        const dl = document.documentElement.lang || undefined;
+        const oynat = () => el.forEach((e) => {
+          const h = Number(e.dataset.hedef);
+          const od = Number(e.dataset.ondalik) || 0;
+          const son = e.textContent;
+          if (!Number.isFinite(h)) return;
+          let f;
+          try { f = new Intl.NumberFormat(dl, { minimumFractionDigits: od, maximumFractionDigits: od }); } catch (x) { return; }
+          const t0 = performance.now();
+          const adim = (t) => {
+            const p = Math.min(1, (t - t0) / 1300);
+            e.textContent = p < 1 ? f.format(h * (1 - Math.pow(1 - p, 3))) : son;
+            if (p < 1) requestAnimationFrame(adim);
+          };
+          requestAnimationFrame(adim);
+        });
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { oynat(); io.disconnect(); } });
+        }, { threshold: 0.3 });
+        io.observe(s);
+      };
+    const secim = (s, P) => {
+        const c = [...s.querySelectorAll("[data-sec]")];
+        const p = [...s.querySelectorAll("[data-secim]")];
+        if (!c.length) return;
+        s.classList.add(P + "--js");
+        const sec = (n) => {
+          c.forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.sec === n)));
+          p.forEach((x) => { x.hidden = x.dataset.secim !== n; });
+        };
+        sec(c[0].dataset.sec);
+        c.forEach((x) => x.addEventListener("click", () => sec(x.dataset.sec)));
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      sayac(s, P, az);
+      secim(s, P, az);
+    });
+  })();
+</script>

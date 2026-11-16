@@ -1,0 +1,163 @@
+<footer class="modulex-alt-ray-kart{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-alt-ray-kart-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</footer>
+
+<style>
+  /* alt-ray-kart — Footer sütunları yan yana sıkıştırılmaz, bir rayda kayar: telefonda parmakla, masaüstünde oklarla (RTL'de yön ters); kart sayısı veri kadar — boş kart yok. */
+  .modulex-alt-ray-kart { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-alt-ray-kart *, .modulex-alt-ray-kart *::before, .modulex-alt-ray-kart *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-alt-ray-kart :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-alt-ray-kart :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-alt-ray-kart :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-alt-ray-kart :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-alt-ray-kart img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-alt-ray-kart) img { height: auto; }
+  .modulex-alt-ray-kart [hidden] { display: none !important; }
+  .modulex-alt-ray-kart :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-alt-ray-kart :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-alt-ray-kart-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-alt-ray-kart-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-alt-ray-kart--bassiz .modulex-alt-ray-kart-bas { display: none; }
+  .modulex-alt-ray-kart-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-alt-ray-kart-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-alt-ray-kart-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-alt-ray-kart-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-alt-ray-kart-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-alt-ray-kart-dugme:hover { transform: translateY(-2px); }
+  .modulex-alt-ray-kart-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-alt-ray-kart-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-alt-ray-kart-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-alt-ray-kart-bag { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-alt-ray-kart-bag:hover { color: --accentInk--; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-alt-ray-kart-bag[aria-current="page"] { color: --accentInk--; font-weight: 700; }
+  .modulex-alt-ray-kart-logo { display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; }
+  .modulex-alt-ray-kart-logo img { width: auto; max-height: --logoH--; }
+  .modulex-alt-ray-kart-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modulex-alt-ray-kart-bbaslik { margin-block-end: 14px; color: --accentInk--; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-alt-ray-kart-sayfalar, .modulex-alt-ray-kart-baglantilar, .modulex-alt-ray-kart-iletisim, .modulex-alt-ray-kart-yasal { display: grid; gap: 9px; }
+  .modulex-alt-ray-kart-il { display: flex; align-items: flex-start; gap: 10px; }
+  .modulex-alt-ray-kart-il-ic { display: grid; gap: 2px; }
+  .modulex-alt-ray-kart-il-etiket { color: --muted--; font-size: 0.8rem; }
+  .modulex-alt-ray-kart-il-ikon { flex: none; color: --accentInk--; font-size: 20px; }
+  .modulex-alt-ray-kart-saatler { display: grid; gap: 6px; }
+  .modulex-alt-ray-kart-saat { display: flex; justify-content: space-between; gap: 16px; }
+  .modulex-alt-ray-kart-saat dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .modulex-alt-ray-kart-sosyal { display: flex; flex-wrap: wrap; gap: 10px; }
+  .modulex-alt-ray-kart-sosyal-a { display: inline-grid; place-items: center; width: 42px; height: 42px; border: 1px solid --cizgi--; border-radius: 50%; color: inherit; font-size: 18px; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
+  .modulex-alt-ray-kart-sosyal-a:hover { border-color: --accent--; background: --accent--; color: --accentText--; transform: translateY(-2px); }
+  .modulex-alt-ray-kart-hakkinda { max-width: 46ch; color: --muted--; }
+  .modulex-alt-ray-kart-telif { display: flex; flex-wrap: wrap; gap: 4px 14px; color: --muted--; font-size: 0.9rem; }
+  .modulex-alt-ray-kart-dil:empty { display: none; }
+  .modulex-alt-ray-kart-yukari { display: inline-grid; place-items: center; flex: none; width: 46px; height: 46px; border-radius: 50%; background: --accent--; color: --accentText--; text-decoration: none; transition: transform 0.25s ease; }
+  .modulex-alt-ray-kart-yukari:hover { transform: translateY(-3px); }
+  .modulex-alt-ray-kart-bulten { display: grid; gap: 8px; }
+  .modulex-alt-ray-kart-nl-etiket { font-size: 0.9rem; font-weight: 700; }
+  .modulex-alt-ray-kart-nl-satir { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-alt-ray-kart-nl-girdi { flex: 1 1 200px; min-width: 0; min-height: 48px; padding: 10px 18px; border: 1px solid --cizgi--; border-radius: 999px; background: --bg--; color: --text--; font: inherit; }
+  .modulex-alt-ray-kart-nl-dugme { display: inline-flex; align-items: center; gap: 6px; min-height: 48px; padding: 10px 22px; border: 0; border-radius: 999px; background: --accent--; color: --accentText--; font: inherit; font-weight: 700; transition: transform 0.2s ease; }
+  .modulex-alt-ray-kart-nl-dugme:hover { transform: translateY(-2px); }
+  .modulex-alt-ray-kart-nl-dugme .material-symbols-outlined { font-size: 18px; }
+  .modulex-alt-ray-kart-nl-durum:empty { display: none; }
+  .modulex-alt-ray-kart-nl-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .modulex-alt-ray-kart-nl-metin { color: --muted--; }
+
+  .modulex-alt-ray-kart-rk-ust { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 18px 40px; margin-block-end: 26px; }
+  .modulex-alt-ray-kart-rk-marka { display: grid; gap: 14px; }
+  .modulex-alt-ray-kart-rk-oklar { display: flex; gap: 10px; }
+  .modulex-alt-ray-kart-rk-ok { display: inline-grid; place-items: center; width: 48px; height: 48px; border: 1px solid --cizgi--; border-radius: 50%; background: --kartBg--; color: --text--; transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease; }
+  .modulex-alt-ray-kart-rk-ok:hover:not(:disabled) { background: --accent--; color: --accentText--; }
+  .modulex-alt-ray-kart-rk-ok:disabled { opacity: 0.35; cursor: default; }
+  .modulex-alt-ray-kart-ray { display: flex; gap: 18px; padding-block: 6px 18px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: --accent-- transparent; }
+  .modulex-alt-ray-kart-rk-kart { display: grid; align-content: start; gap: 12px; flex: 0 0 clamp(240px, 26vw, 300px); min-height: 240px; padding: 24px; border-radius: --yuvarlak--; background: --kartBg--; scroll-snap-align: start; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .modulex-alt-ray-kart-rk-kart:hover { transform: translateY(-4px); box-shadow: 0 20px 36px -28px color-mix(in srgb, --text-- 55%, transparent); }
+  .modulex-alt-ray-kart-rk-sira { color: --accentInk--; font-size: 2rem; font-weight: 900; line-height: 1; }
+  .modulex-alt-ray-kart-rk-baslik { font-size: 1.05rem; font-weight: 800; }
+  .modulex-alt-ray-kart-rk-kart--nl { flex-basis: clamp(280px, 34vw, 380px); border-block-start: 4px solid --accent--; }
+  .modulex-alt-ray-kart-rk-kart--nl .modulex-alt-ray-kart-nl-baslik { font-size: 1.25rem; }
+  .modulex-alt-ray-kart-rk-son { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-block-start: 26px; padding-block-start: 20px; border-block-start: 1px solid --cizgi--; }
+  .modulex-alt-ray-kart-rk-son .modulex-alt-ray-kart-telif { margin-inline-end: auto; }
+  .modulex-alt-ray-kart-rk-yasal { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.9rem; }
+  @media (max-width: 768px) {
+    .modulex-alt-ray-kart-rk-kart, .modulex-alt-ray-kart-rk-kart--nl { flex-basis: 84%; }
+    .modulex-alt-ray-kart-rk-oklar { display: none; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-alt-ray-kart :is(.modulex-alt-ray-kart-baslik, .modulex-alt-ray-kart-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-alt-ray-kart-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-alt-ray-kart { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-alt-ray-kart *, .modulex-alt-ray-kart *::before, .modulex-alt-ray-kart *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-alt-ray-kart";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const ray = (s, P) => {
+        const ray = s.querySelector("." + P + "-ray");
+        if (!ray) return;
+        const dugme = [...s.querySelectorAll("[data-ray]")];
+        const durum = () => {
+          const max = ray.scrollWidth - ray.clientWidth - 2;
+          const x = Math.abs(ray.scrollLeft);
+          dugme.forEach((b) => { b.disabled = max <= 0 || (b.dataset.ray === "geri" ? x <= 2 : x >= max); });
+        };
+        dugme.forEach((b) => b.addEventListener("click", () => {
+          const ilk = ray.firstElementChild;
+          const adim = (ilk ? ilk.getBoundingClientRect().width : ray.clientWidth * 0.8) + 16;
+          const rtl = getComputedStyle(ray).direction === "rtl";
+          ray.scrollBy({ left: (b.dataset.ray === "ileri" ? 1 : -1) * (rtl ? -1 : 1) * adim, behavior: "smooth" });
+        }));
+        ray.addEventListener("scroll", durum, { passive: true });
+        durum();
+      };
+    const form = (s, P) => {
+        s.querySelectorAll("form[data-fb-form]").forEach((f) => {
+          const durum = f.querySelector("[role=status]");
+          const yaz = (m, hata) => { if (durum) { durum.textContent = m || ""; durum.classList.toggle(P + "-durum--hata", !!hata); } };
+          let t0 = Date.now();
+          const al = (ad) => { const e = f.elements.namedItem(ad); return e && "value" in e ? String(e.value).trim() : ""; };
+          const etiket = (ad) => { const e = f.elements.namedItem(ad); const l = e && e.id ? f.querySelector(`label[for="${e.id}"]`) : null; return l ? l.textContent.trim() : ad; };
+          const konuMetin = () => { const e = f.elements.namedItem("topic"); return e && e.selectedIndex > 0 ? e.options[e.selectedIndex].text.trim() : ""; };
+          f.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (!f.checkValidity()) { f.reportValidity(); return; }
+            if (al("website")) return;
+            const govde = ["name", "email", "phone"].filter(al).map((k) => `${etiket(k)}: ${al(k)}`)
+              .concat(konuMetin() ? [`${etiket("topic")}: ${konuMetin()}`] : [], al("message") ? ["", al("message")] : []).join("\n");
+            const d = f.dataset;
+            if (d.action) {
+              const b = f.querySelector("[type=submit]");
+              if (b) b.disabled = true;
+              const yuk = { name: al("name"), email: al("email"), phone: al("phone"), topic: konuMetin(), message: al("message"), kvkk: true, lang: document.documentElement.lang || "", page: location.pathname, website: al("website"), t: Date.now() - t0 };
+              fetch(d.action, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(yuk) })
+                .then((r) => r.json().catch(() => ({})).then((j) => r.ok && j && j.ok !== false))
+                .then((ok) => { if (b) b.disabled = false; yaz(ok ? d.ok : d.hata, !ok); if (ok) { f.reset(); t0 = Date.now(); } })
+                .catch(() => { if (b) b.disabled = false; yaz(d.hata, true); });
+              return;
+            }
+            if (d.gonderim === "whatsapp" && d.wa) { window.open(`https://wa.me/${d.wa}?text=${encodeURIComponent(govde)}`, "_blank", "noopener"); return; }
+            if (d.eposta) {
+              const konu = [d.konu || "", konuMetin()].filter(Boolean).join(" - ");
+              location.href = `mailto:${d.eposta}?subject=${encodeURIComponent(konu)}&body=${encodeURIComponent(govde.replace(/\n/g, "\r\n"))}`;
+            }
+          });
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      ray(s, P, az);
+      form(s, P, az);
+    });
+  })();
+</script>

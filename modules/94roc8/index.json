@@ -1,0 +1,53 @@
+{
+  "name": "Sayaç Kantar — ürün düğmeli hasat kantarı + LCD ekran",
+  "description": "Üstte ürün düğmeleri (ikon + etiket); altta seçili tartım: solda kantar (gövde, oran kadar çöken kefe, üstüne düşen kasalar — kasa sayısı orana göre), sağda yeşil LCD ekranda rakam, sabitlenme ışığı, etiket, not ve fiş no. Ürüne dokununca kasalar yeniden düşer. JS yoksa düğmeler gizli, tüm tartımlar alt alta. sayac-sekmeli tek büyük rakamı sekmeyle değiştirir, sayac-terazi kollu terazi eğimiyle oran anlatır; bu modül ürün seçmeli bir baskül iskeletidir — kasa yığını (adet = oran) + çöken kefe + LCD tartım ekranı + fiş no (hasat / kantar fişi dili). Sayılar sayfa diliyle biçimlenir (Intl), metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "scale",
+  "category": "stats",
+  "subCategory": "harvest-scale",
+  "tags": [
+    "stats",
+    "scale",
+    "harvest",
+    "select",
+    "lcd",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-surface, #f6f7f9)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+    "kartBg": "var(--mx-site-bg, #ffffff)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "sayi": "sayı (zorunlu; 1200 · \"4.9\")",
+      "onek": "önek (dil sözlüğü; ör. «%»)",
+      "sonek": "sonek (dil sözlüğü; ör. «+», «/5»)",
+      "etiket": "etiket (dil sözlüğü, zorunlu)",
+      "metin": "kısa not (dil sözlüğü)",
+      "ikon": "Material Symbols adı",
+      "ondalik": "ondalık basamak (yoksa sayıdan)",
+      "max": "oran tavanı (halka/çubuk/dolgu; yoksa % → 100, değilse listedeki en büyük)"
+    }
+  }
+}

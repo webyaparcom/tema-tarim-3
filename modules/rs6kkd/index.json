@@ -1,0 +1,54 @@
+{
+  "name": "Referans Konveyör — banttan akan koli etiketli markalar",
+  "description": "Üretim hattı metaforu: referanslar bantlı koliler üzerinde sevkiyat etiketi (logo/ad · barkod · sıra no) ve sektör damgasıyla bir konveyör bandında akar, altta dönen silindirler; üzerine gelince/odakta ve duraklat düğmesiyle durur. Hareket azaltılınca kopya gizlenir, koliler bantta durağan sıralar hâlinde dizilir. referans-cift-serit iki karşıt hap şerit, referans-dikey-akis dikey sütunlar; bu modül tek bantlı fabrika hattı iskeleti kurar — farklı boylarda koli kutuları, sevkiyat etiketi + barkod + damga, dönen silindir katmanı ve açık duraklat/oynat düğmesi (WCAG 2.2.2) ailede yok. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "conveyor_belt",
+  "category": "referans",
+  "subCategory": "conveyor-belt",
+  "tags": [
+    "referans",
+    "conveyor",
+    "marquee",
+    "industrial",
+    "logos",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "sayi": "",
+    "sayiEtiket": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "ad": "marka / kurum adı (dil sözlüğü ya da düz metin; logo alt yazısı)",
+      "img": "logo görseli yolu (boşsa yazı logosu)",
+      "url": "iç/dış bağlantı (dış → yeni sekme)",
+      "sektor": "dil sözlüğü (sektör / iş alanı)",
+      "metin": "dil sözlüğü (kısa görüş / iş özeti)",
+      "kisi": "dil sözlüğü (görüş sahibi)",
+      "yil": "birlikte çalışma yılı (düz metin)"
+    }
+  }
+}

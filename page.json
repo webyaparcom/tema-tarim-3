@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "id": "pebek75vr4",
+      "name": {
+        "tr": "Analiz",
+        "en": "Tests",
+        "ar": "التحاليل"
+      },
+      "description": {
+        "tr": "Toprak profili ve numune takvimi.",
+        "en": "Soil profile and sampling calendar.",
+        "ar": "مقطع التربة وتقويم أخذ العينات."
+      },
+      "path": "hizmetler",
+      "icon": "science",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "8ncxx6",
+          "u9o5p8"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Laboratuvar",
+        "en": "Lab",
+        "ar": "المختبر"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "info",
+      "desing": {
+        "header": [],
+        "body": [
+          "94roc8",
+          "rs6kkd"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Bu sezonun sayıları ve iş ortakları (kurgusal).",
+        "en": "This season’s figures and partners (fictional).",
+        "ar": "أرقام هذا الموسم والشركاء (افتراضي)."
+      }
+    },
+    {
+      "id": "8frvkqb6ig",
+      "name": {
+        "tr": "SSS",
+        "en": "FAQ",
+        "ar": "الأسئلة"
+      },
+      "description": {
+        "tr": "Merak edilenler ve kısa yanıtlar.",
+        "en": "Common questions and short answers.",
+        "ar": "أسئلة متكررة وإجابات موجزة."
+      },
+      "path": "sorular",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "t9kf5o",
+          "u9o5p8"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "9nfdclod7z",
+      "name": {
+        "tr": "Parseller",
+        "en": "Plots",
+        "ar": "القطع"
+      },
+      "description": {
+        "tr": "Tarladan laboratuvara kareler; görseller temsilîdir.",
+        "en": "Frames from field to lab; images are representative.",
+        "ar": "لقطات من الحقل إلى المختبر؛ الصور تمثيلية."
+      },
+      "path": "referanslar",
+      "icon": "hexagon",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "qbeg40",
+          "rs6kkd"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 4,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "amqram",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Numune kabul paftası, adres ve saatler.",
+        "en": "Sample drop-off plan, address and hours.",
+        "ar": "مخطط استلام العينات والعنوان والساعات."
+      }
+    }
+  ],
+  "desc": []
+}

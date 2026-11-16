@@ -1,0 +1,168 @@
+<header class="modulex-ust-cizgi-dugum{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ust-cizgi-dugum-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</header>
+
+<style>
+  /* ust-cizgi-dugum — Menü bir metro/yol haritası: öğeler ayrı bağlantılar değil, tek hat üzerindeki duraklar ve hat konumu gösterir (ok zincirinin dolu bloklarından farklı, ince çizgi + düğüm). */
+  .modulex-ust-cizgi-dugum { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ust-cizgi-dugum *, .modulex-ust-cizgi-dugum *::before, .modulex-ust-cizgi-dugum *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ust-cizgi-dugum :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ust-cizgi-dugum :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ust-cizgi-dugum :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ust-cizgi-dugum :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ust-cizgi-dugum img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ust-cizgi-dugum) img { height: auto; }
+  .modulex-ust-cizgi-dugum [hidden] { display: none !important; }
+  .modulex-ust-cizgi-dugum :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ust-cizgi-dugum :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ust-cizgi-dugum-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ust-cizgi-dugum-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ust-cizgi-dugum--bassiz .modulex-ust-cizgi-dugum-bas { display: none; }
+  .modulex-ust-cizgi-dugum-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ust-cizgi-dugum-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ust-cizgi-dugum-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ust-cizgi-dugum-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ust-cizgi-dugum-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ust-cizgi-dugum-dugme:hover { transform: translateY(-2px); }
+  .modulex-ust-cizgi-dugum-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ust-cizgi-dugum-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ust-cizgi-dugum-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ust-cizgi-dugum { position: relative; z-index: 900; }
+  .modulex-ust-cizgi-dugum-logo { display: inline-flex; flex: 0 1 auto; min-width: 0; align-items: center; color: inherit; text-decoration: none; }
+  /* dar ekranda geniş logo/uzun ad çubuğu taşırmasın: logo daralır (img max-width 100%), ad sarar */
+  .modulex-ust-cizgi-dugum-logo img { width: auto; max-height: --logoH--; }
+  .modulex-ust-cizgi-dugum-ad { font-family: var(--mx-font-heading, inherit); font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .modulex-ust-cizgi-dugum-oge { position: relative; display: inline-flex; align-items: center; min-height: 44px; color: inherit; font-weight: 600; text-decoration: none; transition: color 0.2s ease, background 0.2s ease; }
+  .modulex-ust-cizgi-dugum-oge:hover, .modulex-ust-cizgi-dugum-oge[aria-current="page"] { color: --accentInk--; }
+  .modulex-ust-cizgi-dugum-cta { display: inline-flex; flex: none; align-items: center; gap: 6px; min-height: 44px; padding: 8px 18px; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; white-space: nowrap; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .modulex-ust-cizgi-dugum-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -12px --accent--; }
+  .modulex-ust-cizgi-dugum-cta .material-symbols-outlined, .modulex-ust-cizgi-dugum-tel .material-symbols-outlined, .modulex-ust-cizgi-dugum-posta .material-symbols-outlined { font-size: 18px; }
+  .modulex-ust-cizgi-dugum-tel, .modulex-ust-cizgi-dugum-posta { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; white-space: nowrap; }
+  .modulex-ust-cizgi-dugum-tel:hover, .modulex-ust-cizgi-dugum-posta:hover { color: --accentInk--; }
+  .modulex-ust-cizgi-dugum-dil:empty { display: none; }
+  .modulex-ust-cizgi-dugum-ac { display: none; align-items: center; gap: 10px; min-width: 46px; min-height: 46px; padding: 0 12px; border: 1px solid --cizgi--; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-weight: 700; }
+  .modulex-ust-cizgi-dugum-ac-ikon { display: grid; gap: 4px; width: 20px; }
+  .modulex-ust-cizgi-dugum-ac-ikon span { display: block; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+  .modulex-ust-cizgi-dugum--acik .modulex-ust-cizgi-dugum-ac-ikon span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .modulex-ust-cizgi-dugum--acik .modulex-ust-cizgi-dugum-ac-ikon span:nth-child(2) { opacity: 0; }
+  .modulex-ust-cizgi-dugum--acik .modulex-ust-cizgi-dugum-ac-ikon span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .modulex-ust-cizgi-dugum-kapat { display: inline-grid; place-items: center; width: 46px; height: 46px; border: 1px solid --cizgi--; border-radius: 50%; background: transparent; color: inherit; }
+  .modulex-ust-cizgi-dugum-perde { position: fixed; inset: 0; z-index: 1; background: color-mix(in srgb, --text-- 45%, transparent); animation: modulex-ust-cizgi-dugum-sol 0.3s ease both; }
+  @keyframes modulex-ust-cizgi-dugum-sol { from { opacity: 0; } to { opacity: 1; } }
+
+  .modulex-ust-cizgi-dugum-panel { display: grid; gap: 14px; }
+  @media (max-width: 1024px) {
+    .modulex-ust-cizgi-dugum--js .modulex-ust-cizgi-dugum-nav, .modulex-ust-cizgi-dugum--js .modulex-ust-cizgi-dugum-genis { display: none; }
+    .modulex-ust-cizgi-dugum--js .modulex-ust-cizgi-dugum-ac { display: inline-flex; }
+    .modulex-ust-cizgi-dugum-panel { position: absolute; inset-inline: 0; inset-block-start: 100%; padding: 16px 20px 24px; border-block-end: 1px solid --cizgi--; background: --bg--; box-shadow: 0 24px 40px -28px color-mix(in srgb, --text-- 55%, transparent); animation: modulex-ust-cizgi-dugum-in 0.3s ease both; }
+    .modulex-ust-cizgi-dugum-pliste { display: grid; }
+    .modulex-ust-cizgi-dugum-pliste .modulex-ust-cizgi-dugum-oge { width: 100%; min-height: 50px; border-block-end: 1px solid --cizgi--; font-size: 1.05rem; }
+    .modulex-ust-cizgi-dugum-palt { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  }
+  @media (min-width: 1025px) {
+    .modulex-ust-cizgi-dugum-panel { display: none !important; }
+  }
+  @keyframes modulex-ust-cizgi-dugum-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+  .modulex-ust-cizgi-dugum-bar { display: flex; align-items: center; gap: 14px 30px; padding-block: 14px; }
+  .modulex-ust-cizgi-dugum-bar > .modulex-ust-cizgi-dugum-nav { flex: 1 1 auto; min-width: 0; }
+  .modulex-ust-cizgi-dugum-hat { position: relative; display: flex; padding-block-start: 4px; }
+  .modulex-ust-cizgi-dugum-hat::before, .modulex-ust-cizgi-dugum-hat::after { content: ""; position: absolute; inset-block-start: 12px; height: 2px; border-radius: 2px; }
+  .modulex-ust-cizgi-dugum-hat::before { inset-inline: calc(50% / var(--n, 1)); background-color: --cizgi--; }
+  .modulex-ust-cizgi-dugum-hat::after { inset-inline-start: calc(50% / var(--n, 1)); width: calc((100% - 100% / var(--n, 1)) * var(--dolu, 0)); background-color: --accent--; transform-origin: 0 50%; animation: modulex-ust-cizgi-dugum-dol 0.9s ease both; }
+  [dir="rtl"] .modulex-ust-cizgi-dugum-hat::after { transform-origin: 100% 50%; }
+  @keyframes modulex-ust-cizgi-dugum-dol { from { transform: scaleX(0); } to { transform: none; } }
+  .modulex-ust-cizgi-dugum-durak { position: relative; z-index: 1; flex: 1 1 0; min-width: 0; }
+  .modulex-ust-cizgi-dugum-durak-a { display: grid; justify-items: center; gap: 8px; padding-inline: 4px; color: inherit; font-size: 0.9rem; font-weight: 600; line-height: 1.25; text-align: center; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-ust-cizgi-dugum-nokta { display: block; width: 18px; height: 18px; border: 2px solid --cizgi--; border-radius: 50%; background-color: --bg--; transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease; }
+  .modulex-ust-cizgi-dugum-durak-a:hover { color: --accentInk--; }
+  .modulex-ust-cizgi-dugum-durak-a:hover .modulex-ust-cizgi-dugum-nokta { border-color: --accent--; transform: scale(1.3); }
+  .modulex-ust-cizgi-dugum-durak--gecti .modulex-ust-cizgi-dugum-nokta, .modulex-ust-cizgi-dugum-pdurak--gecti .modulex-ust-cizgi-dugum-nokta { border-color: --accent--; background-color: --accent--; }
+  .modulex-ust-cizgi-dugum-durak-a[aria-current="page"], .modulex-ust-cizgi-dugum-pdurak-a[aria-current="page"] { color: --accentInk--; font-weight: 800; }
+  .modulex-ust-cizgi-dugum-durak-a[aria-current="page"] .modulex-ust-cizgi-dugum-nokta, .modulex-ust-cizgi-dugum-pdurak-a[aria-current="page"] .modulex-ust-cizgi-dugum-nokta { border-width: 5px; border-color: --accent--; background-color: --bg--; animation: modulex-ust-cizgi-dugum-nabiz 2.2s ease-out infinite; }
+  @keyframes modulex-ust-cizgi-dugum-nabiz { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, --accent-- 45%, transparent); } 70%, 100% { box-shadow: 0 0 0 10px color-mix(in srgb, --accent-- 0%, transparent); } }
+  .modulex-ust-cizgi-dugum-dad { overflow-wrap: anywhere; }
+  .modulex-ust-cizgi-dugum-genis { display: flex; flex: none; align-items: center; gap: 12px; }
+  .modulex-ust-cizgi-dugum-phat { position: relative; display: grid; }
+  .modulex-ust-cizgi-dugum-phat::before { content: ""; position: absolute; inset-block: 26px; inset-inline-start: 8px; width: 2px; background-color: --cizgi--; }
+  .modulex-ust-cizgi-dugum-pdurak { position: relative; }
+  .modulex-ust-cizgi-dugum-pdurak-a { display: flex; align-items: center; gap: 16px; min-height: 52px; color: inherit; font-size: 1.05rem; font-weight: 600; text-decoration: none; transition: color 0.2s ease; }
+  .modulex-ust-cizgi-dugum-pdurak-a:hover { color: --accentInk--; }
+  .modulex-ust-cizgi-dugum-pdurak-a .modulex-ust-cizgi-dugum-nokta { position: relative; flex: none; }
+  @media (max-width: 1024px) {
+    .modulex-ust-cizgi-dugum:not(.modulex-ust-cizgi-dugum--js) .modulex-ust-cizgi-dugum-bar { flex-wrap: wrap; }
+    .modulex-ust-cizgi-dugum:not(.modulex-ust-cizgi-dugum--js) .modulex-ust-cizgi-dugum-bar > .modulex-ust-cizgi-dugum-nav { order: 3; flex-basis: 100%; }
+  }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ust-cizgi-dugum :is(.modulex-ust-cizgi-dugum-baslik, .modulex-ust-cizgi-dugum-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ust-cizgi-dugum-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ust-cizgi-dugum { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ust-cizgi-dugum *, .modulex-ust-cizgi-dugum *::before, .modulex-ust-cizgi-dugum *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ust-cizgi-dugum";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const cekmece = (s, P) => {
+          const ac = s.querySelector("." + P + "-ac");
+          const panel = ac ? document.getElementById(ac.getAttribute("aria-controls")) : null;
+          if (!ac || !panel) return;
+          s.classList.add(P + "--js");
+          const perde = s.querySelector("." + P + "-perde");
+          const modal = panel.getAttribute("aria-modal") === "true";
+          const kok = document.documentElement;
+          const kapa = (odak) => {
+            if (panel.hidden) return;
+            panel.hidden = true;
+            if (perde) perde.hidden = true;
+            ac.setAttribute("aria-expanded", "false");
+            s.classList.remove(P + "--acik");
+            if (modal) kok.style.overflow = "";
+            if (odak) ac.focus();
+          };
+          const aci = () => {
+            panel.hidden = false;
+            if (perde) perde.hidden = false;
+            ac.setAttribute("aria-expanded", "true");
+            s.classList.add(P + "--acik");
+            if (modal) kok.style.overflow = "hidden";
+            const ilk = panel.querySelector("a[href], button");
+            if (ilk) ilk.focus();
+          };
+          ac.addEventListener("click", () => (panel.hidden ? aci() : kapa(true)));
+          panel.addEventListener("click", (e) => {
+            if (e.target.closest("." + P + "-kapat")) kapa(true);
+            else if (e.target.closest("a[href]")) kapa(false);
+          });
+          if (perde) perde.addEventListener("click", () => kapa(true));
+          document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) kapa(true); });
+          if (modal) {
+            panel.addEventListener("keydown", (e) => {
+              if (e.key !== "Tab") return;
+              const o = [...panel.querySelectorAll("a[href], button:not([disabled])")].filter((x) => x.offsetParent !== null);
+              if (!o.length) return;
+              if (e.shiftKey && document.activeElement === o[0]) { e.preventDefault(); o[o.length - 1].focus(); }
+              else if (!e.shiftKey && document.activeElement === o[o.length - 1]) { e.preventDefault(); o[0].focus(); }
+            });
+          }
+          const g = Number(ac.dataset.genis);
+          if (g && window.matchMedia) window.matchMedia(`(min-width: ${g}px)`).addEventListener("change", (m) => { if (m.matches) kapa(false); });
+        };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      cekmece(s, P, az);
+    });
+  })();
+</script>

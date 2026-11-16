@@ -1,0 +1,51 @@
+{
+  "name": "Zaman Katman — en eskisi altta, toprak katmanları gibi dönemler",
+  "description": "Kesit görünümü: dönemler alttan üste yığılan katmanlardır (en eski en altta ve en kalın, en yeni yüzeyde); katmanların üst kenarı dalgalı, dokusu noktalı, eskidikçe renk koyulaşır. Solda cetvel çentikli derinlik sütununda yıl etiketi, sağda soluk «fosil» ikonu; üzerine gelince katman renklenir ve fosil doğrulur, görünür olunca katmanlar alttan başlayarak sırayla oturur. Mevcut modüllerin hepsi zamanı yukarıdan aşağı ya da soldan sağa okutur; zaman-katman ters (aşağıdan yukarı, column-reverse) birikim kesitidir: kalınlığı ve tonu yaşa göre değişen dalga kenarlı katmanlar ve derinlik cetveli — toprak/malzeme/üretim katmanı dili. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "layers",
+  "category": "timeline",
+  "subCategory": "strata",
+  "tags": [
+    "timeline",
+    "strata",
+    "bottom-up",
+    "layers",
+    "depth",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "etiket": "yıl / tarih / dönem (dil sözlüğü ya da düz metin)",
+      "baslik": "dil sözlüğü (zorunlu)",
+      "metin": "dil sözlüğü",
+      "ikon": "Material Symbols adı",
+      "img": "görsel yolu (destekleyen yerleşimde)",
+      "url": "iç/dış bağlantı"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Toprakbil Tarım: Çumra’da toprak analiz laboratuvarı ve sertifikalı tohum işleme. Numune takvimi, analiz parametreleri, parsel kayıtları. Demo site; içerik kurgusaldır.",
+    "en": "Toprakbil Agriculture: a soil testing laboratory and certified seed processing in Cumra. Sampling calendar, test parameters and plot records. Demo site; content is fictional.",
+    "ar": "توبراكبيل للزراعة: مختبر لتحليل التربة ومعالجة البذور المعتمدة في تشومرا. تقويم أخذ العينات ومعايير التحليل وسجلات القطع. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "toprak analizi, sertifikalı tohum, gübre önerisi, numune alma, konya, çumra",
+    "en": "soil analysis, certified seed, fertiliser advice, soil sampling, konya, cumra",
+    "ar": "تحليل التربة، بذور معتمدة، توصيات التسميد، أخذ العينات، قونية، تشومرا"
+  },
+  "category": "Kurumsal",
+  "name": "Toprakbil",
+  "domain": "tarim-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "rubik",
+    "heading": "barlow-condensed",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#3A6CC4",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "6px",
+    "--mx-radius-md": "10px",
+    "--mx-radius-lg": "14px",
+    "--mx-radius-xl": "19px"
+  },
+  "icon": "icon.png"
+}

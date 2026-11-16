@@ -1,0 +1,111 @@
+<section class="modulex-cagri-hasat-takvim{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-cagri-hasat-takvim-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* cagri-hasat-takvim — cagri-adimlar / cagri-takip-no süreç aşaması, cagri-kontenjan ölçer çubuğu gösterir; bu modül iki eksenli takvim çizelgesi (ürün × ay, gerçek <table>) ile «şimdi taze olanı sipariş edin» çağrısı yapar — ailede tablo/zaman ekseni iskeleti yok. */
+  .modulex-cagri-hasat-takvim { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-hasat-takvim *, .modulex-cagri-hasat-takvim *::before, .modulex-cagri-hasat-takvim *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-cagri-hasat-takvim :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-cagri-hasat-takvim :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-cagri-hasat-takvim :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-cagri-hasat-takvim :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-cagri-hasat-takvim img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-cagri-hasat-takvim) img { height: auto; }
+  .modulex-cagri-hasat-takvim [hidden] { display: none !important; }
+  .modulex-cagri-hasat-takvim :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-cagri-hasat-takvim :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-cagri-hasat-takvim-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-cagri-hasat-takvim-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-cagri-hasat-takvim--bassiz .modulex-cagri-hasat-takvim-bas { display: none; }
+  .modulex-cagri-hasat-takvim-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-cagri-hasat-takvim-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-cagri-hasat-takvim-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-cagri-hasat-takvim-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-cagri-hasat-takvim-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-cagri-hasat-takvim-dugme:hover { transform: translateY(-2px); }
+  .modulex-cagri-hasat-takvim-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
+  .modulex-cagri-hasat-takvim-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-cagri-hasat-takvim-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-cagri-hasat-takvim-ust2 { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px 48px; margin-block-end: clamp(24px, 4vw, 40px); }
+  .modulex-cagri-hasat-takvim-ust2 .modulex-cagri-hasat-takvim-cta { margin: 0; }
+  .modulex-cagri-hasat-takvim-yazi { display: grid; gap: 12px; max-width: 720px; }
+  .modulex-cagri-hasat-takvim-takvim { padding: clamp(12px, 3vw, 28px); border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-cagri-hasat-takvim-tablo { width: 100%; table-layout: fixed; border-collapse: separate; border-spacing: 0 6px; }
+  .modulex-cagri-hasat-takvim-cap { padding-block-end: 8px; font-weight: 750; text-align: start; }
+  .modulex-cagri-hasat-takvim-kose { width: 28%; }
+  .modulex-cagri-hasat-takvim-ay { padding-block-end: 6px; color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; text-align: center; text-transform: uppercase; transition: color 0.3s ease; }
+  .modulex-cagri-hasat-takvim-ay-d { display: none; }
+  .modulex-cagri-hasat-takvim-ay.modulex-cagri-hasat-takvim-buay { color: --accentInk--; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 6px; }
+  .modulex-cagri-hasat-takvim-urun { padding-inline-end: 12px; font-weight: 400; text-align: start; vertical-align: middle; }
+  .modulex-cagri-hasat-takvim-uk { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+  .modulex-cagri-hasat-takvim-uikon { color: --accentInk--; font-size: 22px; }
+  .modulex-cagri-hasat-takvim-uad { display: grid; }
+  .modulex-cagri-hasat-takvim-uad strong { font-weight: 750; }
+  .modulex-cagri-hasat-takvim-uad small { color: --muted--; font-size: 0.8rem; }
+  .modulex-cagri-hasat-takvim-simdi { padding: 2px 10px; border-radius: 999px; background: --accent--; color: --accentText--; font-size: 0.72rem; font-weight: 800; animation: modulex-cagri-hasat-takvim-parla 2s ease-in-out infinite; }
+  .modulex-cagri-hasat-takvim-gun { padding: 0; vertical-align: middle; }
+  .modulex-cagri-hasat-takvim-gun::before { content: ""; display: block; height: 30px; margin-inline-end: 2px; background: color-mix(in srgb, --yaziRenk-- 6%, --kartBg--); transition: background 0.3s ease; }
+  .modulex-cagri-hasat-takvim-dolu::before { background: --accent--; }
+  .modulex-cagri-hasat-takvim-ilk::before { border-start-start-radius: 999px; border-end-start-radius: 999px; }
+  .modulex-cagri-hasat-takvim-son::before { border-start-end-radius: 999px; border-end-end-radius: 999px; }
+  .modulex-cagri-hasat-takvim-gun.modulex-cagri-hasat-takvim-buay:not(.modulex-cagri-hasat-takvim-dolu)::before { background: color-mix(in srgb, --accent-- 24%, --kartBg--); }
+  .modulex-cagri-hasat-takvim-dolu.modulex-cagri-hasat-takvim-buay::before { background: --accentInk--; }
+  @keyframes modulex-cagri-hasat-takvim-parla { 50% { box-shadow: 0 0 0 4px color-mix(in srgb, --accent-- 25%, transparent); } }
+  @media (max-width: 768px) {
+    .modulex-cagri-hasat-takvim-ust2 { grid-template-columns: minmax(0, 1fr); }
+    .modulex-cagri-hasat-takvim-kose { width: 34%; }
+    .modulex-cagri-hasat-takvim-ay-k { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .modulex-cagri-hasat-takvim-ay-d { display: inline; }
+    .modulex-cagri-hasat-takvim-gun::before { height: 22px; margin-inline-end: 1px; }
+    .modulex-cagri-hasat-takvim-uikon { display: none; }
+    .modulex-cagri-hasat-takvim-urun { padding-inline-end: 6px; }
+  }
+  .modulex-cagri-hasat-takvim-wasvg { width: 1.25em; height: 1.25em; flex: none; }
+  .modulex-cagri-hasat-takvim-maddeler { display: grid; gap: 12px; }
+  .modulex-cagri-hasat-takvim-madde { display: flex; align-items: flex-start; gap: 12px; }
+  .modulex-cagri-hasat-takvim-mikon { flex: none; color: --accentInk--; font-size: 24px; }
+  .modulex-cagri-hasat-takvim-myazi { display: grid; gap: 2px; }
+  .modulex-cagri-hasat-takvim-myazi strong { font-weight: 700; }
+  .modulex-cagri-hasat-takvim-myazi small { color: --muted--; font-size: 0.92rem; }
+  .modulex-cagri-hasat-takvim-not { color: --muted--; font-size: 0.9rem; }
+  .modulex-cagri-hasat-takvim-saat { display: flex; align-items: center; gap: 8px; color: --muted--; font-size: 0.95rem; }
+  .modulex-cagri-hasat-takvim-saat .material-symbols-outlined { font-size: 20px; color: --accentInk--; }
+  .modulex-cagri-hasat-takvim-metin { max-width: 62ch; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-hasat-takvim :is(.modulex-cagri-hasat-takvim-baslik, .modulex-cagri-hasat-takvim-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-cagri-hasat-takvim-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-cagri-hasat-takvim { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-cagri-hasat-takvim *, .modulex-cagri-hasat-takvim *::before, .modulex-cagri-hasat-takvim *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-cagri-hasat-takvim";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const buAy = (s, P) => {
+        const ay = String(new Date().getMonth() + 1);
+        s.querySelectorAll(`[data-ha-ay="${ay}"]`).forEach((e) => e.classList.add(P + "-buay"));
+        s.querySelectorAll("tr").forEach((r) => {
+          const c = r.querySelector(`td[data-ha-ay="${ay}"]`);
+          const z = r.querySelector("[data-ha-simdi]");
+          if (z) z.hidden = !(c && c.hasAttribute("data-ha-dolu"));
+        });
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      buAy(s, P, az);
+    });
+  })();
+</script>

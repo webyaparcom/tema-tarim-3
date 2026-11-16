@@ -1,0 +1,84 @@
+<section class="modulex-galeri-petek{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-galeri-petek-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* galeri-petek — Ailedeki tüm ızgaralar dikdörtgen/kare/daire hücrelidir ve satırlar hizalıdır; bu modül altıgen hücreleri (clip-path) yarım hücre kaydırılmış, dikeyde %25 iç içe geçen satırlarla döşer (8/6 sütunlu ızgara + cqi tabanlı negatif boşluk, son satırı ortalayan sunucu hesabı). Doğal, organik ürün ve bilim temalı vitrin. */
+  .modulex-galeri-petek { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-galeri-petek *, .modulex-galeri-petek *::before, .modulex-galeri-petek *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-galeri-petek :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-galeri-petek :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-galeri-petek :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-galeri-petek :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-galeri-petek img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-galeri-petek) img { height: auto; }
+  .modulex-galeri-petek [hidden] { display: none !important; }
+  .modulex-galeri-petek :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-galeri-petek :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-galeri-petek-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-galeri-petek-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-galeri-petek--bassiz .modulex-galeri-petek-bas { display: none; }
+  .modulex-galeri-petek-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-galeri-petek-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-galeri-petek-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-galeri-petek-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-galeri-petek-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-galeri-petek-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-galeri-petek-dugme:hover { transform: translateY(-2px); }
+  .modulex-galeri-petek-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-galeri-petek-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-galeri-petek-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-galeri-petek-kovan { max-width: 1000px; margin-inline: auto; container-type: inline-size; }
+  .modulex-galeri-petek-petek { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); padding-block-end: calc(100cqi / 4 * 0.2887); }
+  .modulex-galeri-petek-hucre { --w: calc(100cqi / 4); position: relative; grid-column: span 2; aspect-ratio: 0.866; margin-block-end: calc(var(--w) * -0.2887); }
+  .modulex-galeri-petek-hucre:nth-child(7n+5) { grid-column: 2 / span 2; }
+  .modulex-galeri-petek-hucre.modulex-galeri-petek-hucre--d { grid-column: var(--d) / span 2; }
+  .modulex-galeri-petek-hucre::before { content: ""; position: absolute; inset: 0; background: --accent--; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); transform: scale(0.9); transition: transform 0.45s ease; }
+  .modulex-galeri-petek-alti { position: absolute; inset: 0; overflow: hidden; background: --kartBg--; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); transform: scale(0.95); transition: transform 0.45s ease; }
+  .modulex-galeri-petek-alti .modulex-galeri-petek-g, .modulex-galeri-petek-alti .modulex-galeri-petek-yer { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; transition: transform 0.7s ease; }
+  .modulex-galeri-petek-hucre:hover { z-index: 2; }
+  .modulex-galeri-petek-hucre:hover::before { transform: scale(1.01); }
+  .modulex-galeri-petek-hucre:hover .modulex-galeri-petek-alti { transform: scale(0.94); }
+  .modulex-galeri-petek-hucre:hover .modulex-galeri-petek-g { transform: scale(1.1); }
+  .modulex-galeri-petek-etiket { position: absolute; inset-inline: 16%; inset-block-end: 19%; z-index: 1; display: grid; justify-items: center; gap: 1px; padding: 6px 10px; border-radius: 12px; background: --bg--; color: --text--; text-align: center; box-shadow: 0 10px 22px -14px color-mix(in srgb, --text-- 70%, transparent); transition: transform 0.35s ease; }
+  .modulex-galeri-petek-hucre:hover .modulex-galeri-petek-etiket { transform: translateY(-6px); }
+  .modulex-galeri-petek-etiket .modulex-galeri-petek-kbaslik { display: -webkit-box; overflow: hidden; font-size: 0.92rem; line-height: 1.25; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+  .modulex-galeri-petek-etiket .modulex-galeri-petek-kat { font-size: 0.66rem; letter-spacing: 0.1em; }
+  @media (max-width: 768px) {
+    .modulex-galeri-petek-petek { grid-template-columns: repeat(6, minmax(0, 1fr)); padding-block-end: calc(100cqi / 3 * 0.2887); }
+    .modulex-galeri-petek-hucre { --w: calc(100cqi / 3); }
+    .modulex-galeri-petek-hucre:nth-child(7n+5), .modulex-galeri-petek-hucre.modulex-galeri-petek-hucre--d { grid-column: span 2; }
+    .modulex-galeri-petek-hucre:nth-child(5n+1) { grid-column: 2 / span 2; }
+    .modulex-galeri-petek-hucre.modulex-galeri-petek-hucre--m { grid-column: var(--m) / span 2; }
+    .modulex-galeri-petek-etiket { inset-inline: 10%; inset-block-end: 17%; padding: 4px 6px; border-radius: 8px; }
+    .modulex-galeri-petek-etiket .modulex-galeri-petek-kbaslik { font-size: 0.7rem; }
+    .modulex-galeri-petek-etiket .modulex-galeri-petek-kat { display: none; }
+  }
+  .modulex-galeri-petek-yer { display: grid; place-items: center; width: 100%; aspect-ratio: 4 / 3; background: color-mix(in srgb, --accent-- 14%, --kartBg--); color: --accentInk--; }
+  .modulex-galeri-petek-yer .material-symbols-outlined { font-size: 40px; }
+  .modulex-galeri-petek-bag { color: inherit; text-decoration: none; }
+  .modulex-galeri-petek-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-galeri-petek-kbaslik { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+  .modulex-galeri-petek-kmetin { color: --muted--; font-size: 0.95rem; line-height: 1.6; }
+  .modulex-galeri-petek-kat { color: --accentInk--; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-galeri-petek-kontrol { display: flex; gap: 10px; justify-content: flex-end; margin-block-start: 18px; }
+  .modulex-galeri-petek-ok { display: inline-grid; place-items: center; width: 48px; height: 48px; border: 1px solid --cizgi--; border-radius: 50%; background: --kartBg--; color: --text--; transition: background 0.25s ease, color 0.25s ease, opacity 0.25s ease; }
+  .modulex-galeri-petek-ok:hover:not(:disabled) { background: --accent--; color: --accentText--; }
+  .modulex-galeri-petek-ok:disabled { opacity: 0.4; cursor: default; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-galeri-petek :is(.modulex-galeri-petek-baslik, .modulex-galeri-petek-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-galeri-petek-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-galeri-petek { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-galeri-petek *, .modulex-galeri-petek *::before, .modulex-galeri-petek *::after { animation: none !important; transition: none !important; }
+  }
+</style>

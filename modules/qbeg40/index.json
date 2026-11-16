@@ -1,0 +1,55 @@
+{
+  "name": "Galeri Petek — iç içe geçen altıgen kovan",
+  "description": "Görseller altıgen kırpılır ve bal peteği gibi birbirine geçer: masaüstünde 4–3, mobilde 2–3 dizilen satırlar yarım altıgen kayar, eksik son satır ortalanır. Her altıgenin altında ad + kategori etiketi; üzerine gelince altıgen büyür, ardında vurgu renkli kenar belirir. Container query ile ölçeklenir. Ailedeki tüm ızgaralar dikdörtgen/kare/daire hücrelidir ve satırlar hizalıdır; bu modül altıgen hücreleri (clip-path) yarım hücre kaydırılmış, dikeyde %25 iç içe geçen satırlarla döşer (8/6 sütunlu ızgara + cqi tabanlı negatif boşluk, son satırı ortalayan sunucu hesabı). Doğal, organik ürün ve bilim temalı vitrin. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "hexagon",
+  "category": "galeri",
+  "subCategory": "honeycomb",
+  "tags": [
+    "galeri",
+    "honeycomb",
+    "hexagon",
+    "clip-path",
+    "organic",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "tumu": "",
+    "bg": "var(--mx-site-surface, #f6f7f9)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+    "kartBg": "var(--mx-site-bg, #ffffff)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "img": "görsel yolu (boşsa yer tutucu)",
+      "baslik": "dil sözlüğü (resim adı)",
+      "alt": "dil sözlüğü (boşsa başlık)",
+      "metin": "dil sözlüğü (kısa açıklama)",
+      "kat": "kategori kimliği (desing.cats id'si)",
+      "url": "iç/dış bağlantı",
+      "w": "görsel genişliği (px, oran için)",
+      "h": "görsel yüksekliği (px)",
+      "kucuk": "küçük görsel (varsa ızgarada bu)"
+    }
+  }
+}

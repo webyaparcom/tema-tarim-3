@@ -1,0 +1,96 @@
+<section class="modulex-zaman-katman{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-zaman-katman-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* zaman-katman — Mevcut modüllerin hepsi zamanı yukarıdan aşağı ya da soldan sağa okutur; zaman-katman ters (aşağıdan yukarı, column-reverse) birikim kesitidir: kalınlığı ve tonu yaşa göre değişen dalga kenarlı katmanlar ve derinlik cetveli — toprak/malzeme/üretim katmanı dili. */
+  .modulex-zaman-katman { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-zaman-katman *, .modulex-zaman-katman *::before, .modulex-zaman-katman *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-zaman-katman :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-zaman-katman :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-zaman-katman :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-zaman-katman :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-zaman-katman img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-zaman-katman) img { height: auto; }
+  .modulex-zaman-katman [hidden] { display: none !important; }
+  .modulex-zaman-katman :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-zaman-katman :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-zaman-katman-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-zaman-katman-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-zaman-katman--bassiz .modulex-zaman-katman-bas { display: none; }
+  .modulex-zaman-katman-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-zaman-katman-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-zaman-katman-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-zaman-katman-ic { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
+  .modulex-zaman-katman-bas { position: sticky; inset-block-start: 96px; margin: 0; }
+  .modulex-zaman-katman--bassiz .modulex-zaman-katman-ic { grid-template-columns: minmax(0, 1fr); }
+  .modulex-zaman-katman-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-zaman-katman-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-zaman-katman-dugme:hover { transform: translateY(-2px); }
+  .modulex-zaman-katman-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-zaman-katman-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-zaman-katman-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-zaman-katman-kesit { padding-block-start: 14px; }
+  .modulex-zaman-katman-tabakalar { display: flex; flex-direction: column-reverse; }
+  .modulex-zaman-katman-tabaka { --renk: color-mix(in srgb, --accent-- calc(6% + (1 - var(--k)) * 34%), --kartBg--); position: relative; z-index: var(--d); display: grid; grid-template-columns: 112px minmax(0, 1fr) auto; align-items: center; gap: 22px; min-height: calc(104px + (1 - var(--k)) * 56px); padding-inline-end: 26px; background-color: var(--renk); background-image: radial-gradient(color-mix(in srgb, --text-- 9%, transparent) 1px, transparent 1.6px); background-size: calc(12px + var(--k) * 8px) calc(12px + var(--k) * 8px); transition: background-color 0.3s ease, transform 0.6s ease calc(var(--k) * 0.5s), visibility 0s linear calc(var(--k) * 0.5s); }
+  .modulex-zaman-katman-tabaka:first-child { border-end-start-radius: --yuvarlak--; border-end-end-radius: --yuvarlak--; }
+  .modulex-zaman-katman-tabaka::before { content: ""; position: absolute; inset-inline: 0; inset-block-start: -11px; height: 12px; background: radial-gradient(13px 11px at 50% 100%, var(--renk) 97%, transparent 100%) 0 0 / 34px 12px repeat-x; }
+  .modulex-zaman-katman-tabaka:hover { --renk: color-mix(in srgb, --accent-- 46%, --kartBg--); }
+  .modulex-zaman-katman-derinlik { position: relative; align-self: stretch; display: grid; align-content: center; justify-items: center; border-inline-end: 2px solid color-mix(in srgb, --text-- 35%, transparent); background-image: repeating-linear-gradient(to bottom, color-mix(in srgb, --text-- 35%, transparent) 0 1px, transparent 1px 11px); background-position: 100% 0; background-repeat: no-repeat; background-size: 12px 100%; }
+  .modulex-zaman-katman-derinlik:dir(rtl) { background-position: 0 0; }
+  .modulex-zaman-katman-yil { padding: 4px 10px; border-radius: 8px; background-color: --bg--; color: --text--; font-size: 1.25rem; font-weight: 850; font-variant-numeric: tabular-nums; box-shadow: 0 6px 14px -10px color-mix(in srgb, --text-- 60%, transparent); }
+  .modulex-zaman-katman-icerik { display: grid; gap: 6px; padding-block: 22px; }
+  .modulex-zaman-katman-kbaslik { font-size: 1.2rem; font-weight: 760; }
+  .modulex-zaman-katman-kmetin { max-width: 62ch; color: --text--; font-size: 0.97rem; line-height: 1.65; }
+  .modulex-zaman-katman-fosil { color: color-mix(in srgb, --text-- 24%, transparent); font-size: 56px; transform: rotate(-14deg); transition: transform 0.4s ease, color 0.4s ease; }
+  .modulex-zaman-katman-tabaka:hover .modulex-zaman-katman-fosil { color: --accentInk--; transform: rotate(0deg) scale(1.08); }
+  .modulex-zaman-katman--hazir:not(.modulex-zaman-katman--gor) .modulex-zaman-katman-tabaka { visibility: hidden; transform: translateY(-26px); }
+  @media (max-width: 768px) {
+    .modulex-zaman-katman-tabaka { grid-template-columns: 82px minmax(0, 1fr); gap: 14px; padding-inline-end: 16px; }
+    .modulex-zaman-katman-fosil { display: none; }
+    .modulex-zaman-katman-yil { padding: 3px 7px; font-size: 1rem; }
+  }
+  .modulex-zaman-katman-bag { color: inherit; text-decoration: none; }
+  .modulex-zaman-katman-bag::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+  .modulex-zaman-katman-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-katman :is(.modulex-zaman-katman-baslik, .modulex-zaman-katman-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-katman-baslik { line-height: 1.35; }
+  @media (max-width: 1024px) {
+    .modulex-zaman-katman-ic { grid-template-columns: minmax(0, 1fr); }
+    .modulex-zaman-katman-bas { position: static; margin-block-end: 32px; }
+  }
+  @media (max-width: 768px) {
+    .modulex-zaman-katman { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-zaman-katman *, .modulex-zaman-katman *::before, .modulex-zaman-katman *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-zaman-katman";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+    });
+  })();
+</script>
