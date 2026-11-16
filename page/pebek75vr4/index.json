@@ -1,0 +1,40 @@
+{
+  "id": "pebek75vr4",
+  "name": {
+    "tr": "Analiz",
+    "en": "Tests",
+    "ar": "التحاليل"
+  },
+  "description": {
+    "tr": "Toprak profili ve numune takvimi.",
+    "en": "Soil profile and sampling calendar.",
+    "ar": "مقطع التربة وتقويم أخذ العينات."
+  },
+  "keyword": {
+    "tr": "toprak analizi, numune",
+    "en": "soil test, sampling",
+    "ar": "تحليل التربة، العينات"
+  },
+  "path": "hizmetler",
+  "icon": "science",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "8ncxx6",
+      "u9o5p8"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Analiz",
+    "en": "Tests",
+    "ar": "التحاليل"
+  },
+  "date": "2026-11-16T20:22:24.758Z",
+  "update": "2026-11-16T20:25:16.396Z"
+}
