@@ -3,17 +3,23 @@
   "name": {
     "tr": "Parseller",
     "en": "Plots",
-    "ar": "القطع"
+    "ar": "القطع",
+    "de": "Parzellen",
+    "ru": "Участки"
   },
   "description": {
     "tr": "Tarladan laboratuvara kareler; görseller temsilîdir.",
     "en": "Frames from field to lab; images are representative.",
-    "ar": "لقطات من الحقل إلى المختبر؛ الصور تمثيلية."
+    "ar": "لقطات من الحقل إلى المختبر؛ الصور تمثيلية.",
+    "de": "Bilder vom Feld bis ins Labor; Abbildungen sind repräsentativ.",
+    "ru": "Кадры от поля до лаборатории; изображения иллюстративны."
   },
   "keyword": {
     "tr": "parsel, galeri",
     "en": "plot, gallery",
-    "ar": "قطعة، معرض"
+    "ar": "قطعة، معرض",
+    "de": "Parzelle, Galerie",
+    "ru": "участок, галерея"
   },
   "path": "referanslar",
   "icon": "hexagon",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Parseller",
     "en": "Plots",
-    "ar": "القطع"
+    "ar": "القطع",
+    "de": "Parzellen",
+    "ru": "Участки"
   },
   "date": "2026-11-16T20:22:24.779Z",
   "update": "2026-11-16T20:25:16.410Z"

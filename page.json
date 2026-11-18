@@ -5,12 +5,16 @@
       "name": {
         "tr": "Analiz",
         "en": "Tests",
-        "ar": "التحاليل"
+        "ar": "التحاليل",
+        "de": "Analysen",
+        "ru": "Анализы"
       },
       "description": {
         "tr": "Toprak profili ve numune takvimi.",
         "en": "Soil profile and sampling calendar.",
-        "ar": "مقطع التربة وتقويم أخذ العينات."
+        "ar": "مقطع التربة وتقويم أخذ العينات.",
+        "de": "Bodenprofil und Probenkalender.",
+        "ru": "Профиль почвы и календарь отбора проб."
       },
       "path": "hizmetler",
       "icon": "science",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Laboratuvar",
         "en": "Lab",
-        "ar": "المختبر"
+        "ar": "المختبر",
+        "de": "Labor",
+        "ru": "Лаборатория"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Bu sezonun sayıları ve iş ortakları (kurgusal).",
         "en": "This season’s figures and partners (fictional).",
-        "ar": "أرقام هذا الموسم والشركاء (افتراضي)."
+        "ar": "أرقام هذا الموسم والشركاء (افتراضي).",
+        "de": "Zahlen und Partner dieser Saison (fiktiv).",
+        "ru": "Показатели и партнёры этого сезона (вымышленные)."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "SSS",
         "en": "FAQ",
-        "ar": "الأسئلة"
+        "ar": "الأسئلة",
+        "de": "FAQ",
+        "ru": "FAQ"
       },
       "description": {
         "tr": "Merak edilenler ve kısa yanıtlar.",
         "en": "Common questions and short answers.",
-        "ar": "أسئلة متكررة وإجابات موجزة."
+        "ar": "أسئلة متكررة وإجابات موجزة.",
+        "de": "Was Sie wissen möchten, in kurzen Antworten.",
+        "ru": "Что интересует читателей — в коротких ответах."
       },
       "path": "sorular",
       "icon": "help",
@@ -85,12 +97,16 @@
       "name": {
         "tr": "Parseller",
         "en": "Plots",
-        "ar": "القطع"
+        "ar": "القطع",
+        "de": "Parzellen",
+        "ru": "Участки"
       },
       "description": {
         "tr": "Tarladan laboratuvara kareler; görseller temsilîdir.",
         "en": "Frames from field to lab; images are representative.",
-        "ar": "لقطات من الحقل إلى المختبر؛ الصور تمثيلية."
+        "ar": "لقطات من الحقل إلى المختبر؛ الصور تمثيلية.",
+        "de": "Bilder vom Feld bis ins Labor; Abbildungen sind repräsentativ.",
+        "ru": "Кадры от поля до лаборатории; изображения иллюстративны."
       },
       "path": "referanslar",
       "icon": "hexagon",
@@ -110,7 +126,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -131,7 +149,9 @@
       "description": {
         "tr": "Numune kabul paftası, adres ve saatler.",
         "en": "Sample drop-off plan, address and hours.",
-        "ar": "مخطط استلام العينات والعنوان والساعات."
+        "ar": "مخطط استلام العينات والعنوان والساعات.",
+        "de": "Plan für die Probeneinreichung, Adresse und Öffnungszeiten.",
+        "ru": "Схема сдачи образцов, адрес и часы работы."
       }
     }
   ],

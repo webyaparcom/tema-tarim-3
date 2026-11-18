@@ -4,12 +4,16 @@
   "description": {
     "tr": "Toprakbil Tarım: Çumra’da toprak analiz laboratuvarı ve sertifikalı tohum işleme. Numune takvimi, analiz parametreleri, parsel kayıtları. Demo site; içerik kurgusaldır.",
     "en": "Toprakbil Agriculture: a soil testing laboratory and certified seed processing in Cumra. Sampling calendar, test parameters and plot records. Demo site; content is fictional.",
-    "ar": "توبراكبيل للزراعة: مختبر لتحليل التربة ومعالجة البذور المعتمدة في تشومرا. تقويم أخذ العينات ومعايير التحليل وسجلات القطع. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "توبراكبيل للزراعة: مختبر لتحليل التربة ومعالجة البذور المعتمدة في تشومرا. تقويم أخذ العينات ومعايير التحليل وسجلات القطع. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Toprakbil Landwirtschaft: Bodenanalyse-Labor und zertifizierte Saatgutverarbeitung in Çumra. Probennahme-Kalender, Analyseparameter, Flurstückaufzeichnungen. Demoseite; Inhalte sind fiktiv.",
+    "ru": "Toprakbil Agriculture: лаборатория почвенного анализа и обработка сертифицированных семян в Чумра. Календарь отбора проб, параметры анализа, записи по участкам. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "toprak analizi, sertifikalı tohum, gübre önerisi, numune alma, konya, çumra",
     "en": "soil analysis, certified seed, fertiliser advice, soil sampling, konya, cumra",
-    "ar": "تحليل التربة، بذور معتمدة، توصيات التسميد، أخذ العينات، قونية، تشومرا"
+    "ar": "تحليل التربة، بذور معتمدة، توصيات التسميد، أخذ العينات، قونية، تشومرا",
+    "de": "Bodenanalyse, zertifiziertes Saatgut, Düngemittel-Empfehlung, Bodenprobe, Konya, Çumra",
+    "ru": "анализ почвы, сертифицированные семена, рекомендации по удобрениям, отбор проб, Конья, Чумра"
   },
   "category": "Kurumsal",
   "name": "Toprakbil",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

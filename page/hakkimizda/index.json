@@ -2,7 +2,9 @@
   "name": {
     "tr": "Laboratuvar",
     "en": "Lab",
-    "ar": "المختبر"
+    "ar": "المختبر",
+    "de": "Labor",
+    "ru": "Лаборатория"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Bu sezonun sayıları ve iş ortakları (kurgusal).",
     "en": "This season’s figures and partners (fictional).",
-    "ar": "أرقام هذا الموسم والشركاء (افتراضي)."
+    "ar": "أرقام هذا الموسم والشركاء (افتراضي).",
+    "de": "Zahlen und Partner dieser Saison (fiktiv).",
+    "ru": "Показатели и партнёры этого сезона (вымышленные)."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Laboratuvar",
     "en": "Lab",
-    "ar": "المختبر"
+    "ar": "المختبر",
+    "de": "Labor",
+    "ru": "Лаборатория"
   },
   "keyword": {
     "tr": "hakkımızda",
     "en": "about",
-    "ar": "من نحن"
+    "ar": "من نحن",
+    "de": "Über uns",
+    "ru": "О нас"
   },
   "text": {},
   "update": "2026-11-16T20:25:16.401Z",
