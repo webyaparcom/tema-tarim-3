@@ -3,17 +3,23 @@
   "name": {
     "tr": "Analiz",
     "en": "Tests",
-    "ar": "التحاليل"
+    "ar": "التحاليل",
+    "de": "Analysen",
+    "ru": "Анализы"
   },
   "description": {
     "tr": "Toprak profili ve numune takvimi.",
     "en": "Soil profile and sampling calendar.",
-    "ar": "مقطع التربة وتقويم أخذ العينات."
+    "ar": "مقطع التربة وتقويم أخذ العينات.",
+    "de": "Bodenprofil und Probenkalender.",
+    "ru": "Профиль почвы и календарь отбора проб."
   },
   "keyword": {
     "tr": "toprak analizi, numune",
     "en": "soil test, sampling",
-    "ar": "تحليل التربة، العينات"
+    "ar": "تحليل التربة، العينات",
+    "de": "Bodenanalyse, Probe",
+    "ru": "анализ почвы, образец"
   },
   "path": "hizmetler",
   "icon": "science",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Analiz",
     "en": "Tests",
-    "ar": "التحاليل"
+    "ar": "التحاليل",
+    "de": "Analysen",
+    "ru": "Анализы"
   },
   "date": "2026-11-16T20:22:24.758Z",
   "update": "2026-11-16T20:25:16.396Z"

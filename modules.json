@@ -14,28 +14,38 @@
         "ariaLabel": {
           "tr": "Demo site uyarısı",
           "en": "Demo site notice",
-          "ar": "تنبيه الموقع التجريبي"
+          "ar": "تنبيه الموقع التجريبي",
+          "de": "Hinweis zur Demo-Website",
+          "ru": "Предупреждение о демонстрационном сайте"
         },
         "text": {
           "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
           "en": "This is a demo site — the content is fictional and no payment is taken",
-          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات",
+          "de": "Dies ist eine Demo-Website — die Inhalte sind fiktiv, es wird keine Zahlung entgegengenommen",
+          "ru": "Это демо-сайт — контент вымышленный, оплата не принимается"
         },
         "ctaText": {
           "tr": "Bu temayı iste",
           "en": "Get this theme",
-          "ar": "اطلب هذا القالب"
+          "ar": "اطلب هذا القالب",
+          "de": "Dieses Thema anfordern",
+          "ru": "Заказать эту тему"
         },
         "newTabText": {
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
-          "ar": "(يفتح في علامة تبويب جديدة)"
+          "ar": "(يفتح في علامة تبويب جديدة)",
+          "de": "(öffnet in einem neuen Tab)",
+          "ru": "(открывается в новой вкладке)"
         },
         "girisHref": "",
         "girisText": {
           "tr": "Üye Girişi",
           "en": "Login",
-          "ar": "تسجيل الدخول"
+          "ar": "تسجيل الدخول",
+          "de": "Mitglieder-Login",
+          "ru": "Вход для участников"
         },
         "hataBildir": "https://webyapar.com/api/portal/tema-hata.js"
       },
@@ -78,28 +88,38 @@
         "badge": {
           "tr": "Emlak",
           "en": "Real estate",
-          "ar": "عقارات"
+          "ar": "عقارات",
+          "de": "Immobilien",
+          "ru": "Недвижимость"
         },
         "title": {
           "tr": "Hayalinizdeki yeri birlikte bulalım",
           "en": "Let's find your dream home together",
-          "ar": "لنجد معًا المكان الذي تحلم به"
+          "ar": "لنجد معًا المكان الذي تحلم به",
+          "de": "Finden wir gemeinsam Ihren Traumort",
+          "ru": "Давайте вместе найдём место вашей мечты"
         },
         "description": {
           "tr": "Satılık ve kiralık seçkin portföy, şeffaf süreç, her ilanda yetki belgesi numarası.",
           "en": "A curated sale and rental portfolio, a transparent process, a permit number on every listing.",
-          "ar": "محفظة مختارة للبيع والإيجار وعملية شفافة ورقم ترخيص في كل إعلان."
+          "ar": "محفظة مختارة للبيع والإيجار وعملية شفافة ورقم ترخيص في كل إعلان.",
+          "de": "Ausgewählte Immobilien zum Kauf und zur Miete, transparenter Ablauf, bei jedem Inserat die Nummer der Vollmacht.",
+          "ru": "Избранный портфель недвижимости на продажу и в аренду, прозрачный процесс, номер разрешительного документа в каждом объявлении."
         },
         "btn1Text": {
           "tr": "İlanları gör",
           "en": "Browse listings",
-          "ar": "تصفح الإعلانات"
+          "ar": "تصفح الإعلانات",
+          "de": "Anzeigen durchsuchen",
+          "ru": "Просмотреть объявления"
         },
         "btn1Url": "ilanlar",
         "btn2Text": {
           "tr": "Değerleme",
           "en": "Valuation",
-          "ar": "التقييم"
+          "ar": "التقييم",
+          "de": "Bewertung",
+          "ru": "Оценка"
         },
         "btn2Url": "iletisim"
       },
@@ -129,127 +149,177 @@
         "title": {
           "tr": "Emlak İlanları",
           "en": "Property Listings",
-          "ar": "إعلانات العقارات"
+          "ar": "إعلانات العقارات",
+          "de": "Immobilienangebote",
+          "ru": "Объявления о недвижимости"
         },
         "subtitle": {
           "tr": "Satılık ve kiralık ilanları süzün, sıralayın ve karşılaştırın.",
           "en": "Filter, sort and compare properties for sale and for rent.",
-          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها."
+          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها.",
+          "de": "Objekte zum Kauf und zur Miete filtern, sortieren und vergleichen.",
+          "ru": "Фильтруйте, сортируйте и сравнивайте объекты на продажу и в аренду."
         },
         "searchLabel": {
           "tr": "İlan ara",
           "en": "Search listings",
-          "ar": "ابحث في الإعلانات"
+          "ar": "ابحث في الإعلانات",
+          "de": "Inserate suchen",
+          "ru": "Искать объявления"
         },
         "searchPlaceholder": {
           "tr": "Semt veya ilan başlığı…",
           "en": "District or listing title…",
-          "ar": "الحي أو عنوان الإعلان…"
+          "ar": "الحي أو عنوان الإعلان…",
+          "de": "Stadtteil oder Anzeigentitel…",
+          "ru": "Район или заголовок объявления…"
         },
         "dealGroupLabel": {
           "tr": "İşlem türü",
           "en": "Deal type",
-          "ar": "نوع الصفقة"
+          "ar": "نوع الصفقة",
+          "de": "Transaktionstyp",
+          "ru": "Тип сделки"
         },
         "dealAll": {
           "tr": "Tümü",
           "en": "All",
-          "ar": "الكل"
+          "ar": "الكل",
+          "de": "Alle",
+          "ru": "Все"
         },
         "dealSale": {
           "tr": "Satılık",
           "en": "For sale",
-          "ar": "للبيع"
+          "ar": "للبيع",
+          "de": "Zu verkaufen",
+          "ru": "Продам"
         },
         "dealRent": {
           "tr": "Kiralık",
           "en": "For rent",
-          "ar": "للإيجار"
+          "ar": "للإيجار",
+          "de": "Zu vermieten",
+          "ru": "Аренда"
         },
         "filtersTitle": {
           "tr": "Filtreler",
           "en": "Filters",
-          "ar": "التصفية"
+          "ar": "التصفية",
+          "de": "Filter",
+          "ru": "Фильтры"
         },
         "typeTitle": {
           "tr": "Emlak türü",
           "en": "Property type",
-          "ar": "نوع العقار"
+          "ar": "نوع العقار",
+          "de": "Eigentumsart",
+          "ru": "Тип недвижимости"
         },
         "roomsTitle": {
           "tr": "Oda sayısı",
           "en": "Rooms",
-          "ar": "عدد الغرف"
+          "ar": "عدد الغرف",
+          "de": "Zimmerzahl",
+          "ru": "Количество комнат"
         },
         "m2Title": {
           "tr": "Alan (m²)",
           "en": "Area (m²)",
-          "ar": "المساحة (م²)"
+          "ar": "المساحة (م²)",
+          "de": "Fläche (m²)",
+          "ru": "Площадь (м²)"
         },
         "priceTitle": {
           "tr": "Fiyat",
           "en": "Price",
-          "ar": "السعر"
+          "ar": "السعر",
+          "de": "Preis",
+          "ru": "Цена"
         },
         "districtTitle": {
           "tr": "Semt",
           "en": "District",
-          "ar": "الحي"
+          "ar": "الحي",
+          "de": "Stadtviertel",
+          "ru": "Район"
         },
         "districtAll": {
           "tr": "Tüm semtler",
           "en": "All districts",
-          "ar": "كل الأحياء"
+          "ar": "كل الأحياء",
+          "de": "Alle Stadtteile",
+          "ru": "Все районы"
         },
         "minLabel": {
           "tr": "En az",
           "en": "Min",
-          "ar": "الحد الأدنى"
+          "ar": "الحد الأدنى",
+          "de": "Mindestens",
+          "ru": "Минимум"
         },
         "maxLabel": {
           "tr": "En çok",
           "en": "Max",
-          "ar": "الحد الأقصى"
+          "ar": "الحد الأقصى",
+          "de": "Max",
+          "ru": "Макс"
         },
         "m2Unit": {
           "tr": "m²",
           "en": "m²",
-          "ar": "م²"
+          "ar": "م²",
+          "de": "m²",
+          "ru": "m²"
         },
         "sortLabel": {
           "tr": "Sırala",
           "en": "Sort by",
-          "ar": "ترتيب حسب"
+          "ar": "ترتيب حسب",
+          "de": "Sortieren",
+          "ru": "Сортировать"
         },
         "sortDate": {
           "tr": "En yeni",
           "en": "Newest",
-          "ar": "الأحدث"
+          "ar": "الأحدث",
+          "de": "Neueste",
+          "ru": "Самые новые"
         },
         "sortPrice": {
           "tr": "Fiyat: düşükten yükseğe",
           "en": "Price: low to high",
-          "ar": "السعر: من الأقل إلى الأعلى"
+          "ar": "السعر: من الأقل إلى الأعلى",
+          "de": "Preis: aufsteigend",
+          "ru": "Цена: по возрастанию"
         },
         "sortPriceDesc": {
           "tr": "Fiyat: yüksekten düşüğe",
           "en": "Price: high to low",
-          "ar": "السعر: من الأعلى إلى الأقل"
+          "ar": "السعر: من الأعلى إلى الأقل",
+          "de": "Preis: absteigend",
+          "ru": "Цена: по убыванию"
         },
         "sortM2": {
           "tr": "Alan: büyükten küçüğe",
           "en": "Area: large to small",
-          "ar": "المساحة: من الأكبر إلى الأصغر"
+          "ar": "المساحة: من الأكبر إلى الأصغر",
+          "de": "Fläche: von groß nach klein",
+          "ru": "Площадь: от большой к малой"
         },
         "sortM2Asc": {
           "tr": "Alan: küçükten büyüğe",
           "en": "Area: small to large",
-          "ar": "المساحة: من الأصغر إلى الأكبر"
+          "ar": "المساحة: من الأصغر إلى الأكبر",
+          "de": "Fläche: von klein nach groß",
+          "ru": "Площадь: от меньшей к большей"
         },
         "resetFilters": {
           "tr": "Filtreleri temizle",
           "en": "Clear filters",
-          "ar": "مسح عوامل التصفية"
+          "ar": "مسح عوامل التصفية",
+          "de": "Filter zurücksetzen",
+          "ru": "Сбросить фильтры"
         },
         "resultCount": {
           "tr": {
@@ -289,62 +359,86 @@
         "noResultTitle": {
           "tr": "Sonuç bulunamadı",
           "en": "No results found",
-          "ar": "لم يتم العثور على نتائج"
+          "ar": "لم يتم العثور على نتائج",
+          "de": "Keine Ergebnisse gefunden",
+          "ru": "Ничего не найдено"
         },
         "noResultText": {
           "tr": "Filtreleri gevşetmeyi veya temizlemeyi deneyin.",
           "en": "Try loosening or clearing your filters.",
-          "ar": "جرّب تخفيف عوامل التصفية أو مسحها."
+          "ar": "جرّب تخفيف عوامل التصفية أو مسحها.",
+          "de": "Versuchen Sie, die Filter zu lockern oder zurückzusetzen.",
+          "ru": "Попробуйте ослабить или сбросить фильтры."
         },
         "pagesLabel": {
           "tr": "Sayfalama",
           "en": "Pagination",
-          "ar": "التنقل بين الصفحات"
+          "ar": "التنقل بين الصفحات",
+          "de": "Seitennavigation",
+          "ru": "Постраничная навигация"
         },
         "prevPage": {
           "tr": "Önceki sayfa",
           "en": "Previous page",
-          "ar": "الصفحة السابقة"
+          "ar": "الصفحة السابقة",
+          "de": "Vorherige Seite",
+          "ru": "Предыдущая страница"
         },
         "nextPage": {
           "tr": "Sonraki sayfa",
           "en": "Next page",
-          "ar": "الصفحة التالية"
+          "ar": "الصفحة التالية",
+          "de": "Nächste Seite",
+          "ru": "Следующая страница"
         },
         "pageN": {
           "tr": "Sayfa {n}",
           "en": "Page {n}",
-          "ar": "الصفحة {n}"
+          "ar": "الصفحة {n}",
+          "de": "Seite {n}",
+          "ru": "Страница {n}"
         },
         "permitLabel": {
           "tr": "Yetki belgesi no",
           "en": "Authorization certificate no.",
-          "ar": "رقم شهادة التفويض"
+          "ar": "رقم شهادة التفويض",
+          "de": "Zulassungsnummer",
+          "ru": "Номер разрешительного документа"
         },
         "permitDemo": {
           "tr": "Yetki belgesi no: örnek ilan (DEMO)",
           "en": "Authorization no.: sample listing (DEMO)",
-          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)"
+          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)",
+          "de": "Zulassungsnr.: Beispielanzeige (DEMO)",
+          "ru": "Номер разрешения: пример объявления (ДЕМО)"
         },
         "perMonth": {
           "tr": "/ ay",
           "en": "/ month",
-          "ar": "/ شهريًا"
+          "ar": "/ شهريًا",
+          "de": "/ month",
+          "ru": "/ month"
         },
         "details": {
           "tr": "İlan detayı",
           "en": "View listing",
-          "ar": "تفاصيل الإعلان"
+          "ar": "تفاصيل الإعلان",
+          "de": "Anzeigedetails",
+          "ru": "Детали объявления"
         },
         "dateLabel": {
           "tr": "İlan tarihi",
           "en": "Listed on",
-          "ar": "تاريخ الإعلان"
+          "ar": "تاريخ الإعلان",
+          "de": "Einschaltungsdatum",
+          "ru": "Дата размещения"
         },
         "demoNote": {
           "tr": "Bu sayfadaki ilanlar kurgusaldır; yetki belgesi numaraları örnektir (DEMO).",
           "en": "Listings on this page are fictional; authorization numbers are samples (DEMO).",
-          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي)."
+          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي).",
+          "de": "Die Anzeigen auf dieser Seite sind fiktiv; die Genehmigungsnummern sind Beispiele (DEMO).",
+          "ru": "Объявления на этой странице вымышлены; номера разрешений приведены в качестве примеров (DEMO)."
         }
       },
       "version": "1.0.0",
@@ -361,27 +455,37 @@
           "daire": {
             "tr": "Daire",
             "en": "Apartment",
-            "ar": "شقة"
+            "ar": "شقة",
+            "de": "Wohnung",
+            "ru": "Квартира"
           },
           "villa": {
             "tr": "Villa",
             "en": "Villa",
-            "ar": "فيلا"
+            "ar": "فيلا",
+            "de": "Villa",
+            "ru": "Villa"
           },
           "rezidans": {
             "tr": "Rezidans",
             "en": "Residence",
-            "ar": "مجمّع سكني"
+            "ar": "مجمّع سكني",
+            "de": "Residenz",
+            "ru": "Резиденция"
           },
           "arsa": {
             "tr": "Arsa",
             "en": "Land",
-            "ar": "أرض"
+            "ar": "أرض",
+            "de": "Grundstück",
+            "ru": "Участок"
           },
           "isyeri": {
             "tr": "İşyeri",
             "en": "Commercial",
-            "ar": "محل تجاري"
+            "ar": "محل تجاري",
+            "de": "Arbeitsplatz",
+            "ru": "Место работы"
           }
         },
         "listings": [
@@ -390,7 +494,9 @@
             "title": {
               "tr": "Deniz manzaralı 3+1 daire",
               "en": "3+1 apartment with sea view",
-              "ar": "شقة 3+1 بإطلالة بحرية"
+              "ar": "شقة 3+1 بإطلالة بحرية",
+              "de": "3+1-Wohnung mit Meerblick",
+              "ru": "Квартира 3+1 с видом на море"
             },
             "deal": "sale",
             "type": "daire",
@@ -401,12 +507,16 @@
             "city": {
               "tr": "İstanbul",
               "en": "Istanbul",
-              "ar": "إسطنبول"
+              "ar": "إسطنبول",
+              "de": "Istanbul",
+              "ru": "Стамбул"
             },
             "district": {
               "tr": "Kadıköy",
               "en": "Kadikoy",
-              "ar": "قاضي كوي"
+              "ar": "قاضي كوي",
+              "de": "Kadıköy",
+              "ru": "Кадыкёй"
             },
             "img": [],
             "permitNo": "DEMO-34-0001",
@@ -415,7 +525,9 @@
             "badge": {
               "tr": "Yeni",
               "en": "New",
-              "ar": "جديد"
+              "ar": "جديد",
+              "de": "Neu",
+              "ru": "Новинка"
             }
           },
           {
@@ -423,7 +535,9 @@
             "title": {
               "tr": "Bahçe katı 2+1 kiralık daire",
               "en": "2+1 garden-floor apartment for rent",
-              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار"
+              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار",
+              "de": "2+1-Mietwohnung im Gartengeschoss",
+              "ru": "Квартира 2+1 в аренду на садовом этаже"
             },
             "deal": "rent",
             "type": "daire",
@@ -434,12 +548,16 @@
             "city": {
               "tr": "Ankara",
               "en": "Ankara",
-              "ar": "أنقرة"
+              "ar": "أنقرة",
+              "de": "Ankara",
+              "ru": "Ankara"
             },
             "district": {
               "tr": "Çankaya",
               "en": "Cankaya",
-              "ar": "تشانكايا"
+              "ar": "تشانكايا",
+              "de": "Çankaya",
+              "ru": "Чанкая"
             },
             "img": [],
             "permitNo": "DEMO-06-0002",
@@ -451,7 +569,9 @@
             "title": {
               "tr": "Havuzlu müstakil villa",
               "en": "Detached villa with pool",
-              "ar": "فيلا مستقلة مع مسبح"
+              "ar": "فيلا مستقلة مع مسبح",
+              "de": "Freistehende Villa mit Pool",
+              "ru": "Отдельно стоящая вилла с бассейном"
             },
             "deal": "sale",
             "type": "villa",
@@ -462,12 +582,16 @@
             "city": {
               "tr": "Muğla",
               "en": "Mugla",
-              "ar": "موغلا"
+              "ar": "موغلا",
+              "de": "Muğla",
+              "ru": "Мугла"
             },
             "district": {
               "tr": "Bodrum",
               "en": "Bodrum",
-              "ar": "بودروم"
+              "ar": "بودروم",
+              "de": "Bodrum",
+              "ru": "Bodrum"
             },
             "img": [],
             "permitNo": "DEMO-48-0003",
@@ -479,7 +603,9 @@
             "title": {
               "tr": "Eşyalı 1+1 kiralık daire",
               "en": "Furnished 1+1 apartment for rent",
-              "ar": "شقة 1+1 مفروشة للإيجار"
+              "ar": "شقة 1+1 مفروشة للإيجار",
+              "de": "Möblierte 1+1-Wohnung zur Miete",
+              "ru": "Меблированная квартира 1+1 в аренду"
             },
             "deal": "rent",
             "type": "daire",
@@ -490,12 +616,16 @@
             "city": {
               "tr": "İzmir",
               "en": "Izmir",
-              "ar": "إزمير"
+              "ar": "إزمير",
+              "de": "İzmir",
+              "ru": "Измир"
             },
             "district": {
               "tr": "Karşıyaka",
               "en": "Karsiyaka",
-              "ar": "قارشيياكا"
+              "ar": "قارشيياكا",
+              "de": "Karşıyaka",
+              "ru": "Каршияка"
             },
             "img": [],
             "permitNo": "DEMO-35-0004",
@@ -507,7 +637,9 @@
             "title": {
               "tr": "İmarlı satılık arsa",
               "en": "Zoned plot for sale",
-              "ar": "أرض مخططة للبيع"
+              "ar": "أرض مخططة للبيع",
+              "de": "Baugrundstück mit Bebauungsplan zu verkaufen",
+              "ru": "Участок под застройку на продажу"
             },
             "deal": "sale",
             "type": "arsa",
@@ -518,12 +650,16 @@
             "city": {
               "tr": "İzmir",
               "en": "Izmir",
-              "ar": "إزمير"
+              "ar": "إزمير",
+              "de": "İzmir",
+              "ru": "Измир"
             },
             "district": {
               "tr": "Urla",
               "en": "Urla",
-              "ar": "أورلا"
+              "ar": "أورلا",
+              "de": "Urla",
+              "ru": "Urla"
             },
             "img": [],
             "permitNo": "DEMO-35-0005",
@@ -535,7 +671,9 @@
             "title": {
               "tr": "Cadde üstü kiralık dükkân",
               "en": "Street-front shop for rent",
-              "ar": "محل على الشارع الرئيسي للإيجار"
+              "ar": "محل على الشارع الرئيسي للإيجار",
+              "de": "Ladenlokal an der Hauptstraße zu vermieten",
+              "ru": "Магазин на главной улице в аренду"
             },
             "deal": "rent",
             "type": "isyeri",
@@ -546,12 +684,16 @@
             "city": {
               "tr": "İstanbul",
               "en": "Istanbul",
-              "ar": "إسطنبول"
+              "ar": "إسطنبول",
+              "de": "Istanbul",
+              "ru": "Стамбул"
             },
             "district": {
               "tr": "Şişli",
               "en": "Sisli",
-              "ar": "شيشلي"
+              "ar": "شيشلي",
+              "de": "Şişli",
+              "ru": "Шишли"
             },
             "img": [],
             "permitNo": "DEMO-34-0006",
@@ -563,7 +705,9 @@
             "title": {
               "tr": "Site içinde 2+1 daire",
               "en": "2+1 apartment in a gated complex",
-              "ar": "شقة 2+1 داخل مجمع سكني مسوّر"
+              "ar": "شقة 2+1 داخل مجمع سكني مسوّر",
+              "de": "2+1 Wohnung in einer Wohnanlage",
+              "ru": "Квартира 2+1 в закрытом комплексе"
             },
             "deal": "sale",
             "type": "daire",
@@ -574,12 +718,16 @@
             "city": {
               "tr": "Bursa",
               "en": "Bursa",
-              "ar": "بورصة"
+              "ar": "بورصة",
+              "de": "Bursa",
+              "ru": "Bursa"
             },
             "district": {
               "tr": "Nilüfer",
               "en": "Nilufer",
-              "ar": "نيلوفر"
+              "ar": "نيلوفر",
+              "de": "Nilüfer",
+              "ru": "Nilüfer"
             },
             "img": [],
             "permitNo": "DEMO-16-0007",
@@ -591,7 +739,9 @@
             "title": {
               "tr": "Merkezi konumda 1+1 rezidans",
               "en": "1+1 residence in a central location",
-              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي"
+              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي",
+              "de": "1+1-Residenz in zentraler Lage",
+              "ru": "Резиденция 1+1 в центральном районе"
             },
             "deal": "sale",
             "type": "rezidans",
@@ -602,12 +752,16 @@
             "city": {
               "tr": "İstanbul",
               "en": "Istanbul",
-              "ar": "إسطنبول"
+              "ar": "إسطنبول",
+              "de": "Istanbul",
+              "ru": "Стамбул"
             },
             "district": {
               "tr": "Beşiktaş",
               "en": "Besiktas",
-              "ar": "بشيكتاش"
+              "ar": "بشيكتاش",
+              "de": "Beşiktaş",
+              "ru": "Бешикташ"
             },
             "img": [],
             "permitNo": "DEMO-34-0008",
@@ -642,7 +796,9 @@
           "label": {
             "tr": "Tamamlanan Proje",
             "en": "Completed Projects",
-            "ar": "مشروع منجز"
+            "ar": "مشروع منجز",
+            "de": "Abgeschlossene Projekte",
+            "ru": "Завершённые проекты"
           },
           "icon": "task_alt"
         },
@@ -652,7 +808,9 @@
           "label": {
             "tr": "Mutlu Müşteri",
             "en": "Happy Customers",
-            "ar": "عميل سعيد"
+            "ar": "عميل سعيد",
+            "de": "Zufriedene Kunden",
+            "ru": "Довольные клиенты"
           },
           "icon": "sentiment_satisfied"
         },
@@ -662,7 +820,9 @@
           "label": {
             "tr": "Yıllık Deneyim",
             "en": "Years of Experience",
-            "ar": "سنوات من الخبرة"
+            "ar": "سنوات من الخبرة",
+            "de": "Jahre Erfahrung",
+            "ru": "Лет опыта"
           },
           "icon": "workspace_premium"
         },
@@ -672,7 +832,9 @@
           "label": {
             "tr": "Destek",
             "en": "Support",
-            "ar": "الدعم"
+            "ar": "الدعم",
+            "de": "Support",
+            "ru": "Поддержка"
           },
           "icon": "support_agent"
         }
@@ -696,17 +858,23 @@
         "badge": {
           "tr": "Ekip",
           "en": "Team",
-          "ar": "الفريق"
+          "ar": "الفريق",
+          "de": "Team",
+          "ru": "Команда"
         },
         "title": {
           "tr": "Danışmanlarımız",
           "en": "Our advisors",
-          "ar": "مستشارونا"
+          "ar": "مستشارونا",
+          "de": "Unsere Berater",
+          "ru": "Наши консультанты"
         },
         "description": {
           "tr": "Alanında deneyimli ekibimiz projelerinize değer katmak için burada.",
           "en": "Our experienced team is here to add value to your projects.",
-          "ar": "فريقنا ذو الخبرة هنا ليضيف قيمة إلى مشاريعك."
+          "ar": "فريقنا ذو الخبرة هنا ليضيف قيمة إلى مشاريعك.",
+          "de": "Unser erfahrenes Team ist hier, um Ihren Projekten Mehrwert zu verleihen.",
+          "ru": "Наша опытная команда готова принести пользу вашим проектам."
         },
         "accentText": "#ffffff"
       },
@@ -718,12 +886,16 @@
           "role": {
             "tr": "Kurucu / CEO",
             "en": "Founder / CEO",
-            "ar": "المؤسس / الرئيس التنفيذي"
+            "ar": "المؤسس / الرئيس التنفيذي",
+            "de": "Gründer / CEO",
+            "ru": "Основатель / CEO"
           },
           "bio": {
             "tr": "10+ yıllık sektör deneyimi ile strateji ve yönetim.",
             "en": "Strategy and management with 10+ years of industry experience.",
-            "ar": "الاستراتيجية والإدارة بخبرة تتجاوز 10 سنوات في القطاع."
+            "ar": "الاستراتيجية والإدارة بخبرة تتجاوز 10 سنوات في القطاع.",
+            "de": "Strategie und Management mit über 10 Jahren Branchenerfahrung.",
+            "ru": "Стратегия и управление с опытом работы в отрасли более 10 лет."
           },
           "img": ""
         },
@@ -732,12 +904,16 @@
           "role": {
             "tr": "Tasarım Direktörü",
             "en": "Design Director",
-            "ar": "مدير التصميم"
+            "ar": "مدير التصميم",
+            "de": "Design Director",
+            "ru": "Арт-директор"
           },
           "bio": {
             "tr": "Marka kimliği ve kullanıcı deneyimi tasarımı.",
             "en": "Brand identity and user experience design.",
-            "ar": "تصميم هوية العلامة التجارية وتجربة المستخدم."
+            "ar": "تصميم هوية العلامة التجارية وتجربة المستخدم.",
+            "de": "Markenidentität und Gestaltung der Nutzererfahrung.",
+            "ru": "Фирменный стиль и дизайн пользовательского опыта."
           },
           "img": ""
         },
@@ -746,12 +922,16 @@
           "role": {
             "tr": "Yazılım Geliştirici",
             "en": "Software Developer",
-            "ar": "مطوّر برمجيات"
+            "ar": "مطوّر برمجيات",
+            "de": "Softwareentwickler",
+            "ru": "Разработчик программного обеспечения"
           },
           "bio": {
             "tr": "Modern web teknolojileri ile ölçeklenebilir çözümler.",
             "en": "Scalable solutions with modern web technologies.",
-            "ar": "حلول قابلة للتوسّع بتقنيات الويب الحديثة."
+            "ar": "حلول قابلة للتوسّع بتقنيات الويب الحديثة.",
+            "de": "Skalierbare Lösungen mit modernen Webtechnologien.",
+            "ru": "Масштабируемые решения на современных веб-технологиях."
           },
           "img": ""
         }
@@ -796,7 +976,9 @@
         "name": {
           "tr": "Bize Ulaşın",
           "en": "Contact Us",
-          "ar": "تواصل معنا"
+          "ar": "تواصل معنا",
+          "de": "Kontaktieren Sie uns",
+          "ru": "Свяжитесь с нами"
         },
         "margin": "30px 0px 30px 0px",
         "linkcolor": "var(--mx-site-primary, #2563eb)",
@@ -850,33 +1032,45 @@
         "name": {
           "tr": "Hakkımızda",
           "en": "About us",
-          "ar": "من نحن"
+          "ar": "من نحن",
+          "de": "Über uns",
+          "ru": "О нас"
         },
         "description": {
           "tr": "Bu sayfa bir tema örneğidir; içerik demo üretiminde doldurulur.",
           "en": "This page is a theme sample; its content is filled in during demo production.",
-          "ar": "هذه الصفحة نموذج للقالب؛ يُملأ محتواها عند إنتاج العرض التجريبي."
+          "ar": "هذه الصفحة نموذج للقالب؛ يُملأ محتواها عند إنتاج العرض التجريبي.",
+          "de": "Diese Seite ist ein Theme-Beispiel; der Inhalt wird bei der Demo-Erstellung befüllt.",
+          "ru": "Эта страница — пример темы; содержание заполняется при создании демо."
         },
         "name2": {
           "tr": "Vizyonumuz",
           "en": "Our Vision",
-          "ar": "رؤيتنا"
+          "ar": "رؤيتنا",
+          "de": "Unsere Vision",
+          "ru": "Наше видение"
         },
         "spot2": {
           "tr": "Sektörümüzde yenilikçi yaklaşımlarla öncü olmak.",
           "en": "To lead our industry with innovative approaches.",
-          "ar": "أن نكون روّادًا في قطاعنا بأساليب مبتكرة."
+          "ar": "أن نكون روّادًا في قطاعنا بأساليب مبتكرة.",
+          "de": "In unserer Branche mit innovativen Ansätzen führend zu sein.",
+          "ru": "Быть лидером в нашей отрасли благодаря инновационным подходам."
         },
         "icon2": "visibility",
         "name3": {
           "tr": "Misyonumuz",
           "en": "Our Mission",
-          "ar": "مهمتنا"
+          "ar": "مهمتنا",
+          "de": "Unsere Mission",
+          "ru": "Наша миссия"
         },
         "spot3": {
           "tr": "İhtiyaç duyulan çözümleri hızlı ve şeffaf sunmak.",
           "en": "Deliver needed solutions quickly and transparently.",
-          "ar": "تقديم الحلول المطلوبة بسرعة وشفافية."
+          "ar": "تقديم الحلول المطلوبة بسرعة وشفافية.",
+          "de": "Die benötigten Lösungen schnell und transparent bereitstellen.",
+          "ru": "Быстро и прозрачно предлагать необходимые решения."
         },
         "icon3": "flag",
         "img": "index.jpg",
@@ -887,7 +1081,9 @@
         "title": {
           "tr": "Kurumsal",
           "en": "Corporate",
-          "ar": "المؤسسة"
+          "ar": "المؤسسة",
+          "de": "Über uns",
+          "ru": "О нас"
         },
         "stil": ""
       },
@@ -917,127 +1113,177 @@
         "title": {
           "tr": "Emlak İlanları",
           "en": "Property Listings",
-          "ar": "إعلانات العقارات"
+          "ar": "إعلانات العقارات",
+          "de": "Immobilienangebote",
+          "ru": "Объявления о недвижимости"
         },
         "subtitle": {
           "tr": "Satılık ve kiralık ilanları süzün, sıralayın ve karşılaştırın.",
           "en": "Filter, sort and compare properties for sale and for rent.",
-          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها."
+          "ar": "صفِّ العقارات المعروضة للبيع والإيجار ورتّبها وقارن بينها.",
+          "de": "Objekte zum Kauf und zur Miete filtern, sortieren und vergleichen.",
+          "ru": "Фильтруйте, сортируйте и сравнивайте объекты на продажу и в аренду."
         },
         "searchLabel": {
           "tr": "İlan ara",
           "en": "Search listings",
-          "ar": "ابحث في الإعلانات"
+          "ar": "ابحث في الإعلانات",
+          "de": "Inserate suchen",
+          "ru": "Искать объявления"
         },
         "searchPlaceholder": {
           "tr": "Semt veya ilan başlığı…",
           "en": "District or listing title…",
-          "ar": "الحي أو عنوان الإعلان…"
+          "ar": "الحي أو عنوان الإعلان…",
+          "de": "Stadtteil oder Anzeigentitel…",
+          "ru": "Район или заголовок объявления…"
         },
         "dealGroupLabel": {
           "tr": "İşlem türü",
           "en": "Deal type",
-          "ar": "نوع الصفقة"
+          "ar": "نوع الصفقة",
+          "de": "Transaktionstyp",
+          "ru": "Тип сделки"
         },
         "dealAll": {
           "tr": "Tümü",
           "en": "All",
-          "ar": "الكل"
+          "ar": "الكل",
+          "de": "Alle",
+          "ru": "Все"
         },
         "dealSale": {
           "tr": "Satılık",
           "en": "For sale",
-          "ar": "للبيع"
+          "ar": "للبيع",
+          "de": "Zu verkaufen",
+          "ru": "Продам"
         },
         "dealRent": {
           "tr": "Kiralık",
           "en": "For rent",
-          "ar": "للإيجار"
+          "ar": "للإيجار",
+          "de": "Zu vermieten",
+          "ru": "Аренда"
         },
         "filtersTitle": {
           "tr": "Filtreler",
           "en": "Filters",
-          "ar": "التصفية"
+          "ar": "التصفية",
+          "de": "Filter",
+          "ru": "Фильтры"
         },
         "typeTitle": {
           "tr": "Emlak türü",
           "en": "Property type",
-          "ar": "نوع العقار"
+          "ar": "نوع العقار",
+          "de": "Eigentumsart",
+          "ru": "Тип недвижимости"
         },
         "roomsTitle": {
           "tr": "Oda sayısı",
           "en": "Rooms",
-          "ar": "عدد الغرف"
+          "ar": "عدد الغرف",
+          "de": "Zimmerzahl",
+          "ru": "Количество комнат"
         },
         "m2Title": {
           "tr": "Alan (m²)",
           "en": "Area (m²)",
-          "ar": "المساحة (م²)"
+          "ar": "المساحة (م²)",
+          "de": "Fläche (m²)",
+          "ru": "Площадь (м²)"
         },
         "priceTitle": {
           "tr": "Fiyat",
           "en": "Price",
-          "ar": "السعر"
+          "ar": "السعر",
+          "de": "Preis",
+          "ru": "Цена"
         },
         "districtTitle": {
           "tr": "Semt",
           "en": "District",
-          "ar": "الحي"
+          "ar": "الحي",
+          "de": "Stadtviertel",
+          "ru": "Район"
         },
         "districtAll": {
           "tr": "Tüm semtler",
           "en": "All districts",
-          "ar": "كل الأحياء"
+          "ar": "كل الأحياء",
+          "de": "Alle Stadtteile",
+          "ru": "Все районы"
         },
         "minLabel": {
           "tr": "En az",
           "en": "Min",
-          "ar": "الحد الأدنى"
+          "ar": "الحد الأدنى",
+          "de": "Mindestens",
+          "ru": "Минимум"
         },
         "maxLabel": {
           "tr": "En çok",
           "en": "Max",
-          "ar": "الحد الأقصى"
+          "ar": "الحد الأقصى",
+          "de": "Max",
+          "ru": "Макс"
         },
         "m2Unit": {
           "tr": "m²",
           "en": "m²",
-          "ar": "م²"
+          "ar": "م²",
+          "de": "m²",
+          "ru": "m²"
         },
         "sortLabel": {
           "tr": "Sırala",
           "en": "Sort by",
-          "ar": "ترتيب حسب"
+          "ar": "ترتيب حسب",
+          "de": "Sortieren",
+          "ru": "Сортировать"
         },
         "sortDate": {
           "tr": "En yeni",
           "en": "Newest",
-          "ar": "الأحدث"
+          "ar": "الأحدث",
+          "de": "Neueste",
+          "ru": "Самые новые"
         },
         "sortPrice": {
           "tr": "Fiyat: düşükten yükseğe",
           "en": "Price: low to high",
-          "ar": "السعر: من الأقل إلى الأعلى"
+          "ar": "السعر: من الأقل إلى الأعلى",
+          "de": "Preis: aufsteigend",
+          "ru": "Цена: по возрастанию"
         },
         "sortPriceDesc": {
           "tr": "Fiyat: yüksekten düşüğe",
           "en": "Price: high to low",
-          "ar": "السعر: من الأعلى إلى الأقل"
+          "ar": "السعر: من الأعلى إلى الأقل",
+          "de": "Preis: absteigend",
+          "ru": "Цена: по убыванию"
         },
         "sortM2": {
           "tr": "Alan: büyükten küçüğe",
           "en": "Area: large to small",
-          "ar": "المساحة: من الأكبر إلى الأصغر"
+          "ar": "المساحة: من الأكبر إلى الأصغر",
+          "de": "Fläche: von groß nach klein",
+          "ru": "Площадь: от большой к малой"
         },
         "sortM2Asc": {
           "tr": "Alan: küçükten büyüğe",
           "en": "Area: small to large",
-          "ar": "المساحة: من الأصغر إلى الأكبر"
+          "ar": "المساحة: من الأصغر إلى الأكبر",
+          "de": "Fläche: von klein nach groß",
+          "ru": "Площадь: от меньшей к большей"
         },
         "resetFilters": {
           "tr": "Filtreleri temizle",
           "en": "Clear filters",
-          "ar": "مسح عوامل التصفية"
+          "ar": "مسح عوامل التصفية",
+          "de": "Filter zurücksetzen",
+          "ru": "Сбросить фильтры"
         },
         "resultCount": {
           "tr": {
@@ -1077,62 +1323,86 @@
         "noResultTitle": {
           "tr": "Sonuç bulunamadı",
           "en": "No results found",
-          "ar": "لم يتم العثور على نتائج"
+          "ar": "لم يتم العثور على نتائج",
+          "de": "Keine Ergebnisse gefunden",
+          "ru": "Ничего не найдено"
         },
         "noResultText": {
           "tr": "Filtreleri gevşetmeyi veya temizlemeyi deneyin.",
           "en": "Try loosening or clearing your filters.",
-          "ar": "جرّب تخفيف عوامل التصفية أو مسحها."
+          "ar": "جرّب تخفيف عوامل التصفية أو مسحها.",
+          "de": "Versuchen Sie, die Filter zu lockern oder zurückzusetzen.",
+          "ru": "Попробуйте ослабить или сбросить фильтры."
         },
         "pagesLabel": {
           "tr": "Sayfalama",
           "en": "Pagination",
-          "ar": "التنقل بين الصفحات"
+          "ar": "التنقل بين الصفحات",
+          "de": "Seitennavigation",
+          "ru": "Постраничная навигация"
         },
         "prevPage": {
           "tr": "Önceki sayfa",
           "en": "Previous page",
-          "ar": "الصفحة السابقة"
+          "ar": "الصفحة السابقة",
+          "de": "Vorherige Seite",
+          "ru": "Предыдущая страница"
         },
         "nextPage": {
           "tr": "Sonraki sayfa",
           "en": "Next page",
-          "ar": "الصفحة التالية"
+          "ar": "الصفحة التالية",
+          "de": "Nächste Seite",
+          "ru": "Следующая страница"
         },
         "pageN": {
           "tr": "Sayfa {n}",
           "en": "Page {n}",
-          "ar": "الصفحة {n}"
+          "ar": "الصفحة {n}",
+          "de": "Seite {n}",
+          "ru": "Страница {n}"
         },
         "permitLabel": {
           "tr": "Yetki belgesi no",
           "en": "Authorization certificate no.",
-          "ar": "رقم شهادة التفويض"
+          "ar": "رقم شهادة التفويض",
+          "de": "Zulassungsnummer",
+          "ru": "Номер разрешительного документа"
         },
         "permitDemo": {
           "tr": "Yetki belgesi no: örnek ilan (DEMO)",
           "en": "Authorization no.: sample listing (DEMO)",
-          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)"
+          "ar": "رقم شهادة التفويض: إعلان تجريبي (عرض توضيحي)",
+          "de": "Zulassungsnr.: Beispielanzeige (DEMO)",
+          "ru": "Номер разрешения: пример объявления (ДЕМО)"
         },
         "perMonth": {
           "tr": "/ ay",
           "en": "/ month",
-          "ar": "/ شهريًا"
+          "ar": "/ شهريًا",
+          "de": "/ month",
+          "ru": "/ month"
         },
         "details": {
           "tr": "İlan detayı",
           "en": "View listing",
-          "ar": "تفاصيل الإعلان"
+          "ar": "تفاصيل الإعلان",
+          "de": "Anzeigedetails",
+          "ru": "Детали объявления"
         },
         "dateLabel": {
           "tr": "İlan tarihi",
           "en": "Listed on",
-          "ar": "تاريخ الإعلان"
+          "ar": "تاريخ الإعلان",
+          "de": "Einschaltungsdatum",
+          "ru": "Дата размещения"
         },
         "demoNote": {
           "tr": "Bu sayfadaki ilanlar kurgusaldır; yetki belgesi numaraları örnektir (DEMO).",
           "en": "Listings on this page are fictional; authorization numbers are samples (DEMO).",
-          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي)."
+          "ar": "الإعلانات في هذه الصفحة وهمية، وأرقام شهادات التفويض أمثلة فقط (عرض توضيحي).",
+          "de": "Die Anzeigen auf dieser Seite sind fiktiv; die Genehmigungsnummern sind Beispiele (DEMO).",
+          "ru": "Объявления на этой странице вымышлены; номера разрешений приведены в качестве примеров (DEMO)."
         }
       },
       "version": "1.0.0",
@@ -1149,27 +1419,37 @@
           "daire": {
             "tr": "Daire",
             "en": "Apartment",
-            "ar": "شقة"
+            "ar": "شقة",
+            "de": "Wohnung",
+            "ru": "Квартира"
           },
           "villa": {
             "tr": "Villa",
             "en": "Villa",
-            "ar": "فيلا"
+            "ar": "فيلا",
+            "de": "Villa",
+            "ru": "Villa"
           },
           "rezidans": {
             "tr": "Rezidans",
             "en": "Residence",
-            "ar": "مجمّع سكني"
+            "ar": "مجمّع سكني",
+            "de": "Residenz",
+            "ru": "Резиденция"
           },
           "arsa": {
             "tr": "Arsa",
             "en": "Land",
-            "ar": "أرض"
+            "ar": "أرض",
+            "de": "Grundstück",
+            "ru": "Участок"
           },
           "isyeri": {
             "tr": "İşyeri",
             "en": "Commercial",
-            "ar": "محل تجاري"
+            "ar": "محل تجاري",
+            "de": "Arbeitsplatz",
+            "ru": "Место работы"
           }
         },
         "listings": [
@@ -1178,7 +1458,9 @@
             "title": {
               "tr": "Deniz manzaralı 3+1 daire",
               "en": "3+1 apartment with sea view",
-              "ar": "شقة 3+1 بإطلالة بحرية"
+              "ar": "شقة 3+1 بإطلالة بحرية",
+              "de": "3+1-Wohnung mit Meerblick",
+              "ru": "Квартира 3+1 с видом на море"
             },
             "deal": "sale",
             "type": "daire",
@@ -1189,12 +1471,16 @@
             "city": {
               "tr": "İstanbul",
               "en": "Istanbul",
-              "ar": "إسطنبول"
+              "ar": "إسطنبول",
+              "de": "Istanbul",
+              "ru": "Стамбул"
             },
             "district": {
               "tr": "Kadıköy",
               "en": "Kadikoy",
-              "ar": "قاضي كوي"
+              "ar": "قاضي كوي",
+              "de": "Kadıköy",
+              "ru": "Кадыкёй"
             },
             "img": [],
             "permitNo": "DEMO-34-0001",
@@ -1203,7 +1489,9 @@
             "badge": {
               "tr": "Yeni",
               "en": "New",
-              "ar": "جديد"
+              "ar": "جديد",
+              "de": "Neu",
+              "ru": "Новинка"
             }
           },
           {
@@ -1211,7 +1499,9 @@
             "title": {
               "tr": "Bahçe katı 2+1 kiralık daire",
               "en": "2+1 garden-floor apartment for rent",
-              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار"
+              "ar": "شقة 2+1 في الطابق الأرضي مع حديقة للإيجار",
+              "de": "2+1-Mietwohnung im Gartengeschoss",
+              "ru": "Квартира 2+1 в аренду на садовом этаже"
             },
             "deal": "rent",
             "type": "daire",
@@ -1222,12 +1512,16 @@
             "city": {
               "tr": "Ankara",
               "en": "Ankara",
-              "ar": "أنقرة"
+              "ar": "أنقرة",
+              "de": "Ankara",
+              "ru": "Ankara"
             },
             "district": {
               "tr": "Çankaya",
               "en": "Cankaya",
-              "ar": "تشانكايا"
+              "ar": "تشانكايا",
+              "de": "Çankaya",
+              "ru": "Чанкая"
             },
             "img": [],
             "permitNo": "DEMO-06-0002",
@@ -1239,7 +1533,9 @@
             "title": {
               "tr": "Havuzlu müstakil villa",
               "en": "Detached villa with pool",
-              "ar": "فيلا مستقلة مع مسبح"
+              "ar": "فيلا مستقلة مع مسبح",
+              "de": "Freistehende Villa mit Pool",
+              "ru": "Отдельно стоящая вилла с бассейном"
             },
             "deal": "sale",
             "type": "villa",
@@ -1250,12 +1546,16 @@
             "city": {
               "tr": "Muğla",
               "en": "Mugla",
-              "ar": "موغلا"
+              "ar": "موغلا",
+              "de": "Muğla",
+              "ru": "Мугла"
             },
             "district": {
               "tr": "Bodrum",
               "en": "Bodrum",
-              "ar": "بودروم"
+              "ar": "بودروم",
+              "de": "Bodrum",
+              "ru": "Bodrum"
             },
             "img": [],
             "permitNo": "DEMO-48-0003",
@@ -1267,7 +1567,9 @@
             "title": {
               "tr": "Eşyalı 1+1 kiralık daire",
               "en": "Furnished 1+1 apartment for rent",
-              "ar": "شقة 1+1 مفروشة للإيجار"
+              "ar": "شقة 1+1 مفروشة للإيجار",
+              "de": "Möblierte 1+1-Wohnung zur Miete",
+              "ru": "Меблированная квартира 1+1 в аренду"
             },
             "deal": "rent",
             "type": "daire",
@@ -1278,12 +1580,16 @@
             "city": {
               "tr": "İzmir",
               "en": "Izmir",
-              "ar": "إزمير"
+              "ar": "إزمير",
+              "de": "İzmir",
+              "ru": "Измир"
             },
             "district": {
               "tr": "Karşıyaka",
               "en": "Karsiyaka",
-              "ar": "قارشيياكا"
+              "ar": "قارشيياكا",
+              "de": "Karşıyaka",
+              "ru": "Каршияка"
             },
             "img": [],
             "permitNo": "DEMO-35-0004",
@@ -1295,7 +1601,9 @@
             "title": {
               "tr": "İmarlı satılık arsa",
               "en": "Zoned plot for sale",
-              "ar": "أرض مخططة للبيع"
+              "ar": "أرض مخططة للبيع",
+              "de": "Baugrundstück mit Bebauungsplan zu verkaufen",
+              "ru": "Участок под застройку на продажу"
             },
             "deal": "sale",
             "type": "arsa",
@@ -1306,12 +1614,16 @@
             "city": {
               "tr": "İzmir",
               "en": "Izmir",
-              "ar": "إزمير"
+              "ar": "إزمير",
+              "de": "İzmir",
+              "ru": "Измир"
             },
             "district": {
               "tr": "Urla",
               "en": "Urla",
-              "ar": "أورلا"
+              "ar": "أورلا",
+              "de": "Urla",
+              "ru": "Urla"
             },
             "img": [],
             "permitNo": "DEMO-35-0005",
@@ -1323,7 +1635,9 @@
             "title": {
               "tr": "Cadde üstü kiralık dükkân",
               "en": "Street-front shop for rent",
-              "ar": "محل على الشارع الرئيسي للإيجار"
+              "ar": "محل على الشارع الرئيسي للإيجار",
+              "de": "Ladenlokal an der Hauptstraße zu vermieten",
+              "ru": "Магазин на главной улице в аренду"
             },
             "deal": "rent",
             "type": "isyeri",
@@ -1334,12 +1648,16 @@
             "city": {
               "tr": "İstanbul",
               "en": "Istanbul",
-              "ar": "إسطنبول"
+              "ar": "إسطنبول",
+              "de": "Istanbul",
+              "ru": "Стамбул"
             },
             "district": {
               "tr": "Şişli",
               "en": "Sisli",
-              "ar": "شيشلي"
+              "ar": "شيشلي",
+              "de": "Şişli",
+              "ru": "Шишли"
             },
             "img": [],
             "permitNo": "DEMO-34-0006",
@@ -1351,7 +1669,9 @@
             "title": {
               "tr": "Site içinde 2+1 daire",
               "en": "2+1 apartment in a gated complex",
-              "ar": "شقة 2+1 داخل مجمع سكني مسوّر"
+              "ar": "شقة 2+1 داخل مجمع سكني مسوّر",
+              "de": "2+1 Wohnung in einer Wohnanlage",
+              "ru": "Квартира 2+1 в закрытом комплексе"
             },
             "deal": "sale",
             "type": "daire",
@@ -1362,12 +1682,16 @@
             "city": {
               "tr": "Bursa",
               "en": "Bursa",
-              "ar": "بورصة"
+              "ar": "بورصة",
+              "de": "Bursa",
+              "ru": "Bursa"
             },
             "district": {
               "tr": "Nilüfer",
               "en": "Nilufer",
-              "ar": "نيلوفر"
+              "ar": "نيلوفر",
+              "de": "Nilüfer",
+              "ru": "Nilüfer"
             },
             "img": [],
             "permitNo": "DEMO-16-0007",
@@ -1379,7 +1703,9 @@
             "title": {
               "tr": "Merkezi konumda 1+1 rezidans",
               "en": "1+1 residence in a central location",
-              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي"
+              "ar": "وحدة 1+1 في مجمّع سكني بموقع مركزي",
+              "de": "1+1-Residenz in zentraler Lage",
+              "ru": "Резиденция 1+1 в центральном районе"
             },
             "deal": "sale",
             "type": "rezidans",
@@ -1390,12 +1716,16 @@
             "city": {
               "tr": "İstanbul",
               "en": "Istanbul",
-              "ar": "إسطنبول"
+              "ar": "إسطنبول",
+              "de": "Istanbul",
+              "ru": "Стамбул"
             },
             "district": {
               "tr": "Beşiktaş",
               "en": "Besiktas",
-              "ar": "بشيكتاش"
+              "ar": "بشيكتاش",
+              "de": "Beşiktaş",
+              "ru": "Бешикташ"
             },
             "img": [],
             "permitNo": "DEMO-34-0008",
@@ -1424,22 +1754,30 @@
         "text": {
           "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
           "en": "This demo was prepared by {brand} —",
-          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —",
+          "de": "Diese Demo wurde von {brand} erstellt —",
+          "ru": "Это демо подготовлено компанией {brand} —"
         },
         "ctaText": {
           "tr": "Bu temayı iste",
           "en": "Get this theme",
-          "ar": "اطلب هذا القالب"
+          "ar": "اطلب هذا القالب",
+          "de": "Dieses Thema anfordern",
+          "ru": "Заказать эту тему"
         },
         "newTabText": {
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
-          "ar": "(يفتح في علامة تبويب جديدة)"
+          "ar": "(يفتح في علامة تبويب جديدة)",
+          "de": "(öffnet in einem neuen Tab)",
+          "ru": "(открывается в новой вкладке)"
         },
         "ariaLabel": {
           "tr": "Demo bilgisi",
           "en": "Demo credit",
-          "ar": "معلومات العرض التجريبي"
+          "ar": "معلومات العرض التجريبي",
+          "de": "Demo-Hinweis",
+          "ru": "Демо-информация"
         }
       },
       "veri": {
@@ -1479,7 +1817,9 @@
         "cta_ad": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         },
         "cta_url": "iletisim",
         "tel": "+90 332 084 36 36",
@@ -1502,7 +1842,9 @@
         "cta": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         }
       },
       "data": [],
@@ -1543,17 +1885,23 @@
         "ust": {
           "tr": "Toprakbil Tarım · Çumra, Konya",
           "en": "Toprakbil Agriculture · Cumra, Konya",
-          "ar": "توبراكبيل للزراعة · تشومرا، قونية"
+          "ar": "توبراكبيل للزراعة · تشومرا، قونية",
+          "de": "Toprakbil Tarım · Çumra, Konya",
+          "ru": "Toprakbil Tarım · Чумра, Конья"
         },
         "baslik": {
           "tr": "Toprak analizi ve sertifikalı tohum: bu sezonun kantar fişi",
           "en": "Soil testing and certified seed: this season’s weighbridge ticket",
-          "ar": "تحليل التربة والبذور المعتمدة: إيصال ميزان هذا الموسم"
+          "ar": "تحليل التربة والبذور المعتمدة: إيصال ميزان هذا الموسم",
+          "de": "Bodenanalyse und zertifiziertes Saatgut: die Wiegequittung dieser Saison",
+          "ru": "Анализ почвы и сертифицированные семена: весовая квитанция этого сезона"
         },
         "metin": {
           "tr": "Bir kalem seçin; kantar o kalemi tartar, ekranda sezon toplamı ve hedefe oranı görünür. Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "Pick an item; the scale weighs it and the display shows the season total and its share of the goal. The laboratory, results and figures are fictional (DEMO).",
-          "ar": "اختر بندًا؛ فيزنه الميزان وتظهر على الشاشة حصيلة الموسم ونسبتها من الهدف. المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "اختر بندًا؛ فيزنه الميزان وتظهر على الشاشة حصيلة الموسم ونسبتها من الهدف. المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Wählen Sie eine Position; die Waage wiegt sie, auf dem Bildschirm erscheinen die Saisonsumme und der Anteil am Ziel. Labor, Ergebnisse und Zahlen sind fiktiv (DEMO).",
+          "ru": "Выберите позицию; весы взвешивают её, на экране видны сезонный итог и доля от цели. Лаборатория, результаты и цифры вымышленные (ДЕМО)."
         },
         "bg": "var(--mx-site-surface, #f6f7f9)",
         "text": "var(--mx-site-text, #111318)",
@@ -1570,23 +1918,31 @@
         "title": {
           "tr": "Toprak analizi ve sertifikalı tohum: bu sezonun kantar fişi",
           "en": "Soil testing and certified seed: this season’s weighbridge ticket",
-          "ar": "تحليل التربة والبذور المعتمدة: إيصال ميزان هذا الموسم"
+          "ar": "تحليل التربة والبذور المعتمدة: إيصال ميزان هذا الموسم",
+          "de": "Bodenanalyse und zertifiziertes Saatgut: die Wiegequittung dieser Saison",
+          "ru": "Анализ почвы и сертифицированные семена: весовая квитанция этого сезона"
         },
         "description": {
           "tr": "Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "The laboratory, results and figures are fictional (DEMO).",
-          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Das Labor, die Ergebnisse und die Zahlen sind fiktiv (DEMO).",
+          "ru": "Лаборатория, результаты и цифры вымышлены (DEMO)."
         },
         "cta_ad": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         },
         "cta_url": "iletisim",
         "cta2_ad": {
           "tr": "Analizler",
           "en": "Tests",
-          "ar": "التحاليل"
+          "ar": "التحاليل",
+          "de": "Analysen",
+          "ru": "Анализы"
         },
         "cta2_url": "hizmetler"
       },
@@ -1596,17 +1952,23 @@
           "sonek": {
             "tr": " numune",
             "en": " samples",
-            "ar": " عينة"
+            "ar": " عينة",
+            "de": " Muster",
+            "ru": " образцы"
           },
           "etiket": {
             "tr": "Analiz edilen toprak numunesi",
             "en": "Soil samples tested",
-            "ar": "عينات تربة محلّلة"
+            "ar": "عينات تربة محلّلة",
+            "de": "Analysierte Bodenproben",
+            "ru": "Проанализированные образцы почвы"
           },
           "metin": {
             "tr": "Sezon hedefi 6.000 numune",
             "en": "Season goal: 6,000 samples",
-            "ar": "هدف الموسم: 6,000 عينة"
+            "ar": "هدف الموسم: 6,000 عينة",
+            "de": "Saisonziel 6.000 Proben",
+            "ru": "Цель сезона — 6.000 образцов"
           },
           "ikon": "science",
           "max": 6000
@@ -1616,17 +1978,23 @@
           "sonek": {
             "tr": " t",
             "en": " t",
-            "ar": " طن"
+            "ar": " طن",
+            "de": " t",
+            "ru": " t"
           },
           "etiket": {
             "tr": "İşlenen sertifikalı tohum",
             "en": "Certified seed processed",
-            "ar": "بذور معتمدة معالَجة"
+            "ar": "بذور معتمدة معالَجة",
+            "de": "Verarbeitetes zertifiziertes Saatgut",
+            "ru": "Переработанные сертифицированные семена"
           },
           "metin": {
             "tr": "Buğday, arpa, nohut; hedef 1.500 t",
             "en": "Wheat, barley, chickpea; goal 1,500 t",
-            "ar": "قمح وشعير وحمص؛ الهدف 1,500 طن"
+            "ar": "قمح وشعير وحمص؛ الهدف 1,500 طن",
+            "de": "Weizen, Gerste, Kichererbsen; Ziel 1.500 t",
+            "ru": "Пшеница, ячмень, нут; цель 1.500 т"
           },
           "ikon": "grass",
           "max": 1500
@@ -1636,17 +2004,23 @@
           "sonek": {
             "tr": " üretici",
             "en": " growers",
-            "ar": " مزارعًا"
+            "ar": " مزارعًا",
+            "de": " Produzent",
+            "ru": " производители"
           },
           "etiket": {
             "tr": "Sözleşmeli üretici",
             "en": "Contract growers",
-            "ar": "مزارعون متعاقدون"
+            "ar": "مزارعون متعاقدون",
+            "de": "Vertragshersteller",
+            "ru": "Производитель по контракту"
           },
           "metin": {
             "tr": "Çumra, Karatay ve Ereğli; hedef 400",
             "en": "Cumra, Karatay and Eregli; goal 400",
-            "ar": "تشومرا وقره طاي وأرغلي؛ الهدف 400"
+            "ar": "تشومرا وقره طاي وأرغلي؛ الهدف 400",
+            "de": "Çumra, Karatay und Ereğli; Ziel 400",
+            "ru": "Чумра, Каратай и Эрегли; цель 400"
           },
           "ikon": "agriculture",
           "max": 400
@@ -1656,17 +2030,23 @@
           "sonek": {
             "tr": " parametre",
             "en": " parameters",
-            "ar": " معيارًا"
+            "ar": " معيارًا",
+            "de": " Parameter",
+            "ru": " параметров"
           },
           "etiket": {
             "tr": "Standart toprak paketinde ölçülen",
             "en": "Measured in the standard soil package",
-            "ar": "تُقاس في باقة التربة القياسية"
+            "ar": "تُقاس في باقة التربة القياسية",
+            "de": "Gemessen im Standard-Bodenpaket",
+            "ru": "Измеряется в стандартном почвенном пакете"
           },
           "metin": {
             "tr": "pH, kireç, tuz, organik madde, N-P-K ve mikro elementler",
             "en": "pH, lime, salinity, organic matter, N-P-K and micronutrients",
-            "ar": "الحموضة والكلس والملوحة والمادة العضوية وN-P-K والعناصر الصغرى"
+            "ar": "الحموضة والكلس والملوحة والمادة العضوية وN-P-K والعناصر الصغرى",
+            "de": "pH-Wert, Kalk, Salz, organische Substanz, N-P-K und Spurenelemente",
+            "ru": "pH, известь, соль, органическое вещество, N-P-K и микроэлементы"
           },
           "ikon": "labs",
           "max": 24
@@ -1676,17 +2056,23 @@
           "sonek": {
             "tr": " iş günü",
             "en": " working days",
-            "ar": " أيام عمل"
+            "ar": " أيام عمل",
+            "de": " Werktage",
+            "ru": " рабочих дней"
           },
           "etiket": {
             "tr": "Numuneden rapora süre",
             "en": "From sample to report",
-            "ar": "من العينة إلى التقرير"
+            "ar": "من العينة إلى التقرير",
+            "de": "Dauer von der Probe bis zum Bericht",
+            "ru": "Срок от образца до отчёта"
           },
           "metin": {
             "tr": "Hasat sonrası yoğunlukta 8 iş gününe çıkabilir",
             "en": "May rise to 8 working days in the post-harvest rush",
-            "ar": "قد تصل إلى 8 أيام عمل في ذروة ما بعد الحصاد"
+            "ar": "قد تصل إلى 8 أيام عمل في ذروة ما بعد الحصاد",
+            "de": "In der Erntezeit kann die Bearbeitungszeit auf 8 Werktage steigen",
+            "ru": "В сезон сбора урожая срок обработки может увеличиться до 8 рабочих дней"
           },
           "ikon": "schedule",
           "max": 8
@@ -1735,17 +2121,23 @@
         "ust": {
           "tr": "Sevkiyat bandı",
           "en": "Dispatch line",
-          "ar": "خط الشحن"
+          "ar": "خط الشحن",
+          "de": "Versandband",
+          "ru": "Отгрузочная лента"
         },
         "baslik": {
           "tr": "Raporlarımızla ekim yapanlar",
           "en": "Who sows with our reports",
-          "ar": "من يزرع بتقاريرنا"
+          "ar": "من يزرع بتقاريرنا",
+          "de": "Wer sät mit unseren Berichten",
+          "ru": "Кто сеет по нашим отчетам"
         },
         "metin": {
           "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir. Bandı duraklatmak için düğmeyi kullanın.",
           "en": "Fictional partner names; they do not belong to real organisations. Use the button to pause the line.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهات حقيقية. استخدم الزر لإيقاف الخط."
+          "ar": "أسماء شركاء افتراضية لا تعود إلى جهات حقيقية. استخدم الزر لإيقاف الخط.",
+          "de": "Fiktive Partnernamen; sie gehören keiner realen Organisation. Mit der Schaltfläche können Sie das Band anhalten.",
+          "ru": "Названия партнёров условные; они не принадлежат реальным организациям. Ленту можно остановить кнопкой."
         },
         "sayi": "",
         "sayiEtiket": "",
@@ -1765,17 +2157,23 @@
         "title": {
           "tr": "Raporlarımızla ekim yapanlar",
           "en": "Who sows with our reports",
-          "ar": "من يزرع بتقاريرنا"
+          "ar": "من يزرع بتقاريرنا",
+          "de": "Wer sät mit unseren Berichten",
+          "ru": "Кто сеет по нашим отчетам"
         },
         "description": {
           "tr": "Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "The laboratory, results and figures are fictional (DEMO).",
-          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Das Labor, die Ergebnisse und die Zahlen sind fiktiv (DEMO).",
+          "ru": "Лаборатория, результаты и цифры вымышлены (DEMO)."
         },
         "listeEtiket": {
           "tr": "İş ortakları",
           "en": "Partners",
-          "ar": "الشركاء"
+          "ar": "الشركاء",
+          "de": "Partner",
+          "ru": "Партнеры"
         }
       },
       "data": [
@@ -1784,7 +2182,9 @@
           "sektor": {
             "tr": "Un değirmeni",
             "en": "Flour mill",
-            "ar": "مطحنة دقيق"
+            "ar": "مطحنة دقيق",
+            "de": "Getreidemühle",
+            "ru": "Мукомольная мельница"
           },
           "yil": "2014"
         },
@@ -1793,7 +2193,9 @@
           "sektor": {
             "tr": "Pancar üreticileri",
             "en": "Beet growers",
-            "ar": "مزارعو الشمندر"
+            "ar": "مزارعو الشمندر",
+            "de": "Rübenanbauer",
+            "ru": "Производители свёклы"
           },
           "yil": "2016"
         },
@@ -1802,7 +2204,9 @@
           "sektor": {
             "tr": "Yem fabrikası",
             "en": "Feed mill",
-            "ar": "مصنع أعلاف"
+            "ar": "مصنع أعلاف",
+            "de": "Futtermittelfabrik",
+            "ru": "Комбикормовый завод"
           },
           "yil": "2017"
         },
@@ -1811,7 +2215,9 @@
           "sektor": {
             "tr": "Bakliyat paketleme",
             "en": "Pulse packing",
-            "ar": "تعبئة البقول"
+            "ar": "تعبئة البقول",
+            "de": "Verpackung von Hülsenfrüchten",
+            "ru": "Упаковка бобовых"
           },
           "yil": "2018"
         },
@@ -1820,7 +2226,9 @@
           "sektor": {
             "tr": "Tohum bayisi",
             "en": "Seed dealer",
-            "ar": "وكيل بذور"
+            "ar": "وكيل بذور",
+            "de": "Saatgut-Händler",
+            "ru": "Посевной материал"
           },
           "yil": "2020"
         },
@@ -1829,7 +2237,9 @@
           "sektor": {
             "tr": "Örtü altı üretim",
             "en": "Greenhouse growing",
-            "ar": "زراعة محمية"
+            "ar": "زراعة محمية",
+            "de": "Gewächshausproduktion",
+            "ru": "Выращивание в теплицах"
           },
           "yil": "2022"
         }
@@ -1876,24 +2286,32 @@
         "ust": {
           "tr": "Numunenin yolu",
           "en": "A sample’s journey",
-          "ar": "رحلة العينة"
+          "ar": "رحلة العينة",
+          "de": "Die Reise einer Probe",
+          "ru": "Путь образца"
         },
         "baslik": {
           "tr": "Tarladan rapora sorular",
           "en": "Questions from field to report",
-          "ar": "أسئلة من الحقل إلى التقرير"
+          "ar": "أسئلة من الحقل إلى التقرير",
+          "de": "Fragen vom Feld bis zum Bericht",
+          "ru": "Вопросы от поля до отчёта"
         },
         "metin": {
           "tr": "Sorular numunenin geçtiği duraklara göre dizildi. Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "Questions are grouped by the stops a sample passes. The laboratory, results and figures are fictional (DEMO).",
-          "ar": "رُتّبت الأسئلة حسب المحطات التي تمر بها العينة. المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "رُتّبت الأسئلة حسب المحطات التي تمر بها العينة. المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Die Fragen sind nach den Stationen geordnet, die die Probe durchläuft. Labor, Ergebnisse und Zahlen sind fiktiv (DEMO).",
+          "ru": "Вопросы расположены по этапам, через которые проходит образец. Лаборатория, результаты и цифры вымышленные (ДЕМО)."
         },
         "tekAcik": "",
         "ilkAcik": "",
         "cta_ad": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         },
         "cta_url": "iletisim",
         "bg": "var(--mx-site-surface, #f6f7f9)",
@@ -1911,17 +2329,23 @@
         "badge": {
           "tr": "SSS",
           "en": "FAQ",
-          "ar": "الأسئلة الشائعة"
+          "ar": "الأسئلة الشائعة",
+          "de": "FAQ",
+          "ru": "FAQ"
         },
         "title": {
           "tr": "Tarladan rapora sorular",
           "en": "Questions from field to report",
-          "ar": "أسئلة من الحقل إلى التقرير"
+          "ar": "أسئلة من الحقل إلى التقرير",
+          "de": "Fragen vom Feld bis zum Bericht",
+          "ru": "Вопросы от поля до отчёта"
         },
         "description": {
           "tr": "Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "The laboratory, results and figures are fictional (DEMO).",
-          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Das Labor, die Ergebnisse und die Zahlen sind fiktiv (DEMO).",
+          "ru": "Лаборатория, результаты и цифры вымышлены (DEMO)."
         }
       },
       "data": [
@@ -1929,108 +2353,144 @@
           "kategori": {
             "tr": "Tarlada numune",
             "en": "Sampling in the field",
-            "ar": "أخذ العينة في الحقل"
+            "ar": "أخذ العينة في الحقل",
+            "de": "Probenahme im Feld",
+            "ru": "Отбор проб в поле"
           },
           "ikon": "agriculture",
           "soru": {
             "tr": "Bir parselden kaç noktadan numune alınır?",
             "en": "How many points are sampled per plot?",
-            "ar": "من كم نقطة تؤخذ العينة في القطعة الواحدة؟"
+            "ar": "من كم نقطة تؤخذ العينة في القطعة الواحدة؟",
+            "de": "An wie vielen Stellen wird pro Parzelle beprobt?",
+            "ru": "Сколько проб берётся с одного участка?"
           },
           "cevap": {
             "tr": "Zikzak çizerek 15–20 noktadan, 0–20 cm derinlikten alınan toprak bir kovada karıştırılır; yaklaşık 1 kg torbaya konur.",
             "en": "Soil from 15–20 points along a zigzag, at 0–20 cm depth, is mixed in a bucket; about 1 kg goes into the bag.",
-            "ar": "تُخلط في دلو تربةٌ مأخوذة من 15–20 نقطة على مسار متعرج وبعمق 0–20 سم، ثم يوضع نحو 1 كغ في الكيس."
+            "ar": "تُخلط في دلو تربةٌ مأخوذة من 15–20 نقطة على مسار متعرج وبعمق 0–20 سم، ثم يوضع نحو 1 كغ في الكيس.",
+            "de": "Der im Zickzack an 15–20 Punkten aus 0–20 cm Tiefe entnommene Boden wird in einem Eimer gemischt; etwa 1 kg kommen in den Beutel.",
+            "ru": "Почва, взятая зигзагом из 15–20 точек с глубины 0–20 см, перемешивается в ведре; около 1 кг кладётся в пакет."
           }
         },
         {
           "kategori": {
             "tr": "Tarlada numune",
             "en": "Sampling in the field",
-            "ar": "أخذ العينة في الحقل"
+            "ar": "أخذ العينة في الحقل",
+            "de": "Probenahme im Feld",
+            "ru": "Отбор проб в поле"
           },
           "ikon": "event",
           "soru": {
             "tr": "Gübrelemeden hemen sonra numune alınır mı?",
             "en": "Can I sample right after fertilising?",
-            "ar": "هل يمكن أخذ العينة بعد التسميد مباشرة؟"
+            "ar": "هل يمكن أخذ العينة بعد التسميد مباشرة؟",
+            "de": "Kann ich direkt nach der Düngung Proben nehmen?",
+            "ru": "Можно ли брать пробы сразу после внесения удобрений?"
           },
           "cevap": {
             "tr": "Alınmaz; sonuç yanıltır. Son gübrelemeden en az iki ay sonra ya da ekimden önce alın.",
             "en": "No; the result would be misleading. Sample at least two months after the last fertiliser or before sowing.",
-            "ar": "لا؛ فالنتيجة ستكون مضللة. خذ العينة بعد آخر تسميد بشهرين على الأقل أو قبل الزراعة."
+            "ar": "لا؛ فالنتيجة ستكون مضللة. خذ العينة بعد آخر تسميد بشهرين على الأقل أو قبل الزراعة.",
+            "de": "Nicht nehmen; das Ergebnis führt in die Irre. Nehmen Sie sie frühestens zwei Monate nach der letzten Düngung oder vor der Aussaat.",
+            "ru": "Не берётся; результат будет неверным. Берите пробу не раньше чем через два месяца после последнего удобрения или до посева."
           }
         },
         {
           "kategori": {
             "tr": "Laboratuvarda",
             "en": "In the laboratory",
-            "ar": "في المختبر"
+            "ar": "في المختبر",
+            "de": "Im Labor",
+            "ru": "В лаборатории"
           },
           "ikon": "labs",
           "soru": {
             "tr": "Standart pakette neler ölçülür?",
             "en": "What does the standard package measure?",
-            "ar": "ماذا تقيس الباقة القياسية؟"
+            "ar": "ماذا تقيس الباقة القياسية؟",
+            "de": "Was wird im Standardpaket gemessen?",
+            "ru": "Что измеряется в стандартном пакете?"
           },
           "cevap": {
             "tr": "pH, tuzluluk, kireç, organik madde, bünye, azot, fosfor, potasyum ve demir, çinko gibi mikro elementler (18 parametre).",
             "en": "pH, salinity, lime, organic matter, texture, nitrogen, phosphorus, potassium and micronutrients such as iron and zinc (18 parameters).",
-            "ar": "الحموضة والملوحة والكلس والمادة العضوية والقوام والنيتروجين والفوسفور والبوتاسيوم والعناصر الصغرى كالحديد والزنك (18 معيارًا)."
+            "ar": "الحموضة والملوحة والكلس والمادة العضوية والقوام والنيتروجين والفوسفور والبوتاسيوم والعناصر الصغرى كالحديد والزنك (18 معيارًا).",
+            "de": "pH, Salzgehalt, Kalk, organische Substanz, Bodenart, Stickstoff, Phosphor, Kalium sowie Mikroelemente wie Eisen und Zink (18 Parameter).",
+            "ru": "pH, засолённость, известь, органическое вещество, структура почвы, азот, фосфор, калий и микроэлементы, такие как железо и цинк (18 параметров)."
           }
         },
         {
           "kategori": {
             "tr": "Laboratuvarda",
             "en": "In the laboratory",
-            "ar": "في المختبر"
+            "ar": "في المختبر",
+            "de": "Im Labor",
+            "ru": "В лаборатории"
           },
           "ikon": "qr_code_2",
           "soru": {
             "tr": "Numunemin karışmayacağını nasıl bilirim?",
             "en": "How do I know my sample will not be mixed up?",
-            "ar": "كيف أتأكد من عدم اختلاط عينتي؟"
+            "ar": "كيف أتأكد من عدم اختلاط عينتي؟",
+            "de": "Woher weiß ich, dass meine Probe nicht verwechselt wird?",
+            "ru": "Как я узнаю, что мой образец не перепутают?"
           },
           "cevap": {
             "tr": "Her torbaya kabul anında barkod yapıştırılır; rapor aynı barkod ve parsel numarasıyla çıkar (örnek, DEMO).",
             "en": "Each bag gets a barcode on arrival; the report carries the same barcode and plot number (sample, DEMO).",
-            "ar": "يُلصق رمز شريطي على كل كيس عند الاستلام؛ ويصدر التقرير بالرمز نفسه ورقم القطعة (نموذج، DEMO)."
+            "ar": "يُلصق رمز شريطي على كل كيس عند الاستلام؛ ويصدر التقرير بالرمز نفسه ورقم القطعة (نموذج، DEMO).",
+            "de": "Jeder Beutel erhält bei der Annahme einen Barcode; der Bericht wird mit demselben Barcode und der Parzellennummer ausgestellt (Beispiel, DEMO).",
+            "ru": "На каждый мешок при приёмке наклеивается штрихкод; отчёт выдаётся с тем же штрихкодом и номером участка (пример, ДЕМО)."
           }
         },
         {
           "kategori": {
             "tr": "Rapor ve tohum",
             "en": "Report and seed",
-            "ar": "التقرير والبذور"
+            "ar": "التقرير والبذور",
+            "de": "Bericht und Saatgut",
+            "ru": "Отчёт и семена"
           },
           "ikon": "description",
           "soru": {
             "tr": "Rapor bana ne söyler?",
             "en": "What does the report tell me?",
-            "ar": "ماذا يخبرني التقرير؟"
+            "ar": "ماذا يخبرني التقرير؟",
+            "de": "Was sagt mir der Bericht?",
+            "ru": "Что мне говорит отчёт?"
           },
           "cevap": {
             "tr": "Ölçülen değerleri, bölge için uygun aralıkları ve ekeceğiniz ürüne göre dekara gübre önerisini gösterir. Öneri, verim garantisi değildir.",
             "en": "It shows the measured values, suitable ranges for the region and a per-decare fertiliser suggestion for your crop. The suggestion is not a yield guarantee.",
-            "ar": "يعرض القيم المقاسة والمجالات المناسبة للمنطقة واقتراح تسميد لكل دونم حسب محصولك. الاقتراح ليس ضمانًا للإنتاج."
+            "ar": "يعرض القيم المقاسة والمجالات المناسبة للمنطقة واقتراح تسميد لكل دونم حسب محصولك. الاقتراح ليس ضمانًا للإنتاج.",
+            "de": "Zeigt gemessene Werte, regionale Richtwerte und Düngervorschlag pro Dekare für Ihre Kultur. Keine Ertragsgarantie.",
+            "ru": "Показывает измеренные значения, нормативы для региона и рекомендацию по удобрению на декаре для вашей культуры. Не является гарантией урожайности."
           }
         },
         {
           "kategori": {
             "tr": "Rapor ve tohum",
             "en": "Report and seed",
-            "ar": "التقرير والبذور"
+            "ar": "التقرير والبذور",
+            "de": "Bericht und Saatgut",
+            "ru": "Отчёт и семена"
           },
           "ikon": "grass",
           "soru": {
             "tr": "Sertifikalı tohum için nasıl talep veririm?",
             "en": "How do I order certified seed?",
-            "ar": "كيف أطلب بذورًا معتمدة؟"
+            "ar": "كيف أطلب بذورًا معتمدة؟",
+            "de": "Wie bestelle ich zertifiziertes Saatgut?",
+            "ru": "Как заказать сертифицированные семена?"
           },
           "cevap": {
             "tr": "İletişim formundan çeşit ve miktarı yazın; fiyat ve teslim tarihi talep üzerine bildirilir. Sözleşmeli üreticiye öncelik verilir.",
             "en": "Write the variety and quantity in the contact form; price and delivery date are given on request. Contract growers have priority.",
-            "ar": "اكتب الصنف والكمية في نموذج التواصل؛ ويُبلَّغ السعر وموعد التسليم عند الطلب. الأولوية للمزارعين المتعاقدين."
+            "ar": "اكتب الصنف والكمية في نموذج التواصل؛ ويُبلَّغ السعر وموعد التسليم عند الطلب. الأولوية للمزارعين المتعاقدين.",
+            "de": "Geben Sie Sorte und Menge im Kontaktformular an; Preis und Lieferdatum werden auf Anfrage mitgeteilt. Vertragsproduzenten haben Vorrang.",
+            "ru": "Укажите сорт и количество в форме обратной связи; цена и дата доставки сообщаются по запросу. Приоритет отдается контрактным производителям."
           }
         }
       ],
@@ -2074,22 +2534,30 @@
         "ust": {
           "tr": "Pafta",
           "en": "Site plan",
-          "ar": "المخطط"
+          "ar": "المخطط",
+          "de": "Lageplan",
+          "ru": "План участка"
         },
         "baslik": {
           "tr": "Laboratuvara numune getirin",
           "en": "Bring your sample to the lab",
-          "ar": "أحضر عينتك إلى المختبر"
+          "ar": "أحضر عينتك إلى المختبر",
+          "de": "Probe ins Labor bringen",
+          "ru": "Принесите образец в лабораторию"
         },
         "metin": {
           "tr": "Numuneyi elden bırakabilir ya da kargo ile gönderebilirsiniz; kap ve barkod için yazın. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
           "en": "Drop your sample off in person or send it by courier; write to us for bags and barcodes. This form is a demo; it opens your e-mail client and stores no data.",
-          "ar": "يمكنك تسليم العينة باليد أو إرسالها بالبريد؛ راسلنا للحصول على الأكياس والرموز الشريطية. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات."
+          "ar": "يمكنك تسليم العينة باليد أو إرسالها بالبريد؛ راسلنا للحصول على الأكياس والرموز الشريطية. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات.",
+          "de": "Bringen Sie Ihre Probe persönlich vorbei oder senden Sie sie per Kurier; schreiben Sie uns für Beutel und Barcodes. Dieses Formular ist eine Demo; es öffnet Ihren E-Mail-Client und speichert keine Daten.",
+          "ru": "Привезите образец лично или отправьте курьером; напишите нам по поводу пакетов и штрих-кодов. Эта форма является демо-версией; она открывает ваш почтовый клиент и не сохраняет данные."
         },
         "adres": {
           "tr": "Tohum Sokak No: 9, Küçükköy, Çumra, Konya (kurgusal adres)",
           "en": "9 Tohum Street, Kucukkoy, Cumra, Konya (fictional address)",
-          "ar": "شارع توهوم رقم 9، كوتشوك كوي، تشومرا، قونية (عنوان افتراضي)"
+          "ar": "شارع توهوم رقم 9، كوتشوك كوي، تشومرا، قونية (عنوان افتراضي)",
+          "de": "Tohum Sokak No: 9, Küçükköy, Çumra, Konya (fiktive Adresse)",
+          "ru": "Tohum Sokak No: 9, Küçükköy, Çumra, Konya (вымышленный адрес)"
         },
         "telefon": "+90 332 084 36 36",
         "eposta": "numune@toprakbil.example",
@@ -2097,14 +2565,18 @@
         "saat": {
           "tr": "Pzt–Cum 08:00 – 17:30 · Cmt numune kabulü 09:00 – 13:00",
           "en": "Mon–Fri 08:00 – 17:30 · Sat sample drop-off 09:00 – 13:00",
-          "ar": "الاثنين–الجمعة 08:00 – 17:30 · السبت استلام العينات 09:00 – 13:00"
+          "ar": "الاثنين–الجمعة 08:00 – 17:30 · السبت استلام العينات 09:00 – 13:00",
+          "de": "Mo–Fr 08:00 – 17:30 · Sa Probeneingang 09:00 – 13:00",
+          "ru": "Пн–Пт 08:00 – 17:30 · Сб прием образцов 09:00 – 13:00"
         },
         "haritaUrl": "",
         "haritaGomme": "",
         "waMesaj": {
           "tr": "Merhaba Toprakbil, numune kabı istiyorum.",
           "en": "Hello Toprakbil, I would like a sample bag.",
-          "ar": "مرحبًا توبراكبيل، أريد كيس عينة."
+          "ar": "مرحبًا توبراكبيل، أريد كيس عينة.",
+          "de": "Hallo Toprakbil, ich möchte eine Musterdose.",
+          "ru": "Здравствуйте, Toprakbil, мне нужен образец в контейнере."
         },
         "bg": "var(--mx-site-bg, #ffffff)",
         "text": "var(--mx-site-text, #111318)",
@@ -2122,40 +2594,54 @@
         "address": {
           "tr": "Tohum Sokak No: 9, Küçükköy, Çumra, Konya (kurgusal adres)",
           "en": "9 Tohum Street, Kucukkoy, Cumra, Konya (fictional address)",
-          "ar": "شارع توهوم رقم 9، كوتشوك كوي، تشومرا، قونية (عنوان افتراضي)"
+          "ar": "شارع توهوم رقم 9، كوتشوك كوي، تشومرا، قونية (عنوان افتراضي)",
+          "de": "Tohum Sokak No: 9, Küçükköy, Çumra, Konya (fiktive Adresse)",
+          "ru": "Tohum Sokak No: 9, Küçükköy, Çumra, Konya (вымышленный адрес)"
         },
         "phone": "+90 332 084 36 36",
         "email": "numune@toprakbil.example",
         "hours": {
           "tr": "Pzt–Cum 08:00 – 17:30 · Cmt numune kabulü 09:00 – 13:00",
           "en": "Mon–Fri 08:00 – 17:30 · Sat sample drop-off 09:00 – 13:00",
-          "ar": "الاثنين–الجمعة 08:00 – 17:30 · السبت استلام العينات 09:00 – 13:00"
+          "ar": "الاثنين–الجمعة 08:00 – 17:30 · السبت استلام العينات 09:00 – 13:00",
+          "de": "Mo–Fr 08:00 – 17:30 · Sa Probeneingang 09:00 – 13:00",
+          "ru": "Пн–Пт 08:00 – 17:30 · Сб прием образцов 09:00 – 13:00"
         },
         "social": [],
         "title": {
           "tr": "Laboratuvara numune getirin",
           "en": "Bring your sample to the lab",
-          "ar": "أحضر عينتك إلى المختبر"
+          "ar": "أحضر عينتك إلى المختبر",
+          "de": "Probe ins Labor bringen",
+          "ru": "Принесите образец в лабораторию"
         },
         "description": {
           "tr": "Numuneyi elden bırakabilir ya da kargo ile gönderebilirsiniz; kap ve barkod için yazın. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
           "en": "Drop your sample off in person or send it by courier; write to us for bags and barcodes. This form is a demo; it opens your e-mail client and stores no data.",
-          "ar": "يمكنك تسليم العينة باليد أو إرسالها بالبريد؛ راسلنا للحصول على الأكياس والرموز الشريطية. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات."
+          "ar": "يمكنك تسليم العينة باليد أو إرسالها بالبريد؛ راسلنا للحصول على الأكياس والرموز الشريطية. هذا النموذج تجريبي؛ يفتح برنامج البريد لديك ولا يحفظ أي بيانات.",
+          "de": "Bringen Sie Ihre Probe persönlich vorbei oder senden Sie sie per Kurier; schreiben Sie uns für Beutel und Barcodes. Dieses Formular ist eine Demo; es öffnet Ihren E-Mail-Client und speichert keine Daten.",
+          "ru": "Привезите образец лично или отправьте курьером; напишите нам по поводу пакетов и штрих-кодов. Эта форма является демо-версией; она открывает ваш почтовый клиент и не сохраняет данные."
         },
         "panelTitle": {
           "tr": "Toprakbil",
           "en": "Toprakbil",
-          "ar": "توبراكبيل"
+          "ar": "توبراكبيل",
+          "de": "Toprakbil",
+          "ru": "Toprakbil"
         },
         "panelText": {
           "tr": "Görseller temsilîdir.",
           "en": "Images are representative.",
-          "ar": "الصور تمثيلية."
+          "ar": "الصور تمثيلية.",
+          "de": "Bilder sind repräsentativ.",
+          "ru": "Изображения носят иллюстративный характер."
         },
         "formTitle": {
           "tr": "Numune talebi",
           "en": "Sample request",
-          "ar": "طلب عينة"
+          "ar": "طلب عينة",
+          "de": "Musteranfrage",
+          "ru": "Запрос образца"
         },
         "subjects": [
           {
@@ -2163,7 +2649,9 @@
             "name": {
               "tr": "Toprak analizi",
               "en": "Soil test",
-              "ar": "تحليل التربة"
+              "ar": "تحليل التربة",
+              "de": "Bodenanalyse",
+              "ru": "Анализ почвы"
             }
           },
           {
@@ -2171,7 +2659,9 @@
             "name": {
               "tr": "Sulama suyu analizi",
               "en": "Irrigation water test",
-              "ar": "تحليل مياه الري"
+              "ar": "تحليل مياه الري",
+              "de": "Bewässerungswasseranalyse",
+              "ru": "Анализ воды для полива"
             }
           },
           {
@@ -2179,7 +2669,9 @@
             "name": {
               "tr": "Sertifikalı tohum",
               "en": "Certified seed",
-              "ar": "بذور معتمدة"
+              "ar": "بذور معتمدة",
+              "de": "Zertifiziertes Saatgut",
+              "ru": "Сертифицированные семена"
             }
           },
           {
@@ -2187,80 +2679,110 @@
             "name": {
               "tr": "Diğer",
               "en": "Other",
-              "ar": "أخرى"
+              "ar": "أخرى",
+              "de": "Sonstiges",
+              "ru": "Другое"
             }
           }
         ],
         "kvkkText": {
           "tr": "Kişisel verilerimin bu talebin yanıtlanması amacıyla işlenmesine ilişkin aydınlatma metnini okudum.",
           "en": "I have read the privacy notice on how my personal data is processed to answer this request.",
-          "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية للرد على هذا الطلب."
+          "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية للرد على هذا الطلب.",
+          "de": "Ich habe die Datenschutzerklärung zur Verarbeitung meiner personenbezogenen Daten zur Beantwortung dieser Anfrage gelesen.",
+          "ru": "Я ознакомился(лась) с уведомлением о конфиденциальности об обработке моих персональных данных для ответа на этот запрос."
         },
         "kvkkLinkText": {
           "tr": "Aydınlatma metni",
           "en": "Privacy notice",
-          "ar": "إشعار الخصوصية"
+          "ar": "إشعار الخصوصية",
+          "de": "Datenschutzhinweis",
+          "ru": "Информация об обработке данных"
         },
         "kvkkHref": "kisiselveriler",
         "name": {
           "tr": "Laboratuvara numune getirin",
           "en": "Bring your sample to the lab",
-          "ar": "أحضر عينتك إلى المختبر"
+          "ar": "أحضر عينتك إلى المختبر",
+          "de": "Probe ins Labor bringen",
+          "ru": "Принесите образец в лабораторию"
         },
         "adresAd": {
           "tr": "Numune kabul",
           "en": "Sample drop-off",
-          "ar": "استلام العينات"
+          "ar": "استلام العينات",
+          "de": "Probenannahme",
+          "ru": "Приём образцов"
         },
         "telAd": {
           "tr": "Telefon",
           "en": "Phone",
-          "ar": "الهاتف"
+          "ar": "الهاتف",
+          "de": "Telefon",
+          "ru": "Телефон"
         },
         "epostaAd": {
           "tr": "E-posta",
           "en": "E-mail",
-          "ar": "البريد الإلكتروني"
+          "ar": "البريد الإلكتروني",
+          "de": "E-Mail",
+          "ru": "Эл. почта"
         },
         "waAd": {
           "tr": "WhatsApp",
           "en": "WhatsApp",
-          "ar": "واتساب"
+          "ar": "واتساب",
+          "de": "WhatsApp",
+          "ru": "WhatsApp"
         },
         "waDugme": {
           "tr": "Yazın",
           "en": "Write",
-          "ar": "راسلنا"
+          "ar": "راسلنا",
+          "de": "Im Sommer",
+          "ru": "Летом"
         },
         "saatAd": {
           "tr": "Saatler",
           "en": "Hours",
-          "ar": "الساعات"
+          "ar": "الساعات",
+          "de": "Öffnungszeiten",
+          "ru": "Часы работы"
         },
         "yolAd": {
           "tr": "Yol tarifi",
           "en": "Directions",
-          "ar": "الاتجاهات"
+          "ar": "الاتجاهات",
+          "de": "Anfahrt",
+          "ru": "Проезд"
         },
         "araAd": {
           "tr": "Arayın",
           "en": "Call",
-          "ar": "اتصل"
+          "ar": "اتصل",
+          "de": "Rufen Sie an",
+          "ru": "Позвоните"
         },
         "yazAd": {
           "tr": "Yazın",
           "en": "Write",
-          "ar": "اكتب"
+          "ar": "اكتب",
+          "de": "Im Sommer",
+          "ru": "Летом"
         },
         "formBaslik": {
           "tr": "Numune talebi",
           "en": "Sample request",
-          "ar": "طلب عينة"
+          "ar": "طلب عينة",
+          "de": "Musteranfrage",
+          "ru": "Запрос образца"
         },
         "mailSubject": {
           "tr": "Numune talebi",
           "en": "Sample request",
-          "ar": "طلب عينة"
+          "ar": "طلب عينة",
+          "de": "Musteranfrage",
+          "ru": "Запрос образца"
         }
       },
       "data": [],
@@ -2302,28 +2824,38 @@
         "ust": {
           "tr": "Numune takvimi",
           "en": "Sampling calendar",
-          "ar": "تقويم أخذ العينات"
+          "ar": "تقويم أخذ العينات",
+          "de": "Probenkalender",
+          "ru": "Календарь отбора проб"
         },
         "baslik": {
           "tr": "Hangi ürün için ne zaman numune?",
           "en": "When to sample, crop by crop",
-          "ar": "متى تؤخذ العينة لكل محصول؟"
+          "ar": "متى تؤخذ العينة لكل محصول؟",
+          "de": "Wann sollte welches Produkt als Probe kommen?",
+          "ru": "Когда и для какого продукта нужен образец?"
         },
         "metin": {
           "tr": "Şerit, ekimden önce toprak numunesi almak için en uygun ayları gösterir; işaretli ay bu ay. Numune kabı ve barkodu ücretsiz gönderilir (kurgusal).",
           "en": "The band shows the best months to take a soil sample before sowing; the marked month is this month. Sample bags and barcodes are sent free of charge (fictional).",
-          "ar": "يُظهر الشريط أنسب الأشهر لأخذ عينة التربة قبل الزراعة؛ والشهر المعلَّم هو الشهر الحالي. تُرسل أكياس العينات والرموز الشريطية مجانًا (افتراضي)."
+          "ar": "يُظهر الشريط أنسب الأشهر لأخذ عينة التربة قبل الزراعة؛ والشهر المعلَّم هو الشهر الحالي. تُرسل أكياس العينات والرموز الشريطية مجانًا (افتراضي).",
+          "de": "Der Streifen zeigt die besten Monate für die Entnahme einer Bodenprobe vor der Aussaat; der markierte Monat ist der aktuelle. Probenbehälter und Barcode werden kostenlos zugeschickt (fiktiv).",
+          "ru": "Полоса показывает лучшие месяцы для отбора пробы почвы перед посевом; отмеченный месяц — текущий. Ёмкость для пробы и штрихкод высылаются бесплатно (условно)."
         },
         "btn1Text": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         },
         "btn1Url": "iletisim",
         "btn2Text": {
           "tr": "Analizler",
           "en": "Tests",
-          "ar": "التحاليل"
+          "ar": "التحاليل",
+          "de": "Analysen",
+          "ru": "Анализы"
         },
         "btn2Url": "hizmetler",
         "img": "",
@@ -2332,34 +2864,46 @@
         "not": {
           "tr": "Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "The laboratory, results and figures are fictional (DEMO).",
-          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Das Labor, die Ergebnisse und die Zahlen sind fiktiv (DEMO).",
+          "ru": "Лаборатория, результаты и цифры вымышлены (DEMO)."
         },
         "number": "903320843636",
         "numberText": "+90 332 084 36 36",
         "waLabel": {
           "tr": "Mesaj gönder",
           "en": "Send a message",
-          "ar": "أرسل رسالة"
+          "ar": "أرسل رسالة",
+          "de": "Nachricht senden",
+          "ru": "Отправить сообщение"
         },
         "waTitle": {
           "tr": "WhatsApp ile yazın",
           "en": "Write on WhatsApp",
-          "ar": "راسلنا عبر واتساب"
+          "ar": "راسلنا عبر واتساب",
+          "de": "Schreiben Sie per WhatsApp",
+          "ru": "Напишите в WhatsApp"
         },
         "waMessage": {
           "tr": "Merhaba Toprakbil, toprak numunesi göndermek istiyorum.",
           "en": "Hello Toprakbil, I would like to send a soil sample.",
-          "ar": "مرحبًا توبراكبيل، أودّ إرسال عينة تربة."
+          "ar": "مرحبًا توبراكبيل، أودّ إرسال عينة تربة.",
+          "de": "Hallo Toprakbil, ich möchte eine Bodenprobe senden.",
+          "ru": "Здравствуйте, Toprakbil, я хотел бы отправить образец почвы."
         },
         "hours": {
           "tr": "Pzt–Cum 08:00 – 17:30 · Cmt numune kabulü 09:00 – 13:00",
           "en": "Mon–Fri 08:00 – 17:30 · Sat sample drop-off 09:00 – 13:00",
-          "ar": "الاثنين–الجمعة 08:00 – 17:30 · السبت استلام العينات 09:00 – 13:00"
+          "ar": "الاثنين–الجمعة 08:00 – 17:30 · السبت استلام العينات 09:00 – 13:00",
+          "de": "Mo–Fr 08:00 – 17:30 · Sa Probeneingang 09:00 – 13:00",
+          "ru": "Пн–Пт 08:00 – 17:30 · Сб прием образцов 09:00 – 13:00"
         },
         "hoursLabel": {
           "tr": "Numune kabul saatleri",
           "en": "Sample drop-off hours",
-          "ar": "ساعات استلام العينات"
+          "ar": "ساعات استلام العينات",
+          "de": "Annahmezeiten für Proben",
+          "ru": "Часы приёма образцов"
         },
         "bg": "var(--mx-site-surface, #f6f7f9)",
         "yaziRenk": "var(--mx-site-text, #111318)",
@@ -2374,12 +2918,16 @@
         "takvimAd": {
           "tr": "Numune takvimi",
           "en": "Sampling calendar",
-          "ar": "تقويم أخذ العينات"
+          "ar": "تقويم أخذ العينات",
+          "de": "Probenkalender",
+          "ru": "Календарь отбора проб"
         },
         "simdiAd": {
           "tr": "Numune zamanı",
           "en": "Sample now",
-          "ar": "وقت العينة"
+          "ar": "وقت العينة",
+          "de": "Musterzeit",
+          "ru": "Время образцов"
         },
         "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "color": "var(--mx-site-text, #111318)",
@@ -2387,22 +2935,30 @@
         "title": {
           "tr": "Hangi ürün için ne zaman numune?",
           "en": "When to sample, crop by crop",
-          "ar": "متى تؤخذ العينة لكل محصول؟"
+          "ar": "متى تؤخذ العينة لكل محصول؟",
+          "de": "Wann sollte welches Produkt als Probe kommen?",
+          "ru": "Когда и для какого продукта нужен образец?"
         },
         "btn1Label": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         },
         "btn2Label": {
           "tr": "Analizler",
           "en": "Tests",
-          "ar": "التحاليل"
+          "ar": "التحاليل",
+          "de": "Analysen",
+          "ru": "Анализы"
         },
         "description": {
           "tr": "Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "The laboratory, results and figures are fictional (DEMO).",
-          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Das Labor, die Ergebnisse und die Zahlen sind fiktiv (DEMO).",
+          "ru": "Лаборатория, результаты и цифры вымышлены (DEMO)."
         }
       },
       "data": [
@@ -2411,12 +2967,16 @@
           "baslik": {
             "tr": "Kışlık buğday",
             "en": "Winter wheat",
-            "ar": "القمح الشتوي"
+            "ar": "القمح الشتوي",
+            "de": "Winterweizen",
+            "ru": "Зимняя пшеница"
           },
           "aciklama": {
             "tr": "Ekimden 4–6 hafta önce",
             "en": "4–6 weeks before sowing",
-            "ar": "قبل الزراعة بـ4–6 أسابيع"
+            "ar": "قبل الزراعة بـ4–6 أسابيع",
+            "de": "4–6 Wochen vor Oktober",
+            "ru": "За 4–6 недель до октября"
           },
           "aylar": "8-9"
         },
@@ -2425,12 +2985,16 @@
           "baslik": {
             "tr": "Arpa",
             "en": "Barley",
-            "ar": "الشعير"
+            "ar": "الشعير",
+            "de": "Gerste",
+            "ru": "Ячмень"
           },
           "aciklama": {
             "tr": "Anız kaldırıldıktan sonra",
             "en": "After stubble is cleared",
-            "ar": "بعد إزالة بقايا الحصاد"
+            "ar": "بعد إزالة بقايا الحصاد",
+            "de": "Nach der Stoppelentfernung",
+            "ru": "После уборки стерни"
           },
           "aylar": "8-10"
         },
@@ -2439,12 +3003,16 @@
           "baslik": {
             "tr": "Nohut",
             "en": "Chickpea",
-            "ar": "الحمص"
+            "ar": "الحمص",
+            "de": "Kichererbse",
+            "ru": "Нут"
           },
           "aciklama": {
             "tr": "Kış sonu, toprak tava gelince",
             "en": "Late winter, once the soil is workable",
-            "ar": "أواخر الشتاء حين تصبح التربة صالحة للعمل"
+            "ar": "أواخر الشتاء حين تصبح التربة صالحة للعمل",
+            "de": "Ende des Winters, wenn die Tonpfanne kommt",
+            "ru": "В конце зимы, когда появляется глиняная сковорода"
           },
           "aylar": "1-3"
         },
@@ -2453,12 +3021,16 @@
           "baslik": {
             "tr": "Şeker pancarı",
             "en": "Sugar beet",
-            "ar": "الشمندر السكري"
+            "ar": "الشمندر السكري",
+            "de": "Zuckerrübe",
+            "ru": "Сахарная свёкла"
           },
           "aciklama": {
             "tr": "Sonbahar sürümünden önce",
             "en": "Before autumn ploughing",
-            "ar": "قبل الحراثة الخريفية"
+            "ar": "قبل الحراثة الخريفية",
+            "de": "Vor der Herbstpflüge",
+            "ru": "До осенней вспашки"
           },
           "aylar": "10-12"
         },
@@ -2467,12 +3039,16 @@
           "baslik": {
             "tr": "Ayçiçeği",
             "en": "Sunflower",
-            "ar": "دوار الشمس"
+            "ar": "دوار الشمس",
+            "de": "Sonnenblume",
+            "ru": "Подсолнечник"
           },
           "aciklama": {
             "tr": "Erken ilkbahar",
             "en": "Early spring",
-            "ar": "أوائل الربيع"
+            "ar": "أوائل الربيع",
+            "de": "Frühling",
+            "ru": "Ранняя весна"
           },
           "aylar": "2-4"
         },
@@ -2481,12 +3057,16 @@
           "baslik": {
             "tr": "Sulama suyu",
             "en": "Irrigation water",
-            "ar": "مياه الري"
+            "ar": "مياه الري",
+            "de": "Bewässerungswasser",
+            "ru": "Поливная вода"
           },
           "aciklama": {
             "tr": "Sulama sezonu başında ve ortasında",
             "en": "At the start and middle of the irrigation season",
-            "ar": "في بداية موسم الري ومنتصفه"
+            "ar": "في بداية موسم الري ومنتصفه",
+            "de": "Zu Beginn und Mitte der Bewässerungssaison",
+            "ru": "В начале и середине сезона орошения"
           },
           "aylar": "5-7"
         }
@@ -2532,19 +3112,25 @@
         "hakkinda": {
           "tr": "Çumra’da kurgusal bir demo toprak, su ve tohum laboratuvarı. Görseller temsilîdir.",
           "en": "A fictional demo soil, water and seed laboratory in Cumra. Images are representative.",
-          "ar": "مختبر تجريبي افتراضي للتربة والمياه والبذور في تشومرا. الصور تمثيلية."
+          "ar": "مختبر تجريبي افتراضي للتربة والمياه والبذور في تشومرا. الصور تمثيلية.",
+          "de": "Ein fiktives Demo-Labor für Boden, Wasser und Saatgut in Çumra. Die Bilder sind symbolisch.",
+          "ru": "Вымышленная демо-лаборатория почвы, воды и семян в Чумре. Изображения символические."
         },
         "tel": "+90 332 084 36 36",
         "eposta": "numune@toprakbil.example",
         "adres": {
           "tr": "Çumra, Konya (kurgusal)",
           "en": "Cumra, Konya (fictional)",
-          "ar": "تشومرا، قونية (افتراضي)"
+          "ar": "تشومرا، قونية (افتراضي)",
+          "de": "Çumra, Konya (fiktiv)",
+          "ru": "Чумра, Конья (вымышленное)"
         },
         "cta_ad": {
           "tr": "Numune gönder",
           "en": "Send a sample",
-          "ar": "أرسل عينة"
+          "ar": "أرسل عينة",
+          "de": "Muster senden",
+          "ru": "Отправить образец"
         },
         "cta_url": "iletisim",
         "rightsText": "",
@@ -2568,12 +3154,16 @@
         "about": {
           "tr": "Çumra’da kurgusal bir demo toprak, su ve tohum laboratuvarı. Görseller temsilîdir.",
           "en": "A fictional demo soil, water and seed laboratory in Cumra. Images are representative.",
-          "ar": "مختبر تجريبي افتراضي للتربة والمياه والبذور في تشومرا. الصور تمثيلية."
+          "ar": "مختبر تجريبي افتراضي للتربة والمياه والبذور في تشومرا. الصور تمثيلية.",
+          "de": "Ein fiktives Demo-Labor für Boden, Wasser und Saatgut in Çumra. Die Bilder sind symbolisch.",
+          "ru": "Вымышленная демо-лаборатория почвы, воды и семян в Чумре. Изображения символические."
         },
         "address": {
           "tr": "Çumra, Konya (kurgusal)",
           "en": "Cumra, Konya (fictional)",
-          "ar": "تشومرا، قونية (افتراضي)"
+          "ar": "تشومرا، قونية (افتراضي)",
+          "de": "Çumra, Konya (fiktiv)",
+          "ru": "Чумра, Конья (вымышленное)"
         },
         "phone": "+90 332 084 36 36",
         "email": "numune@toprakbil.example",
@@ -2583,7 +3173,9 @@
             "name": {
               "tr": "KVKK",
               "en": "Privacy (KVKK)",
-              "ar": "حماية البيانات"
+              "ar": "حماية البيانات",
+              "de": "Datenschutz (KVKK)",
+              "ru": "Закон о защите данных (KVKK)"
             },
             "href": "kisiselveriler"
           },
@@ -2591,7 +3183,9 @@
             "name": {
               "tr": "Gizlilik",
               "en": "Privacy policy",
-              "ar": "سياسة الخصوصية"
+              "ar": "سياسة الخصوصية",
+              "de": "Datenschutz",
+              "ru": "Конфиденциальность"
             },
             "href": "gizlilikpolitikasi"
           },
@@ -2599,7 +3193,9 @@
             "name": {
               "tr": "Yasal uyarı",
               "en": "Legal notice",
-              "ar": "إشعار قانوني"
+              "ar": "إشعار قانوني",
+              "de": "Rechtlicher Hinweis",
+              "ru": "Правовое уведомление"
             },
             "href": "yasaluyari"
           }
@@ -2607,24 +3203,32 @@
         "nlTitle": {
           "tr": "Numune hatırlatıcısı",
           "en": "Sampling reminder",
-          "ar": "تذكير بأخذ العينات"
+          "ar": "تذكير بأخذ العينات",
+          "de": "Erinnerung an die Probe",
+          "ru": "Напоминание о пробе"
         },
         "nlText": {
           "tr": "Ekimden bir ay önce numune hatırlatması alın. Bu demo sitede veri saklanmaz.",
           "en": "Get a sampling reminder one month before sowing. No data is stored on this demo site.",
-          "ar": "احصل على تذكير بأخذ العينة قبل الزراعة بشهر. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
+          "ar": "احصل على تذكير بأخذ العينة قبل الزراعة بشهر. لا تُحفظ أي بيانات في هذا الموقع التجريبي.",
+          "de": "Erhalten Sie eine Erinnerung an die Aussaat einen Monat im Voraus. Auf dieser Demo-Seite werden keine Daten gespeichert.",
+          "ru": "Получите напоминание о посеве за месяц. На этом демо-сайте данные не сохраняются."
         },
         "nlKvkk": {
           "tr": "E-postanız yalnızca duyuru göndermek için kullanılır; dilediğiniz an listeden çıkabilirsiniz.",
           "en": "Your e-mail is used only to send announcements; you can leave the list at any time.",
-          "ar": "يُستخدم بريدك الإلكتروني لإرسال الإعلانات فقط، ويمكنك إلغاء الاشتراك في أي وقت."
+          "ar": "يُستخدم بريدك الإلكتروني لإرسال الإعلانات فقط، ويمكنك إلغاء الاشتراك في أي وقت.",
+          "de": "Ihre E-Mail-Adresse wird nur für den Versand von Ankündigungen verwendet; Sie können sich jederzeit abmelden.",
+          "ru": "Ваш e-mail используется только для рассылки объявлений; вы можете отписаться в любой момент."
         },
         "services": [
           {
             "name": {
               "tr": "Analizler",
               "en": "Tests",
-              "ar": "التحاليل"
+              "ar": "التحاليل",
+              "de": "Analysen",
+              "ru": "Анализы"
             },
             "href": "hizmetler"
           },
@@ -2632,7 +3236,9 @@
             "name": {
               "tr": "Parseller",
               "en": "Plots",
-              "ar": "القطع"
+              "ar": "القطع",
+              "de": "Parzellen",
+              "ru": "Участки"
             },
             "href": "referanslar"
           },
@@ -2640,7 +3246,9 @@
             "name": {
               "tr": "Numune gönder",
               "en": "Send a sample",
-              "ar": "أرسل عينة"
+              "ar": "أرسل عينة",
+              "de": "Muster senden",
+              "ru": "Отправить образец"
             },
             "href": "iletisim"
           }
@@ -2650,7 +3258,9 @@
             "days": {
               "tr": "Pzt–Cum",
               "en": "Mon–Fri",
-              "ar": "الاثنين–الجمعة"
+              "ar": "الاثنين–الجمعة",
+              "de": "Mo–Fr",
+              "ru": "Пн–Пт"
             },
             "time": "08:00 – 17:30"
           },
@@ -2658,7 +3268,9 @@
             "days": {
               "tr": "Cmt (numune kabulü)",
               "en": "Sat (sample drop-off)",
-              "ar": "السبت (استلام العينات)"
+              "ar": "السبت (استلام العينات)",
+              "de": "Sa (Probenannahme)",
+              "ru": "Сб (приём образцов)"
             },
             "time": "09:00 – 13:00"
           }
@@ -2666,12 +3278,16 @@
         "title_services": {
           "tr": "Hızlı bağlantılar",
           "en": "Quick links",
-          "ar": "روابط سريعة"
+          "ar": "روابط سريعة",
+          "de": "Schnellzugriff",
+          "ru": "Быстрые ссылки"
         },
         "title_hours": {
           "tr": "Laboratuvar saatleri",
           "en": "Laboratory hours",
-          "ar": "ساعات المختبر"
+          "ar": "ساعات المختبر",
+          "de": "Laborzeiten",
+          "ru": "Часы работы лаборатории"
         }
       },
       "data": [],
@@ -2720,17 +3336,23 @@
         "ust": {
           "tr": "Toprak profili · derinlik cm",
           "en": "Soil profile · depth in cm",
-          "ar": "مقطع التربة · العمق بالسنتيمتر"
+          "ar": "مقطع التربة · العمق بالسنتيمتر",
+          "de": "Bodenprofil · Tiefe in cm",
+          "ru": "Профиль почвы · глубина в см"
         },
         "baslik": {
           "tr": "Bir parselin kesiti: yüzeyden ana kayaya",
           "en": "A plot in cross-section: from the surface to the parent rock",
-          "ar": "مقطع في قطعة أرض: من السطح إلى الصخر الأم"
+          "ar": "مقطع في قطعة أرض: من السطح إلى الصخر الأم",
+          "de": "Querschnitt eines Grundstücks: von der Oberfläche bis zum Muttergestein",
+          "ru": "Разрез участка: от поверхности до материнской породы"
         },
         "metin": {
           "tr": "Konya Ovası’nda tipik bir profil; her katmanda neyi ölçtüğümüzü yazdık. Rutin numune yalnız en üst işlenen katmandan alınır. Laboratuvar, sonuçlar ve rakamlar kurgusaldır (DEMO).",
           "en": "A typical profile on the Konya Plain, with what we measure in each layer. Routine samples come only from the top, tilled layer. The laboratory, results and figures are fictional (DEMO).",
-          "ar": "مقطع نموذجي في سهل قونية مع ما نقيسه في كل طبقة. تؤخذ العينات الروتينية من الطبقة العليا المحروثة فقط. المختبر والنتائج والأرقام افتراضية (DEMO)."
+          "ar": "مقطع نموذجي في سهل قونية مع ما نقيسه في كل طبقة. تؤخذ العينات الروتينية من الطبقة العليا المحروثة فقط. المختبر والنتائج والأرقام افتراضية (DEMO).",
+          "de": "Ein typisches Profil auf der Konya-Ebene; wir haben festgehalten, was wir in jeder Schicht messen. Routineproben werden nur aus der obersten bearbeiteten Schicht entnommen. Das Labor, die Ergebnisse und die Zahlen sind fiktiv (DEMO).",
+          "ru": "Типичный профиль на равнине Конья; мы описали, что измеряем в каждом слое. Рутинные пробы берутся только из верхнего обработанного слоя. Лаборатория, результаты и цифры вымышлены (DEMO)."
         },
         "bg": "var(--mx-site-bg, #ffffff)",
         "text": "var(--mx-site-text, #111318)",
@@ -2752,12 +3374,16 @@
           "baslik": {
             "tr": "Ana materyal",
             "en": "Parent material",
-            "ar": "المادة الأم"
+            "ar": "المادة الأم",
+            "de": "Hauptmaterial",
+            "ru": "Основной материал"
           },
           "metin": {
             "tr": "Kireçli göl tortusu; derin sondajda kireç ve jips oranına bakılır.",
             "en": "Limy lake sediment; deep cores are checked for lime and gypsum.",
-            "ar": "رواسب بحيرية كلسية؛ يُفحص فيها الكلس والجبس عند الحفر العميق."
+            "ar": "رواسب بحيرية كلسية؛ يُفحص فيها الكلس والجبس عند الحفر العميق.",
+            "de": "Kalkhaltiger Seesediment; bei Tiefbohrungen wird der Kalk- und Gipsanteil geprüft.",
+            "ru": "Известковый озерный осадок; при глубоком бурении проверяется содержание извести и гипса."
           }
         },
         {
@@ -2766,12 +3392,16 @@
           "baslik": {
             "tr": "Birikme katmanı",
             "en": "Accumulation layer",
-            "ar": "طبقة التراكم"
+            "ar": "طبقة التراكم",
+            "de": "Ablagerungsschicht",
+            "ru": "Слой накопления"
           },
           "metin": {
             "tr": "Yıkanan kireç ve tuz burada birikir; tuzluluk ve taban suyu izlenir.",
             "en": "Leached lime and salt build up here; salinity and groundwater are monitored.",
-            "ar": "يتراكم هنا الكلس والملح المغسولان؛ وتُراقَب الملوحة والمياه الجوفية."
+            "ar": "يتراكم هنا الكلس والملح المغسولان؛ وتُراقَب الملوحة والمياه الجوفية.",
+            "de": "Hier sammeln sich ausgewaschener Kalk und Salz; Salzgehalt und Grundwasser werden überwacht.",
+            "ru": "Здесь накапливаются вымытая известь и соль; засолённость и грунтовые воды отслеживаются."
           }
         },
         {
@@ -2780,12 +3410,16 @@
           "baslik": {
             "tr": "Alt toprak",
             "en": "Subsoil",
-            "ar": "التربة التحتية"
+            "ar": "التربة التحتية",
+            "de": "Unterboden",
+            "ru": "Подпочва"
           },
           "metin": {
             "tr": "Kök ve su burada depolanır; bünye ve sıkışma (pulluk tabanı) ölçülür.",
             "en": "Roots and water are stored here; texture and compaction (plough pan) are measured.",
-            "ar": "تُخزَّن هنا الجذور والمياه؛ ويُقاس القوام والانضغاط (طبقة المحراث)."
+            "ar": "تُخزَّن هنا الجذور والمياه؛ ويُقاس القوام والانضغاط (طبقة المحراث).",
+            "de": "Wurzeln und Wasser werden hier gespeichert; Textur und Verdichtung (Pflugsohle) werden gemessen.",
+            "ru": "Здесь хранятся корни и вода; измеряются структура и уплотнение (плугушная подошва)."
           }
         },
         {
@@ -2794,30 +3428,40 @@
           "baslik": {
             "tr": "İşlenen katman",
             "en": "Tilled layer",
-            "ar": "الطبقة المحروثة"
+            "ar": "الطبقة المحروثة",
+            "de": "Bearbeitete Ebene",
+            "ru": "Обработанный слой"
           },
           "metin": {
             "tr": "Rutin numunenin alındığı yer: pH, organik madde, azot, fosfor, potasyum ve mikro elementler.",
             "en": "Where routine samples come from: pH, organic matter, nitrogen, phosphorus, potassium and micronutrients.",
-            "ar": "مصدر العينات الروتينية: الحموضة والمادة العضوية والنيتروجين والفوسفور والبوتاسيوم والعناصر الصغرى."
+            "ar": "مصدر العينات الروتينية: الحموضة والمادة العضوية والنيتروجين والفوسفور والبوتاسيوم والعناصر الصغرى.",
+            "de": "Wo die Routineprobe entnommen wird: pH, organische Substanz, Stickstoff, Phosphor, Kalium und Spurenelemente.",
+            "ru": "Где берётся стандартный образец: pH, органическое вещество, азот, фосфор, калий и микроэлементы."
           }
         },
         {
           "etiket": {
             "tr": "Yüzey",
             "en": "Surface",
-            "ar": "السطح"
+            "ar": "السطح",
+            "de": "Oberfläche",
+            "ru": "Поверхность"
           },
           "ikon": "grass",
           "baslik": {
             "tr": "Anız ve örtü",
             "en": "Stubble and cover",
-            "ar": "بقايا الحصاد والغطاء"
+            "ar": "بقايا الحصاد والغطاء",
+            "de": "Stoppeln und Bodenbedeckung",
+            "ru": "Стерня и покровный слой"
           },
           "metin": {
             "tr": "Anız yakılmazsa organik madde korunur; rapor bunu yıldan yıla karşılaştırır.",
             "en": "Unburnt stubble keeps organic matter; the report compares it year on year.",
-            "ar": "عدم حرق بقايا الحصاد يحفظ المادة العضوية؛ ويقارنها التقرير عامًا بعد عام."
+            "ar": "عدم حرق بقايا الحصاد يحفظ المادة العضوية؛ ويقارنها التقرير عامًا بعد عام.",
+            "de": "Wird die Stoppel nicht verbrannt, bleibt organische Substanz erhalten; der Bericht vergleicht das von Jahr zu Jahr.",
+            "ru": "Если стерню не сжигать, органическое вещество сохраняется; отчёт сравнивает это из года в год."
           }
         }
       ],
@@ -2862,22 +3506,30 @@
         "ust": {
           "tr": "Parseller",
           "en": "Plots",
-          "ar": "القطع"
+          "ar": "القطع",
+          "de": "Parzellen",
+          "ru": "Участки"
         },
         "baslik": {
           "tr": "Tarladan laboratuvara yedi kare",
           "en": "Seven frames from field to lab",
-          "ar": "سبع لقطات من الحقل إلى المختبر"
+          "ar": "سبع لقطات من الحقل إلى المختبر",
+          "de": "Sieben Bilder vom Feld ins Labor",
+          "ru": "Семь кадров от поля до лаборатории"
         },
         "metin": {
           "tr": "Numunenin ve tohumun yolundan kareler. Görseller temsilîdir.",
           "en": "Frames from the path of a sample and a seed. Images are representative.",
-          "ar": "لقطات من رحلة العينة والبذرة. الصور تمثيلية."
+          "ar": "لقطات من رحلة العينة والبذرة. الصور تمثيلية.",
+          "de": "Bilder vom Weg einer Probe und eines Samens. Die Abbildungen sind repräsentativ.",
+          "ru": "Кадры с пути образца и семени. Изображения являются иллюстративными."
         },
         "tumu": {
           "tr": "Tümü",
           "en": "All",
-          "ar": "الكل"
+          "ar": "الكل",
+          "de": "Alle",
+          "ru": "Все"
         },
         "bg": "var(--mx-site-surface, #f6f7f9)",
         "text": "var(--mx-site-text, #111318)",
@@ -2897,7 +3549,9 @@
             "name": {
               "tr": "Tarla",
               "en": "Field",
-              "ar": "الحقل"
+              "ar": "الحقل",
+              "de": "Feld",
+              "ru": "Поле"
             }
           },
           {
@@ -2905,7 +3559,9 @@
             "name": {
               "tr": "Laboratuvar",
               "en": "Laboratory",
-              "ar": "المختبر"
+              "ar": "المختبر",
+              "de": "Labor",
+              "ru": "Лаборатория"
             }
           },
           {
@@ -2913,7 +3569,9 @@
             "name": {
               "tr": "Tohum",
               "en": "Seed",
-              "ar": "البذور"
+              "ar": "البذور",
+              "de": "Samen",
+              "ru": "Семя"
             }
           }
         ]
@@ -2925,12 +3583,16 @@
           "baslik": {
             "tr": "Çıkış sayımı",
             "en": "Emergence count",
-            "ar": "عدّ الإنبات"
+            "ar": "عدّ الإنبات",
+            "de": "Ausgangszählung",
+            "ru": "Подсчёт при выходе"
           },
           "alt": {
             "tr": "Koyu toprakta sıra halinde yeni çıkmış fideler",
             "en": "Young seedlings in rows on dark soil",
-            "ar": "شتلات صغيرة في صفوف على تربة داكنة"
+            "ar": "شتلات صغيرة في صفوف على تربة داكنة",
+            "de": "Junge Setzlinge in Reihen auf dunkler Erde",
+            "ru": "Молодые саженцы рядами на темной почве"
           },
           "w": 1600,
           "h": 1000
@@ -2941,12 +3603,16 @@
           "baslik": {
             "tr": "Kıraç parsel",
             "en": "Dry plot",
-            "ar": "قطعة جافة"
+            "ar": "قطعة جافة",
+            "de": "Grundstück Kıraç",
+            "ru": "Участок Кырач"
           },
           "alt": {
             "tr": "Kurak tepeler önünde sıra ağaçlı bahçe",
             "en": "An orchard in rows before dry hills",
-            "ar": "بستان بأشجار مصفوفة أمام تلال جافة"
+            "ar": "بستان بأشجار مصفوفة أمام تلال جافة",
+            "de": "Garten mit Baumreihe vor trockenen Hügeln",
+            "ru": "Сад с рядом деревьев на фоне засушливых холмов"
           },
           "w": 1600,
           "h": 1000
@@ -2957,12 +3623,16 @@
           "baslik": {
             "tr": "Sulama suyu",
             "en": "Irrigation water",
-            "ar": "مياه الري"
+            "ar": "مياه الري",
+            "de": "Bewässerungswasser",
+            "ru": "Поливная вода"
           },
           "alt": {
             "tr": "Taşlı sığ dere suyu",
             "en": "Shallow stream water over stones",
-            "ar": "مياه جدول ضحل فوق الحجارة"
+            "ar": "مياه جدول ضحل فوق الحجارة",
+            "de": "Shallow stream water over stones",
+            "ru": "Глубокий поток воды по камням"
           },
           "w": 1600,
           "h": 1000
@@ -2973,12 +3643,16 @@
           "baslik": {
             "tr": "Ölçüm tezgâhı",
             "en": "Test bench",
-            "ar": "منضدة القياس"
+            "ar": "منضدة القياس",
+            "de": "Messplatz",
+            "ru": "Измерительный стол"
           },
           "alt": {
             "tr": "Laboratuvar tezgâhında göstergeli ölçüm cihazı",
             "en": "A gauge instrument on a laboratory bench",
-            "ar": "جهاز قياس بعدّادات على منضدة مختبر"
+            "ar": "جهاز قياس بعدّادات على منضدة مختبر",
+            "de": "Messgerät mit Anzeige auf einem Labortisch",
+            "ru": "Прибор с индикатором на лабораторном столе"
           },
           "w": 1600,
           "h": 1000
@@ -2989,12 +3663,16 @@
           "baslik": {
             "tr": "Hasat partisi",
             "en": "Harvest batch",
-            "ar": "دفعة الحصاد"
+            "ar": "دفعة الحصاد",
+            "de": "Erntefest",
+            "ru": "Праздник урожая"
           },
           "alt": {
             "tr": "Sepetlerde yeni toplanmış ürün",
             "en": "Freshly picked produce in baskets",
-            "ar": "محصول مقطوف حديثًا في سلال"
+            "ar": "محصول مقطوف حديثًا في سلال",
+            "de": "Frisch geerntete Ware in den Körben",
+            "ru": "Свежесобранные продукты в корзинах"
           },
           "w": 1600,
           "h": 1000
@@ -3005,12 +3683,16 @@
           "baslik": {
             "tr": "Tohum deposu",
             "en": "Seed store",
-            "ar": "مستودع البذور"
+            "ar": "مستودع البذور",
+            "de": "Saatgutlager",
+            "ru": "Хранилище семян"
           },
           "alt": {
             "tr": "Raflı, aydınlık depo koridoru",
             "en": "A bright warehouse aisle with racks",
-            "ar": "ممر مستودع مضيء بالرفوف"
+            "ar": "ممر مستودع مضيء بالرفوف",
+            "de": "Heller Lagergang mit Regalen",
+            "ru": "Светлый складской проход со стеллажами"
           },
           "w": 1600,
           "h": 1000
@@ -3021,12 +3703,16 @@
           "baslik": {
             "tr": "Sevkiyata hazır",
             "en": "Ready to dispatch",
-            "ar": "جاهز للشحن"
+            "ar": "جاهز للشحن",
+            "de": "Bereit zur Versendung",
+            "ru": "Готово к отправке"
           },
           "alt": {
             "tr": "Streçlenmiş paletler üst üste",
             "en": "Stretch-wrapped pallets stacked",
-            "ar": "منصات مغلفة ومكدسة"
+            "ar": "منصات مغلفة ومكدسة",
+            "de": "Stretchverpackte Paletten übereinander",
+            "ru": "Паллеты в стрейч-плёнке, поставленные друг на друга"
           },
           "w": 1600,
           "h": 1000

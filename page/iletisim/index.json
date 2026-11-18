@@ -2,7 +2,9 @@
   "name": {
     "tr": "İletişim",
     "en": "Contact",
-    "ar": "اتصل بنا"
+    "ar": "اتصل بنا",
+    "de": "Kontakt",
+    "ru": "Контакты"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Numune kabul paftası, adres ve saatler.",
     "en": "Sample drop-off plan, address and hours.",
-    "ar": "مخطط استلام العينات والعنوان والساعات."
+    "ar": "مخطط استلام العينات والعنوان والساعات.",
+    "de": "Plan für die Probeneinreichung, Adresse und Öffnungszeiten.",
+    "ru": "Схема сдачи образцов, адрес и часы работы."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "İletişim",
     "en": "Contact",
-    "ar": "اتصل بنا"
+    "ar": "اتصل بنا",
+    "de": "Kontakt",
+    "ru": "Контакты"
   },
   "keyword": {
     "tr": "iletişim",
     "en": "contact",
-    "ar": "اتصال"
+    "ar": "اتصال",
+    "de": "Kontakt",
+    "ru": "контакты"
   },
   "text": {},
   "update": "2026-11-16T20:25:16.414Z",
